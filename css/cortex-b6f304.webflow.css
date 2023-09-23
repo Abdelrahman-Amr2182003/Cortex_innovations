@@ -120,6 +120,7 @@ figcaption {
   line-height: 18px;
 }
 
+
 .navbar {
   background-color: rgba(0, 0, 0, 0);
   border-bottom: 1px solid rgba(255, 255, 255, .1);
@@ -264,7 +265,6 @@ figcaption {
 
 
 
-
 .dropdown-link {
   font-size: 13px;
   transition: background-color .2s, color .2s;
@@ -282,6 +282,31 @@ figcaption {
 .dropdown-link.w--current:hover {
   color: #fff;
 }
+
+
+
+
+/* Initially hide the dropdown menus */
+.dropdown-list.w-dropdown-list {
+  display: none;
+}
+
+/* Show the dropdown menu when the parent is hovered */
+.dropdown.w-dropdown:hover .dropdown-list.w-dropdown-list {
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .container {
   margin-top: 147px;
@@ -1605,6 +1630,7 @@ figcaption {
   margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
+
   display: block;
 }
 
@@ -1680,6 +1706,32 @@ figcaption {
 .field.line.area {
   height: 95px;
 }
+
+
+#subject:focus{
+
+  border-bottom-color: var(--color_cyan);
+
+
+}
+#subject {
+  height: 50px;
+  background-color: #f2f3f7;
+  border: 0 solid #989ba2;
+  border-radius: 10px;
+  transition: background-color .2s;
+  width: 100%;
+  color: #989ba2;
+
+}
+
+#subject:hover {
+    background-color: #fff;
+    border: 2px;
+  }
+
+
+
 
 .success-message {
   color: #fff;
@@ -3191,7 +3243,7 @@ figcaption {
 
 .white-contact-form {
   width: 60%;
-  height: 545px;
+  height: fit-content;
   float: left;
   color: #000;
   text-align: left;
@@ -8938,15 +8990,24 @@ html.w-mod-js [data-ix="hide-lightbox"] {
     max-width: 1500px;
   }
 
+
+
   .dropdown-list.w--open {
     border-radius: 0;
     margin-top: 0;
     box-shadow: 0 0 rgba(0, 0, 0, 0);
+
   }
 
   .dropdown-link {
     padding-left: 35px;
   }
+
+
+
+
+
+
 
   .container.footer-container {
     font-size: 12px;
@@ -11109,7 +11170,7 @@ html.w-mod-js [data-ix="hide-lightbox"] {
   }
 
   .container.above-image-section {
-    margin-bottom: -130px;
+    margin-bottom: 130px;
   }
 
   .button.text-button {
@@ -12503,7 +12564,7 @@ html.w-mod-js [data-ix="hide-lightbox"] {
 
   .browser-mockup-right-copy {
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     position: relative;
     top: 0;
     right: 0;

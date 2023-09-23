@@ -382,6 +382,10 @@ textarea.w-input,
 textarea.w-select {
   height: auto;
 }
+
+
+
+
 .w-select {
   background-color: #f3f3f3;
 }
@@ -668,6 +672,7 @@ textarea.w-select {
   .w-container .w-row {
     margin-left: 0;
     margin-right: 0;
+    margin-top: 100px;
   }
   .w-col {
     width: 100%;

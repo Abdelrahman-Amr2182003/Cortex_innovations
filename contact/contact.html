@@ -38,19 +38,21 @@
             <a href="../research/research_items_page.html" class="dropdown-link w-dropdown-link">Category 4</a>
           </nav>
         </div>
-        <a href="../lab/lab_home.html" class="dropdown w-dropdown">
-          <div data-delay="0" data-hover="false" class="nav-link dropdown-toggle light w-dropdown-toggle">
+        <a href="../lab/lab_home.html">
+        <div data-delay="0" class="dropdown w-dropdown">
+          
+          <div class="nav-link dropdown-toggle light w-dropdown-toggle">
             <div>Our Lab</div>
             <div class="dropdown-icon w-icon-dropdown-toggle"></div>
           </div>
-          <nav class="dropdown-list w-dropdown-list">
+            <nav class="dropdown-list w-dropdown-list">
             <a href="../lab/lab_items_page.html" class="dropdown-link w-dropdown-link">Lab 1</a>
             <a href="../lab/lab_items_page.html" class="dropdown-link w-dropdown-link">Lab 2</a>
             <a href="../lab/lab_items_page.html" class="dropdown-link w-dropdown-link">Lab 3</a>
             <a href="../lab/lab_items_page.html" class="dropdown-link w-dropdown-link">Lab 4</a>
             <a href="../lab/lab_items_page.html" class="dropdown-link w-dropdown-link">Lab 5</a>
           </nav>
-        </a>
+        </div>
 
         <a href="../blog/blog.html" aria-current="page" class="nav-link light w-nav-link w--current">Blog</a>
         <a href="../about/about.html" aria-current="page" class="nav-link light w-nav-link w--current">About Us</a>
@@ -67,7 +69,57 @@
       <div data-ix="fade-in-on-load" class="white-contact-form centered w-form">
         <form id="wf-form-Email-Form" name="wf-form-Email-Form-4" data-name="Email Form 4" method="get" data-wf-page-id="64cea513d9b9ac3ec674f297" data-wf-element-id="6427d2d8-bd35-2a54-5e49-ede3e7334e66">
           <h1 class="form-title">Contact us now</h1>
-          <h2 class="form-title subtitle">Do you have a question? Contact us now!</h2><label for="name-2" class="field-label">Name:</label><input type="text" class="field rounded w-input" maxlength="256" name="name" data-name="Name 2" placeholder="" id="name-2"><label for="Email-3" class="field-label">Email address:</label><input type="email" class="field rounded w-input" maxlength="256" name="Email" data-name="Email" placeholder="" id="Email-3" required=""><label for="Message" class="field-label">Your message:</label><textarea id="Message" name="Message" maxlength="5000" data-name="Message" placeholder="" class="field rounded area w-input"></textarea><input type="submit" value="Send Email" data-wait="Please wait..." class="button w-button">
+          <h2 class="form-title subtitle">Do you have a question? Contact us now!</h2>
+          <label for="name-2" class="field-label">Name:</label>
+          <input type="text" class="field rounded w-input" maxlength="256" name="name" data-name="Name 2" placeholder="" id="name-2">
+          <label for="name-2" class="field-label">subject:</label>
+          <select id="subject" name="subject">
+              <option value="General Inquiry">General Inquiry</option>
+              <option value="Service">Service</option>
+              <option value="Data Set">Data Set</option>
+          </select>
+
+          <script>
+           // Function to parse query parameters from the URL
+           function parseQueryParameters() {
+               var query = window.location.search.substring(1);
+               var parameters = query.split('&');
+               var parameterMap = {};
+
+               for (var i = 0; i < parameters.length; i++) {
+                   var parameter = parameters[i].split('=');
+                   var paramName = decodeURIComponent(parameter[0]);
+                   var paramValue = decodeURIComponent(parameter[1]);
+                   parameterMap[paramName] = paramValue;
+               }
+
+               return parameterMap;
+           }
+
+           // Get the 'subject' query parameter value
+           var queryParameters = parseQueryParameters();
+           var selectedSubject = queryParameters.subject;
+
+           // Set the selected option in the dropdown based on the query parameter
+           if (selectedSubject) {
+               var dropdown = document.getElementById('subject');
+               for (var i = 0; i < dropdown.options.length; i++) {
+                   if (dropdown.options[i].value === selectedSubject) {
+                       dropdown.options[i].selected = true;
+                       break;
+                   }
+               }
+           }
+        </script>
+
+
+
+
+          <label for="Email-3" class="field-label">Email address:</label>
+          <input type="email" class="field rounded w-input" maxlength="256" name="Email" data-name="Email" placeholder="" id="Email-3" required="">
+          <label for="Message" class="field-label">Your message:</label>
+          <textarea id="Message" name="Message" maxlength="5000" data-name="Message" placeholder="" class="field rounded area w-input"></textarea>
+          <input type="submit" value="Send Email" data-wait="Please wait..." class="button w-button">
         </form>
         <div class="success-message w-form-done">
           <p>Thank you! Your submission has been received!</p>
