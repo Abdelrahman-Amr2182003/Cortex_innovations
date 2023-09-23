@@ -15874,7 +15874,16 @@
       });
     }
   });
-
+$(document).ready(function () {
+    // Check if the page is scrolled down
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 50) {
+            $('.navbar').addClass('scrolled');
+        } else {
+            $('.navbar').removeClass('scrolled');
+        }
+    });
+});
   // packages/shared/render/plugins/Widget/webflow-maps.js
   var require_webflow_maps = __commonJS({
     "packages/shared/render/plugins/Widget/webflow-maps.js"(exports, module) {
@@ -16058,50 +16067,7 @@
   require_webflow_tabs();
   require_webflow_maps();
 })();
-/*!
- * tram.js v0.8.2-global
- * Cross-browser CSS3 transitions in JavaScript
- * https://github.com/bkwld/tram
- * MIT License
- */
-/*!
- * Webflow._ (aka) Underscore.js 1.6.0 (custom build)
- * _.each
- * _.map
- * _.find
- * _.filter
- * _.any
- * _.contains
- * _.delay
- * _.defer
- * _.throttle (webflow)
- * _.debounce
- * _.keys
- * _.has
- * _.now
- * _.template (webflow: upgraded to 1.13.6)
- *
- * http://underscorejs.org
- * (c) 2009-2013 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
- * Underscore may be freely distributed under the MIT license.
- * @license MIT
- */
-/*! Bundled license information:
 
-timm/lib/timm.js:
-  (*!
-   * Timm
-   *
-   * Immutability helpers with fast reads and acceptable writes.
-   *
-   * @copyright Guillermo Grau Panea 2016
-   * @license MIT
-   *)
-*/
-/**
- * ----------------------------------------------------------------------
- * Webflow: Interactions: Init
- */
 Webflow.require('ix').init([
   {"slug":"hide-block-title","name":"Hide Block Title","value":{"style":{"opacity":0,"x":"0px","y":"-10px","z":"0px"},"triggers":[]}},
   {"slug":"hide-block-description","name":"Hide Block Description","value":{"style":{"title":"Hide Block Description","opacity":0,"x":"0px","y":"10px","z":"0px"},"triggers":[]}},

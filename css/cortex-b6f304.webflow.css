@@ -26,6 +26,7 @@ body {
   font-family: Source Sans Pro, sans-serif;
   font-size: 15px;
   line-height: 23px;
+  position: relative;
 }
 
 h1 {
@@ -126,11 +127,13 @@ figcaption {
   border-bottom: 1px solid rgba(255, 255, 255, .1);
   padding-top: 40px;
   padding-bottom: 45px;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
 }
+
+
 
 .navbar.with-color-button {
   background-color: rgba(0, 0, 0, .1);
@@ -146,6 +149,74 @@ figcaption {
   left: 0;
   right: 0;
   box-shadow: 0 0 33px rgba(0, 0, 0, .2);
+}
+
+/* Initial styles for the navbar */
+.navbar {
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Style for the navbar when scrolled down */
+.navbar.scrolled {
+    background-color: #fff; /* Change to your desired background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a box shadow if desired */
+}
+
+.nav-link{
+
+
+  border: 2px solid transparent; 
+}
+
+
+.nav-link:hover{
+
+
+    border-color: var(--button_gray);
+}
+
+.navbar.scrolled .nav-link {
+    color: #000; /* Change to your desired text color when scrolled */
+
+}
+
+.navbar.scrolled .nav-link:hover {
+    color: var(--color_cyan); /* Change to your desired text color when scrolled */
+    border-color: var(--button_gray);
+}
+
+.navbar.scrolled .logo-block-copy{
+
+
+  color: #000;
+}
+
+
+
+
+.navbar.scrolled .logo-block-copy:hover{
+
+
+  color: var(--color_cyan);
+}
+
+.navbar .logo-block-copy{
+
+
+  color: #fff;
+}
+
+.navbar .logo-block-copy:hover{
+
+
+  color: #000;
+}
+
+.w-nav-brand:hover{
+
+
+  color: var(--color_cyan);
 }
 
 .logo-block {
