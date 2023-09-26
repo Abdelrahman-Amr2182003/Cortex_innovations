@@ -190,6 +190,9 @@ figcaption {
 
 
   color: #000;
+    transition: transform 0.3s ease; 
+
+
 }
 
 
@@ -199,18 +202,26 @@ figcaption {
 
 
   color: var(--color_cyan);
+    transform: scale(1.2);
+
 }
+
+
+
 
 .navbar .logo-block-copy{
 
 
   color: #fff;
+    transition: transform 0.3s ease; 
+
 }
 
 .navbar .logo-block-copy:hover{
 
 
-  color: #000;
+  color: var(--color_cyan);
+  transform: scale(1.2);
 }
 
 .w-nav-brand:hover{
@@ -223,10 +234,39 @@ figcaption {
   z-index: 10;
   color: #000;
   -webkit-text-stroke-color: #fff;
-  margin-right: 30px;
+  margin-right: 60px;
   font-size: 30px;
   font-weight: 700;
+    z-index: 10;
+
+  display: flex; 
+  align-items: center;
+  margin: 0;
+    transition: transform 0.3s ease; 
+
 }
+
+
+.logo-block:hover{
+
+  transform: scale(1.2);
+  color: var(--color_cyan);
+
+}
+
+.logo-block img{
+
+  width: 3em;
+  height: 1.5em;
+  transition: transform 0.3s ease; 
+
+}
+.logo-block img:hover{
+
+    transform :scale(1.2);
+
+}
+
 
 .logo-block.w--current {
   color: #fff;
@@ -366,8 +406,6 @@ figcaption {
 .dropdown.w-dropdown:hover .dropdown-list.w-dropdown-list {
   display: block;
 }
-
-
 
 
 
@@ -4809,9 +4847,23 @@ figcaption {
   margin-right: 30px;
   font-size: 30px;
   font-weight: 700;
+  display: flex; 
+  align-items: center;
+  margin: 0;
+
 }
+.logo-block-copy img{
 
+  width: 3em;
+  height: 1.5em;
+  transition: transform 0.3s ease; 
 
+}
+.logo-block-copy img:hover{
+
+    transform :scale(1.2);
+
+}
 
 
 .logo-block-copy.w--current {
@@ -8992,6 +9044,10 @@ html.w-mod-js [data-ix="hide-lightbox"] {
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
   }
 
   .navbar.with-color-button {
@@ -9017,6 +9073,7 @@ html.w-mod-js [data-ix="hide-lightbox"] {
     margin-left: 0;
     margin-right: 0;
     padding-left: 35px;
+
   }
 
   .nav-link:hover {
