@@ -607,6 +607,28 @@ transition: transform 0.3s ease;
   background-color: var(--button_green);
 }
 
+.button-project{
+  background-color: #fff;
+  color: #000;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  margin-top: 40px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 12px;
+  font-weight: 600;
+  transition: background-color .2s, background-position .2s, color .2s, border .2s, box-shadow .2s;
+}
+
+
+.button-project:hover{
+  background-color: var(--color_cyan);
+  color: #fff;
+    box-shadow: 0 8px 16px 4px rgba(0, 0, 0, .3);
+
+
+}
 .button.slider-button.outline {
   background-color: rgba(0, 0, 0, 0);
   border: 1px solid rgba(255, 255, 255, .6);
@@ -3796,6 +3818,7 @@ transition: transform 0.3s ease;
   margin-bottom: -22px;
   padding-bottom: 19px;
   font-weight: 700;
+  font-size: 30px;
 }
 
 .team-member-tag {
@@ -3815,9 +3838,9 @@ transition: transform 0.3s ease;
 
 .team-member-description {
   color: #fff;
-  margin-top: 20px;
-  margin-bottom: 50px;
-  font-size: 12px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 20px;
   line-height: 18px;
 }
 
@@ -4507,6 +4530,8 @@ transition: transform 0.3s ease;
 .team-member-item {
   margin-bottom: -40px;
   padding-bottom: 42px;
+
+
 }
 
 .small-features-wrapper {
@@ -4963,11 +4988,11 @@ transition: transform 0.3s ease;
 }
 
 .team-member-block-copy-copy-copy {
-  height: 300px;
+  height: 350px;
   text-align: center;
   object-fit: fill;
   background-color: #fff;
-  background-image: linear-gradient(rgba(0, 0, 0, .56), rgba(0, 0, 0, .56)), url('../images/Photo-2.jpg');
+  background-image: linear-gradient(var(--color_navy_overlay),var(--color_navy_overlay)), url('../images/Photo-2.jpg');
   background-position: 0 0, 0 0;
   background-repeat: repeat, repeat;
   background-size: auto, cover;
@@ -4976,6 +5001,8 @@ transition: transform 0.3s ease;
   padding: 30px 20px;
   position: static;
   box-shadow: 0 0 13px rgba(0, 0, 0, .09);
+  width: 15em;
+  margin-left: 20px;
 }
 
 .section-copy {
