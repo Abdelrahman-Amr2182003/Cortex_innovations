@@ -1,9 +1,25 @@
-
 :root {
-  --btn_color: #07407b;
-  --btn_color_hover:#88dbfc;
-  --color_cyan:#1f6fff;
+  --nav_bar_hover:#fca742;
+  --dark_gray:#3b3f46;
+  --image_section_color:rgba(146, 155, 170, .9);
+  --button_green:#5ec045;
+  --contact_us_gray:rgba(31, 111, 255, .86);
+  --button_gray:#9ea89b;
+  --footer_gray_text:#979da5;
+  --footer_gray:#424549;
+  --footer_bottom_text:#94979e;
+  --panels_color:#3e434d;
+  --panels_blue:rgba(255, 255, 255, .5);
+  --panels_text:#b9b9b9;
+  --footer_top_gray:#2a2d30;
+
+    --color_orange:#fca742;
+    --color_cyan:#88dbfc;
+    --color_blue:#07407b;
+    --color_navy_blue:#0e0f3b;
+    --color_grey:#f1f2f3;
 }
+
 
 
 @font-face {
@@ -1103,13 +1119,20 @@ textarea.w-select {
   position: relative;
   vertical-align: top;
   text-decoration: none;
-  color: var(--color_cyan);
+  color: var(--color_orange);
   padding: 20px;
   text-align: left;
   margin-left: auto;
   margin-right: auto;
   white-space: nowrap;
 }
+
+.w-dropdown-btn:hover,.w-dropdown-toggle:hover,
+.w-dropdown-link:hover{
+
+  color: var(--color_cyan);
+}
+
 .w-dropdown-toggle {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1625,15 +1648,27 @@ textarea.w-select {
   display: inline-block;
   vertical-align: top;
   text-decoration: none;
-  color: #222222;
+  color: var(--color_orange);
   padding: 20px;
   text-align: left;
   margin-left: auto;
   margin-right: auto;
 }
-.w-nav-link.w--current {
-  color: #0082f3;
+
+
+.w-nav-link:hover{
+
+color: var(--color_cyan);
+
 }
+.w-nav-link.w--current {
+  color: var(--color_orange);
+}
+
+.w-nav-link.w--current:hover {
+  color: var(--color_cyan);
+}
+
 .w-nav-menu {
   position: relative;
   float: right;

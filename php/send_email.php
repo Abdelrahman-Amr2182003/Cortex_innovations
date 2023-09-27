@@ -3,12 +3,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Extract form data from POST request
     $name = $_POST["name"];
     $subject = $_POST["subject"];
-    $email = $_POST["email"];
-    $message = $_POST["message"];
+    $email = $_POST["Email"];
+    $message = $_POST["Message"];
 
     // Configure your SMTP settings (for Gmail)
-    $smtpUsername = 'your_email@gmail.com';
-    $smtpPassword = 'your_email_password';
+    $smtpUsername = 'abdelrahmanamr2182003@gmail.com';
+    $smtpPassword = 'wgbn msnr awsw ewfs';
 
     // Create a new PHPMailer instance
     require('PHPMailer/src/PHPMailer.php');
@@ -21,14 +21,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPDebug = 2; // Enable verbose debugging
     $mail->Debugoutput = 'html'; // Display debug output as HTML
-    $mail->Port = 587; // 465 or 587
-    $mail->SMTPSecure = 'tls';
+    $mail->Port = 465; // 465 or 587
+    $mail->SMTPSecure = 'ssl';
     $mail->SMTPAuth = true;
     $mail->IsHTML(true);
 
     // Sender (From) and Recipient (To) email addresses
-    $mail->setFrom('your_email@gmail.com', 'Your Name'); // Use your email as the sender
-    $mail->addAddress('company_email@example.com'); // Company email
+    $mail->setFrom('abdelrahmanamr2182003@gmail.com', 'Your Name'); // Use your email as the sender
+    $mail->addAddress('abdelrahmanamrfreelance@gmail.com'); // Company email
 
     // Set the "Reply-To" header to the user's email
     $mail->addReplyTo($email, $name);
