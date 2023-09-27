@@ -1643,10 +1643,12 @@ transition: transform 0.3s ease;
 .team-block-title.subtitle.small-subtitle {
   margin-bottom: -5px;
   line-height: 21px;
+  color: #fff;
 }
 
 .team-block-title.smaller {
   font-size: 15px;
+  color: #fff;
 }
 
 .team-social-button {
@@ -3421,6 +3423,14 @@ transition: transform 0.3s ease;
   font-weight: 400;
   line-height: 16px;
 }
+.subpage-title-team{
+
+  color: #fff;
+}
+.page-subtitle-team{
+
+  color: #fff;
+}
 
 .subpage-title {
   margin-top: 0;
@@ -3662,6 +3672,7 @@ transition: transform 0.3s ease;
   font-family: Montserrat, sans-serif;
   font-size: 15px;
   font-weight: 700;
+  color: #000;
 }
 
 .pricing-features-row {
@@ -9456,6 +9467,7 @@ html.w-mod-js [data-ix="hide-lightbox"] {
   .team-block-title.smaller {
     font-size: 13px;
     line-height: 19px;
+
   }
 
   .team-outline-block {
