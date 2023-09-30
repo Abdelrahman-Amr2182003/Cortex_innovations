@@ -232,6 +232,31 @@ box-shadow: 0 0 33px rgba(0, 0, 0, .2);
   transform: scale(1.2);
 }
 
+
+
+.logo-block-copy .favicon-img{
+
+  background-image:url('../images/logo_2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:3em;
+  height:1.5em;
+  display: block;
+  padding: 10px;
+  margin-right: 10px;
+  background-position: center;
+  transition: background-image 0.3S ease-in-out;
+
+}
+
+.navbar.scrolled .favicon-img{
+
+  background-image: url('../images/favicon.png');
+
+}
+
+
+
 .w-nav-brand:hover{
 
 
@@ -1004,10 +1029,9 @@ input[type="radio"] {
 
 .section-description-lab-home{
 
-  width: 800px;
   text-align: left;
-  margin-top: -4px;
-  margin-bottom: 40px;
+  margin-top: -30px;
+  margin-bottom: 10px;
   padding-top: 0;
   font-size: 21px;
   font-weight: 300;
