@@ -82,31 +82,54 @@
   </div>
   <div class="section">
     <div class="container home-intro-container w-container">
-      <div data-ix="fade-in-zoom" class="home-intro-wrapper">
-        <a href="services/services.html" class="_500 w-inline-block"></a>
-        <div class="intro-block-text-wrapper">
-          <div class="intro-block-title">Service 1</div>
-          <p>Description text , what we offer and how.</p>
-        </div>
-      </div>
-      <div data-ix="fade-in-zoom-3" class="home-intro-wrapper mid">
-        <a href="services/services.html" class="_500-copy w-inline-block"></a>
-        <div class="intro-block-text-wrapper mid">
-          <div class="intro-block-title">Service 2</div>
-          <p>Description text , what we offer and how.</p>
-        </div>
-        <a href="services/services.html" class="button w-hidden-small w-hidden-tiny w-button">go to services</a>
-      </div>
-      <div data-ix="fade-in-zoom-2" class="home-intro-wrapper right">
-        <a href="services/services.html" class="_500 w-inline-block"></a>
-        <div class="intro-block-text-wrapper last">
-          <div class="intro-block-title">Service 3</div>
-          <p>Description text , what we offer and how.</p>
-        </div>
+        <input type="radio" name="slider" id="item-1" checked>
+    <input type="radio" name="slider" id="item-2">
+    <input type="radio" name="slider" id="item-3">
+        <input type="radio" name="slider" id="item-4">
+    <input type="radio" name="slider" id="item-5">
+
+  <div class="cards">
+    <label class="card" for="item-1" id="song-1">
+      <img src="images/Photo-12.jpg" alt="song">
+      <div class="overlay-text">Text 1</div>
+    </label>
+
+    <label class="card" for="item-2" id="song-2">
+      <img src="images/Photo-1.jpg" alt="song">
+      <div class="overlay-text">Text 2</div>
+    </label>
+
+        <label class="card" for="item-3" id="song-3">
+      <img src="images/Photo-2.jpg" alt="song">
+      <div class="overlay-text">Text 3</div>
+    </label>
+
+       
+
+        <label class="card" for="item-4" id="song-4">
+      <img src="images/Photo-3.jpg" alt="song">
+      <div class="overlay-text">Text 4</div>
+    </label>
+        <label class="card" for="item-5" id="song-5">
+      <img src="images/Photo-4.jpg" alt="song">
+      <div class="overlay-text">Text 5</div>
+    </label>
+
+  </div>
+  </div>
+
+ 
       </div>
       <a href="index.html" class="button w-hidden-main w-hidden-medium w-button">Discover more homepages</a>
     </div>
   </div>
+     <script>
+      $('input').on('change', function() {
+      $('body').toggleClass('blue');
+      });
+
+
+    </script>
   <div class="image-section">
     <div class="image-section-overlay-copy-copy-copy color">
       <div class="container w-container">
@@ -204,7 +227,7 @@ optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
           <a href="blog/blog.html" class="footer-inline-link">Blog</a>
 
           <a href="about/about.html" class="footer-inline-link">About us</a>
-          <a href="data/data.html" class="footer-inline-link">Data</a>
+<a href="data/data.html" class="footer-inline-link">Data</a>
 
           <a href="contact/contact.html" class="footer-inline-link">Contact</a>
         </div>
