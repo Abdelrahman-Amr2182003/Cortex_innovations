@@ -2166,7 +2166,7 @@ input[type="radio"] {
   display: flex;
   overflow: hidden;
   box-shadow: 0 10px 40px rgba(0, 0, 0, .3);
-  margin-left: 200px;
+  margin-left: 220px;
 }
 
 .overall-video-lightbox.hero-small {
@@ -8438,7 +8438,7 @@ input[type="radio"] {
 
 .section-title-copy-copy-copy {
   margin-top: -271px;
-  margin-bottom: 23px;
+  margin-bottom: 33px;
   padding-top: 257px;
   font-size: 46px;
   font-weight: 300;
