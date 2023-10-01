@@ -246,7 +246,6 @@ box-shadow: 0 0 33px rgba(0, 0, 0, .2);
   margin-right: 10px;
   background-position: center;
   transition: background-image 0.3S ease-in-out;
-
 }
 
 .navbar.scrolled .favicon-img{
@@ -761,8 +760,33 @@ input[type="radio"] {
   color: #fff;
     box-shadow: 0 8px 16px 4px rgba(0, 0, 0, .3);
 
+}
+
+.button-research{
+
+    background-color: var(--color_navy_blue);
+    color: #fff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 3px;
+    transition: background-color 0.2s ease 0s, background-position 0.2s ease 0s, color 0.2s ease 0s, border 0.2s ease 0s, box-shadow 0.2s ease 0s;
+
 
 }
+
+
+.button-research:hover{
+  background-color: var(--color_cyan);
+  box-shadow: 0 8px 16px 4px rgba(0, 0, 0, .3);
+  color: #fff;
+
+}
+
 .button.slider-button.outline {
   background-color: rgba(0, 0, 0, 0);
   border: 1px solid rgba(255, 255, 255, .6);
@@ -3549,6 +3573,12 @@ input[type="radio"] {
   background-size: auto, cover;
 }
 
+.subpage-header.research {
+  background-image: linear-gradient(var(--color_navy_overlay),var(--color_navy_overlay)), url('../images/Photo-5.jpg');
+  background-position: 0 0, 50%;
+  background-size: auto, cover;
+}
+
 .subpage-header.sign-up-1 {
   background-image: linear-gradient(rgba(31, 111, 255, .9), rgba(31, 111, 255, .9)), url('../images/Photo-4.jpg');
   background-position: 0 0, 50% 0;
@@ -4277,6 +4307,13 @@ input[type="radio"] {
   display: flex;
 }
 
+.research-items-list.archive {
+  display: flex;
+  flex-direction: column;
+  margin-left: 150px;
+
+}
+
 .blog-post-item {
   order: -1;
   margin-bottom: 80px;
@@ -4285,6 +4322,36 @@ input[type="radio"] {
   position: relative;
 }
 
+.research-item {
+  order: -1;
+  margin-bottom: 100px;
+  padding-left: 150px;
+  padding-right: 40px;
+  position: relative;
+}
+
+.research-item-image-block {
+  height: 320px;
+  background-image: url('https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg');
+  background-position: 50%;
+  background-size: cover;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  display: block;
+  overflow: hidden;
+}
+
+
+.research-overlay{
+
+        width: 100%;
+        height: 100%;
+        background-color: var(--color_navy_overlay);
+        border-radius: 4px;
+        position: relative;
+        overflow: hidden;
+
+}
 .blog-post-image-block {
   height: 320px;
   background-image: url('https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg');
@@ -4448,6 +4515,18 @@ input[type="radio"] {
   display: block;
 }
 
+.simple-research-image-block {
+  width: 50vh;
+  height: 40vh;
+  
+  background-position: 50%;
+  background-size: cover;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+
 .simple-blog-image-block.small {
   width: 90px;
   height: 85px;
@@ -4465,9 +4544,47 @@ input[type="radio"] {
   padding-right: 30px;
 }
 
+.simple-research-post-item.archive {
+  order: -1;
+  padding-right: 30px;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.research-description{
+  display: block;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  padding-top: 20px;
+  margin-left: 30px;
+  max-width: 40vh;
+
+}
+
+.research-description .title-research{
+
+  color: var(--color_cyan);
+  font-size: 45px;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 40px;
+  text-decoration: none;
+}
+.research-description .small-paragraph{
+
+  font-size: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 500;
+  padding-top: 20px;
+}
+
 .simple-blog-post-item.related, .image-blog-post-item {
   order: -1;
 }
+
+
 
 .blog-post-page-content {
   width: 80%;
@@ -9929,6 +10046,14 @@ html.w-mod-js [data-ix="hide-lightbox"] {
     padding-top: 90px;
   }
 
+  .subpage-header.research {
+    padding-bottom: 50px;
+  }
+
+  .subpage-header.research {
+    padding-top: 90px;
+  }
+
   .white-contact-form {
     padding: 25px;
   }
@@ -12351,6 +12476,10 @@ html.w-mod-js [data-ix="hide-lightbox"] {
   }
 
   .subpage-header.blog-1 {
+    padding-bottom: 30px;
+  }
+
+   .subpage-header.research {
     padding-bottom: 30px;
   }
 
@@ -14823,6 +14952,11 @@ html.w-mod-js [data-ix="hide-lightbox"] {
     padding-bottom: 15px;
   }
 
+  .subpage-header.research {
+    padding-top: 80px;
+    padding-bottom: 15px;
+  }
+
   .subpage-header.sign-up-1 {
     padding-top: 80px;
   }
@@ -15140,6 +15274,10 @@ html.w-mod-js [data-ix="hide-lightbox"] {
     padding-left: 0;
     padding-right: 0;
   }
+
+
+
+
 
   .blog-post-page-content {
     box-shadow: none;
