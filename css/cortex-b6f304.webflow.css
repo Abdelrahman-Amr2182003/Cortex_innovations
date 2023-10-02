@@ -14229,7 +14229,10 @@ html.w-mod-js [data-ix="hide-lightbox"] {
   .section {
     padding: 15px;
   }
+  .carousel-control-next,.carousel-control-prev{
 
+    display: none;
+  }
   .section.tint.overflow-none {
     padding: 20px;
   }
