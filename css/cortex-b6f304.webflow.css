@@ -6036,7 +6036,7 @@ input[type="radio"] {
 }
 
 .section-copy-copy.overflow-none {
-  height: 700px;
+  height: auto;
   overflow: hidden;
 }
 
@@ -10202,7 +10202,7 @@ html.w-mod-js [data-ix="hide-lightbox"] {
   }
 
   .hero-overlay-block {
-    background-color: rgba(31, 111, 255, .85);
+    background-color: var(--color_navy_overlay);
     padding-top: 180px;
     padding-bottom: 180px;
   }
@@ -10730,6 +10730,7 @@ html.w-mod-js [data-ix="hide-lightbox"] {
     padding-top: 0;
     padding-bottom: 0;
     padding-left: 50px;
+    margin-bottom: 100px;
   }
 
   .section-copy {
@@ -14226,7 +14227,7 @@ html.w-mod-js [data-ix="hide-lightbox"] {
   }
 
   .section {
-    padding: 25px;
+    padding: 15px;
   }
 
   .section.tint.overflow-none {
@@ -14287,10 +14288,37 @@ html.w-mod-js [data-ix="hide-lightbox"] {
 
   .section-description {
     margin-top: 14px;
-    font-size: 15px;
+    font-size: 12px;
     line-height: 23px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    width: 40vh;
+  }
+  .button-research{
+
+    width: 20vh;
+    font-size: 15px;
+  }
+  .research-items-list.archive{
+
+    margin-left: 5px;
   }
 
+.research-description .small-paragraph{
+  font-size: 12px;
+  width: 20vh;
+
+}
+.simple-research-post-item.archive{
+  padding-right: 0px;
+}
+
+.simple-research-image-block{
+  width: 35vh;
+  height: 35vh;
+
+}
   .section-description.faded {
     font-size: 15px;
   }
@@ -16526,11 +16554,22 @@ html.w-mod-js [data-ix="hide-lightbox"] {
     padding-left: 15px;
     padding-right: 15px;
   }
+
+  .overall-video-lightbox {
+    width: 100%;
+    height: 230px;
+    border-radius: 4px;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, .3);
+    margin-left: 0px;
+}
+
 }
 
 #introCarousel
 {
-  height: 100%;
+  height: auto;
   background-color: rgba(0, 0, 0, 0);
   background-image: linear-gradient(rgba(128, 133, 144, .73), rgba(128, 133, 144, .73)), url('../images/Photo-5.jpg');
   background-position: 0 0, 100%;
@@ -16549,7 +16588,7 @@ html.w-mod-js [data-ix="hide-lightbox"] {
   .carousel-item,
   .carousel-item.active
   {
-    height: 100%;
+    height: auto;
 
 
   }
@@ -16558,6 +16597,7 @@ html.w-mod-js [data-ix="hide-lightbox"] {
 @media (min-width: 992px) {
   #introCarousel {
     margin-top: -58.59px;
+    height: auto;
   }
 }
 
