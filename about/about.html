@@ -53,12 +53,44 @@
         </div>
       </div>
       <style type="text/css">
-        .stats-number,.stats-title{
-          color:var(--color_cyan);
-          font-size: 1.5em;
+         .stats-number {
+            color: var(--color_cyan);
+            font-size: 2.8em;
+            font-weight: 700;
+            line-height: 71px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+          
+          
 
         }
-
+        .stats-title{
+          color:#9ea89b;
+        }
+        .stats-block {
+          padding-top: 14px;
+          padding-left: 128px;
+          position: relative;
+      }
+        
+        @media screen and (max-width: 479px){
+        
+        .stats-number{
+          font-weight: 700;
+          line-height: 71px;
+          font-size: 2.5em;
+        }
+        .stats-title{
+          color:#9ea89b;
+        }
+        .stats-block {
+    padding-top: 14px;
+    padding-left: 128px;
+    position: relative;
+}
+      }
       </style>
       <div class="stats-row w-row">
         <div class="stats-column w-col w-col-4">
@@ -82,44 +114,33 @@
       </div>
     </div>
   </div>
-  <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar white w-nav">
+  <div data-collapse="medium" data-animation="default" data-duration="400" data-no-scroll="1" data-easing="ease" data-easing2="ease" role="banner" class="navbar white w-nav">
     <div class="navbar-container">
       <a href="../index.html" aria-current="page" class="logo-block-copy w-nav-brand w--current "><div class="favicon-img"></div>CORTEX</a>
       <nav role="navigation" class="nav-menu w-nav-menu">
-        <a href="../services/services.html" aria-current="page" class="nav-link w-nav-link" >Services</a>
+        <a href="../services/services.html" aria-current="page" class="nav-link light w-nav-link w--current">SERVICES</a>
+
         <div data-delay="0" data-hover="false" class="dropdown w-dropdown">
-          <div class="nav-link dropdown-toggle w-dropdown-toggle">
-            <div  >RESEARCH</div>
-            <div class="small-dropdown-icon w-icon-dropdown-toggle"></div>
-          </div>
-          <nav class="dropdown-list w-dropdown-list">
-            <a href="../research/research_categories_page.html" class="dropdown-link w-dropdown-link">Category 1</a>
-            <a href="../research/research_categories_page.html" class="dropdown-link w-dropdown-link">Category 2</a>
-            <a href="../research/research_categories_page.html" class="dropdown-link w-dropdown-link">Category 3</a>
-            <a href="../research/research_categories_page.html" class="dropdown-link w-dropdown-link">Category 4</a>
-          </nav>
-        </div>
-        <a href="../lab/lab_home.html">
-        <div data-delay="0" class="dropdown w-dropdown">
-          
           <div class="nav-link dropdown-toggle light w-dropdown-toggle">
-            <div>Our Lab</div>
+            <div>RESEARCH</div>
             <div class="dropdown-icon w-icon-dropdown-toggle"></div>
           </div>
-            <nav class="dropdown-list w-dropdown-list">
-            <a href="../lab/lab_items_page.html" class="dropdown-link w-dropdown-link">Lab 1</a>
-            <a href="../lab/lab_items_page.html" class="dropdown-link w-dropdown-link">Lab 2</a>
-            <a href="../lab/lab_items_page.html" class="dropdown-link w-dropdown-link">Lab 3</a>
-            <a href="../lab/lab_items_page.html" class="dropdown-link w-dropdown-link">Lab 4</a>
-            <a href="../lab/lab_items_page.html" class="dropdown-link w-dropdown-link">Lab 5</a>
+          <nav class="dropdown-list w-dropdown-list">
+            <a href="../research/freezing_desalination.html" class="dropdown-link w-dropdown-link">Freezing Desalination</a>
+            <a href="../research/awg.html" class="dropdown-link w-dropdown-link">Atmospheric Water Capture</a>
+            <a href="../research/power_gen.html" class="dropdown-link w-dropdown-link">Power Generation</a>
+            <a href="../research/thermal_mangment.html" class="dropdown-link w-dropdown-link">Thermal Management</a>
+            <a href="../research/embedded.html" class="dropdown-link w-dropdown-link">Embedded Systems and 3D Laser Scanning</a>
+            <a href="#" class="dropdown-link w-dropdown-link">Product Development</a>
           </nav>
-        </div></a>
-        <a href="../blog/blog.html" aria-current="page" class="nav-link w-nav-link" >Blog and News</a>
-        <a href="../about/about.html" aria-current="page" class="nav-link w-nav-link" >About Us</a>
-        <a href="../data/data.html" aria-current="page" class="nav-link w-nav-link" >Data Repository</a>
-        <a href="../contact/contact.html" aria-current="page" class="nav-link w-nav-link" >Contact Us</a>
+        </div>
+        <a href="../lab/lab_home.html" aria-current="page" class="nav-link light w-nav-link w--current">Our Lab</a>
+
+        <a href="../blog/blog.html" aria-current="page" class="nav-link light w-nav-link w--current">Blog and News</a>
+        <a href="../about/about.html" aria-current="page" class="nav-link light w-nav-link w--current">About Us</a>
+        <a href="../contact/contact.html" aria-current="page" class="nav-link light w-nav-link w--current">Contact us</a>
       </nav>
-      <div class="fixed-nav-menu-button w-nav-button">
+      <div class="transparant-menu-button w-nav-button">
         <div class="w-icon-nav-menu"></div>
       </div>
     </div>
@@ -567,164 +588,33 @@
     </div>
   </div>
   
-    <aside data-w-id="c6b05ff7-6694-c1a1-becf-19edbd6eaef9" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaef9&quot;]" class="subpage-header-copy-copy about-2">
-   <div data-w-id="c6b05ff7-6694-c1a1-becf-19edbd6eaefa" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaefa&quot;]" class="container w-container">
-      <h2 data-ix="fade-in-on-load" data-w-id="c6b05ff7-6694-c1a1-becf-19edbd6eaefb" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaefb&quot;]" class="subpage-title">Interns Experience</h2>
-      <div data-ix="fade-in-on-load-2" data-w-id="c6b05ff7-6694-c1a1-becf-19edbd6eaefd" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaefd&quot;]" class="page-subtitle-copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-   </div>
 
 
 
-
-
-   <div data-w-id="c6b05ff7-6694-c1a1-becf-19edbd6eaeff" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaeff&quot;]" class="container-copy team-container w-container">
-      <div data-w-id="c6b05ff7-6694-c1a1-becf-19edbd6eaf00" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf00&quot;]" class="team-member-list-wrapper w-dyn-list">
-         <div data-w-id="c6b05ff7-6694-c1a1-becf-19edbd6eaf01" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf01&quot;]" role="list" class="team-member-list w-dyn-items w-row">
-           
-
-
-
-            <div data-w-id="c6b05ff7-6694-c1a1-becf-19edbd6eaf02_instance-0" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf02_instance-0&quot;]" data-dyn-label="Collection Item 1" role="listitem" class="team-member-item w-dyn-item w-col w-col-6">
-               <div data-w-id="c6b05ff7-6694-c1a1-becf-19edbd6eaf03_instance-0" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf03_instance-0&quot;]" class="team-image-block" style="background-image: url(&quot;https://uploads-ssl.webflow.com/64cea513d9b9ac3ec674f284/64cea513d9b9ac3ec674f2f6_Z-1.jpg&quot;);">
-                  
-
-                  <div data-w-id="c6b05ff7-6694-c1a1-becf-19edbd6eaf04_instance-0" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf04_instance-0&quot;]" class="team-image-block-overlay">
-                     <div data-w-id="c6b05ff7-6694-c1a1-becf-19edbd6eaf05_instance-0" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf05_instance-0&quot;]" class="team-block-title">Peter Jefferson</div>
-                     <div data-w-id="c6b05ff7-6694-c1a1-becf-19edbd6eaf06_instance-0" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf06_instance-0&quot;]" class="team-block-title subtitle">" A brief quote from some interns about cortex vision and the workflow and how it contributes to their work.."</div>
-                     <a href="http://www.facebook.com" data-w-id="c6b05ff7-6694-c1a1-becf-19edbd6eaf07_instance-0" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf07_instance-0&quot;]" class="team-social-button w-inline-block"><img src="../images/Icon-mail-white.png" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf08_instance-0&quot;]" data-w-id="c6b05ff7-6694-c1a1-becf-19edbd6eaf08_instance-0" alt="" class="team-social-icon"></a><a href="https://www.linkedin.com" target="_blank" data-w-id="c6b05ff7-6694-c1a1-becf-19edbd6eaf09_instance-0" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf09_instance-0&quot;]" class="team-social-button w-inline-block"></a><a href="https://www.gmail.com" target="_blank" data-w-id="c6b05ff7-6694-c1a1-becf-19edbd6eaf0a_instance-0" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf0a_instance-0&quot;]" class="team-social-button w-inline-block"><img src="../images/Icon-linkedin.png" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf0b_instance-0&quot;]" data-w-id="c6b05ff7-6694-c1a1-becf-19edbd6eaf0b_instance-0" alt="" class="team-social-icon"></a>
-                  </div>
-
-
-
-               </div>
-            </div>
-
-
-
-
-
-
-                        <div data-w-id="c6b05ff7-6694-c1a1-becf-19edbd6eaf02_instance-0" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf02_instance-0&quot;]" data-dyn-label="Collection Item 1" role="listitem" class="team-member-item w-dyn-item w-col w-col-6">
-               <div data-w-id="c6b05ff7-6694-c1a1-becf-19edbd6eaf03_instance-0" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf03_instance-0&quot;]" class="team-image-block" style="background-image: url(&quot;https://uploads-ssl.webflow.com/64cea513d9b9ac3ec674f284/64cea513d9b9ac3ec674f2f6_Z-1.jpg&quot;);">
-                  
-
-                  <div data-w-id="c6b05ff7-6694-c1a1-becf-19edbd6eaf04_instance-0" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf04_instance-0&quot;]" class="team-image-block-overlay">
-                     <div data-w-id="c6b05ff7-6694-c1a1-becf-19edbd6eaf05_instance-0" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf05_instance-0&quot;]" class="team-block-title">Peter Jefferson</div>
-                     <div data-w-id="c6b05ff7-6694-c1a1-becf-19edbd6eaf06_instance-0" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf06_instance-0&quot;]" class="team-block-title subtitle">" A brief quote from some interns about cortex vision and the workflow and how it contributes to their work.."</div>
-                     <a href="http://www.facebook.com" data-w-id="c6b05ff7-6694-c1a1-becf-19edbd6eaf07_instance-0" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf07_instance-0&quot;]" class="team-social-button w-inline-block"><img src="../images/Icon-mail-white.png" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf08_instance-0&quot;]" data-w-id="c6b05ff7-6694-c1a1-becf-19edbd6eaf08_instance-0" alt="" class="team-social-icon"></a><a href="https://www.linkedin.com" target="_blank" data-w-id="c6b05ff7-6694-c1a1-becf-19edbd6eaf09_instance-0" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf09_instance-0&quot;]" class="team-social-button w-inline-block"></a><a href="https://www.gmail.com" target="_blank" data-w-id="c6b05ff7-6694-c1a1-becf-19edbd6eaf0a_instance-0" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf0a_instance-0&quot;]" class="team-social-button w-inline-block"><img src="../images/Icon-linkedin.png" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf0b_instance-0&quot;]" data-w-id="c6b05ff7-6694-c1a1-becf-19edbd6eaf0b_instance-0" alt="" class="team-social-icon"></a>
-                  </div>
-
-                  
-
-               </div>
-            </div>
-
-                        <div data-w-id="c6b05ff7-6694-c1a1-becf-19edbd6eaf02_instance-0" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf02_instance-0&quot;]" data-dyn-label="Collection Item 1" role="listitem" class="team-member-item w-dyn-item w-col w-col-6">
-               <div data-w-id="c6b05ff7-6694-c1a1-becf-19edbd6eaf03_instance-0" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf03_instance-0&quot;]" class="team-image-block" style="background-image: url(&quot;https://uploads-ssl.webflow.com/64cea513d9b9ac3ec674f284/64cea513d9b9ac3ec674f2f6_Z-1.jpg&quot;);">
-                  
-
-                  <div data-w-id="c6b05ff7-6694-c1a1-becf-19edbd6eaf04_instance-0" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf04_instance-0&quot;]" class="team-image-block-overlay">
-                     <div data-w-id="c6b05ff7-6694-c1a1-becf-19edbd6eaf05_instance-0" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf05_instance-0&quot;]" class="team-block-title">Peter Jefferson</div>
-                     <div data-w-id="c6b05ff7-6694-c1a1-becf-19edbd6eaf06_instance-0" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf06_instance-0&quot;]" class="team-block-title subtitle">" A brief quote from some interns about cortex vision and the workflow and how it contributes to their work.."</div>
-                     <a href="http://www.facebook.com" data-w-id="c6b05ff7-6694-c1a1-becf-19edbd6eaf07_instance-0" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf07_instance-0&quot;]" class="team-social-button w-inline-block"><img src="../images/Icon-mail-white.png" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf08_instance-0&quot;]" data-w-id="c6b05ff7-6694-c1a1-becf-19edbd6eaf08_instance-0" alt="" class="team-social-icon"></a><a href="https://www.linkedin.com target="_blank" data-w-id="c6b05ff7-6694-c1a1-becf-19edbd6eaf09_instance-0" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf09_instance-0&quot;]" class="team-social-button w-inline-block"></a><a href="https://www.gmail.com" target="_blank" data-w-id="c6b05ff7-6694-c1a1-becf-19edbd6eaf0a_instance-0" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf0a_instance-0&quot;]" class="team-social-button w-inline-block"><img src="../images/Icon-linkedin.png" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf0b_instance-0&quot;]" data-w-id="c6b05ff7-6694-c1a1-becf-19edbd6eaf0b_instance-0" alt="" class="team-social-icon"></a>
-                  </div>
-
-
-
-               </div>
-            </div>
-            <div data-w-id="c6b05ff7-6694-c1a1-becf-19edbd6eaf02_instance-1" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf02_instance-1&quot;]" data-dyn-label="Collection Item 2" role="listitem" class="team-member-item w-dyn-item w-col w-col-6">
-               <div data-w-id="c6b05ff7-6694-c1a1-becf-19edbd6eaf03_instance-1" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf03_instance-1&quot;]" class="team-image-block" style="background-image: url(&quot;https://uploads-ssl.webflow.com/64cea513d9b9ac3ec674f284/64cea513d9b9ac3ec674f2c3_Z.jpg&quot;);">
-                  <div data-w-id="c6b05ff7-6694-c1a1-becf-19edbd6eaf04_instance-1" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf04_instance-1&quot;]" class="team-image-block-overlay">
-                     <div data-w-id="c6b05ff7-6694-c1a1-becf-19edbd6eaf05_instance-1" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf05_instance-1&quot;]" class="team-block-title">Peter Johnson</div>
-                     <div data-w-id="c6b05ff7-6694-c1a1-becf-19edbd6eaf06_instance-1" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf06_instance-1&quot;]" class="team-block-title subtitle">" A brief quote from some interns about cortex vision and the workflow and how it contributes to their work.."</div>
-                     <a href="http://www.facebook.com" data-w-id="c6b05ff7-6694-c1a1-becf-19edbd6eaf07_instance-1" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf07_instance-1&quot;]" class="team-social-button w-inline-block"><img src="../images/Icon-mail-white.png" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf08_instance-1&quot;]" data-w-id="c6b05ff7-6694-c1a1-becf-19edbd6eaf08_instance-1" alt="" class="team-social-icon"></a><a href="https://www.linkedin.com" target="_blank" data-w-id="c6b05ff7-6694-c1a1-becf-19edbd6eaf09_instance-1" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf09_instance-1&quot;]" class="team-social-button w-inline-block"></a><a href="https://www.gmail.com" target="_blank" data-w-id="c6b05ff7-6694-c1a1-becf-19edbd6eaf0a_instance-1" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf0a_instance-1&quot;]" class="team-social-button w-inline-block"><img src="../images/Icon-linkedin.png" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf0b_instance-1&quot;]" data-w-id="c6b05ff7-6694-c1a1-becf-19edbd6eaf0b_instance-1" alt="" class="team-social-icon"></a>
-                  </div>
-               </div>
-            </div>
-         </div>
-
-
-         <div data-w-id="c6b05ff7-6694-c1a1-becf-19edbd6eaf0c" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf0c&quot;]" class="empty-state w-dyn-hide w-dyn-empty">
-            <div data-w-id="c6b05ff7-6694-c1a1-becf-19edbd6eaf0d" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf0d&quot;]">No items found.</div>
-         </div>
-      </div>
-      <div data-w-id="c6b05ff7-6694-c1a1-becf-19edbd6eaf0f" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf0f&quot;]" class="team-member-list-wrapper w-dyn-list">
-         <div data-w-id="c6b05ff7-6694-c1a1-becf-19edbd6eaf10" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf10&quot;]" role="list" class="team-member-list w-dyn-items w-row">
-            <div data-w-id="c6b05ff7-6694-c1a1-becf-19edbd6eaf11_instance-0" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf11_instance-0&quot;]" data-dyn-label="Collection Item 1" role="listitem" class="team-member-item w-dyn-item w-col w-col-4"></div>
-            <div data-w-id="c6b05ff7-6694-c1a1-becf-19edbd6eaf11_instance-1" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf11_instance-1&quot;]" data-dyn-label="Collection Item 2" role="listitem" class="team-member-item w-dyn-item w-col w-col-4"></div>
-            <div data-w-id="c6b05ff7-6694-c1a1-becf-19edbd6eaf11_instance-2" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf11_instance-2&quot;]" data-dyn-label="Collection Item 3" role="listitem" class="team-member-item w-dyn-item w-col w-col-4"></div>
-         </div>
-         <div data-w-id="c6b05ff7-6694-c1a1-becf-19edbd6eaf2d" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf2d&quot;]" class="empty-state w-dyn-hide w-dyn-empty">
-            <div data-w-id="c6b05ff7-6694-c1a1-becf-19edbd6eaf2e" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf2e&quot;]">No items found.</div>
-         </div>
-      </div>
-      <div data-ix="hide-popup" data-w-id="73804e12-1871-2135-f453-ef4f0b96097b" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf30&quot;,&quot;73804e12-1871-2135-f453-ef4f0b96097b&quot;]" class="contact-popup">
-         <div data-w-id="e44ac6da-fd5d-7e0b-6390-6a71b38c88b7" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf30&quot;,&quot;e44ac6da-fd5d-7e0b-6390-6a71b38c88b7&quot;]" class="popup-block">
-            <a href="#" data-ix="close-popup" data-w-id="212c41f1-65f5-22f8-91c2-399cd17a2a00" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf30&quot;,&quot;212c41f1-65f5-22f8-91c2-399cd17a2a00&quot;]" class="popup-close-button w-inline-block"><img src="https://uploads-ssl.webflow.com/64cea512d9b9ac3ec674f210/64cea513d9b9ac3ec674f391_Icon-close.png" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf30&quot;,&quot;31fe1ae8-1903-1d91-b21d-af2c6980ff22&quot;]" data-w-id="31fe1ae8-1903-1d91-b21d-af2c6980ff22" alt="" class="close-icon"></a>
-            <div data-w-id="bca785ea-371b-3899-eaaf-7992fa8f9bd6" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf30&quot;,&quot;bca785ea-371b-3899-eaaf-7992fa8f9bd6&quot;]" class="popup-contact-form w-form">
-               <form method="get" name="wf-form-Popup-Contact-Form" data-name="Popup Contact Form" data-w-id="ebb30551-e50b-548d-3fe7-15fb7ac3c9e9" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf30&quot;,&quot;ebb30551-e50b-548d-3fe7-15fb7ac3c9e9&quot;]" id="wf-form-Popup-Contact-Form" data-wf-page-id="64cea513d9b9ac3ec674f28b" data-wf-element-id="ebb30551-e50b-548d-3fe7-15fb7ac3c9e9" aria-label="Popup Contact Form">
-                  <div data-w-id="ca5bdaaa-8173-8f4b-6a7a-a198bd31dd4d" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf30&quot;,&quot;ca5bdaaa-8173-8f4b-6a7a-a198bd31dd4d&quot;]" class="popup-title">Send us an Email</div>
-                  <input class="field line w-input" maxlength="256" name="name" data-name="Name" placeholder="Enter your name" data-w-id="39fb314b-d4e1-fc2f-8d88-a51da4d9d7bb" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf30&quot;,&quot;39fb314b-d4e1-fc2f-8d88-a51da4d9d7bb&quot;]" type="text" id="name"><input class="field line w-input" maxlength="256" name="email" data-name="Email" placeholder="Enter your email address" data-w-id="4f4ef9b9-763c-e9c4-4ddc-b4985e14cd55" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf30&quot;,&quot;4f4ef9b9-763c-e9c4-4ddc-b4985e14cd55&quot;]" type="email" id="email" required=""><input class="field line w-input" maxlength="256" name="email-2" data-name="Email 2" placeholder="Enter your email address" data-w-id="90efc30b-94d7-1d7c-cf91-edc1b6879dc7" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf30&quot;,&quot;90efc30b-94d7-1d7c-cf91-edc1b6879dc7&quot;]" type="email" id="email-2" required="">
-                  <textarea class="field line area w-input" maxlength="5000" name="Message" data-name="Message" placeholder="Your message..." data-w-id="fb9af147-aac1-425a-0016-5ea1dfad4e71" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf30&quot;,&quot;fb9af147-aac1-425a-0016-5ea1dfad4e71&quot;]" id="Message" data-gramm="false" wt-ignore-input="true"></textarea>
-                  <input type="submit" data-wait="Please wait..." data-w-id="07f960ec-0912-0422-ae8d-9f48e6a9fef2" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf30&quot;,&quot;07f960ec-0912-0422-ae8d-9f48e6a9fef2&quot;]" class="button w-button" value="Send Email">
-               </form>
-               <div data-w-id="39632a04-5c53-e116-9018-9f15d96b6498" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf30&quot;,&quot;39632a04-5c53-e116-9018-9f15d96b6498&quot;]" class="success-message w-form-done" tabindex="-1" role="region" aria-label="Popup Contact Form success">
-                  <p data-w-id="795da807-b18d-6a5f-acb7-4b7e4e669acb" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf30&quot;,&quot;795da807-b18d-6a5f-acb7-4b7e4e669acb&quot;]">Thank you! Your submission has been received!</p>
-               </div>
-               <div data-w-id="605c8b3d-0916-844b-a08b-c96643f624f4" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf30&quot;,&quot;605c8b3d-0916-844b-a08b-c96643f624f4&quot;]" class="error-bg w-form-fail" tabindex="-1" role="region" aria-label="Popup Contact Form failure">
-                  <p data-w-id="c39e17d7-6a2e-ea8e-74e1-ebcb80e47a64" data-wf-id="[&quot;c6b05ff7-6694-c1a1-becf-19edbd6eaf30&quot;,&quot;c39e17d7-6a2e-ea8e-74e1-ebcb80e47a64&quot;]">Oops! Something went wrong while submitting the form</p>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-
-
-
-
-
-
-
-
-</aside>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div class="simple-footer">
+<div class="simple-footer">
     <div class="container footer-container" >
       <div class="footer-row w-row">
-        <div class="footer-logo-column-left w-col w-col-3">
-          <div class="footer-logo">cortex</div>
+        <div class="w-col w-col-1"></div>
+        <div class="footer-logo-column-left w-col w-col-2">
+          <a href="../index.html" class="footer-inline-link">
+            <div class="footer-logo">cortex</div>
           <div class="footer-logo subtitle">Innovations</div>
+
+          </a>
+          
         </div>
         <div class="footer-menu-column w-col w-col-6">
-          <a href="../index.html" class="footer-inline-link">Home</a>
           <a href="../services/services.html" class="footer-inline-link">Services</a>
           <a href="../lab/lab_home.html" class="footer-inline-link">Lab</a>
           <a href="../blog/blog.html" class="footer-inline-link">Blog</a>
+
           <a href="../about/about.html" class="footer-inline-link">About us</a>
-          <a href="../data/data.html" class="footer-inline-link">Data</a>
 
           <a href="../contact/contact.html" class="footer-inline-link">Contact</a>
-          
         </div>
         <div class="footer-social-col-right w-col w-col-3">
           <a href="http://www.facebook.com" target="_blank" class="footer-social-icon w-inline-block"><img src="../images/Icon-linkedin.png" alt="" class="footer-small-social-icon"></a>
-          <a href="https://www.gmail.com" target="_blank" class="footer-social-icon w-inline-block"><img src="../images/Icon-mail-white.png" alt="" class="footer-small-social-icon"></a>
+          <a href="http://www.google.com" target="_blank" class="footer-social-icon w-inline-block"><img src="../images/Icon-mail-white.png" alt="" class="footer-small-social-icon"></a>
         </div>
       </div>
     </div>
