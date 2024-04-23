@@ -204,9 +204,94 @@ box-shadow: 0 0 33px rgba(0, 0, 0, .2);
 
 
 }
+.navbar.scrolled .w-dropdown-list {
+  position: absolute;
+  background: #dddddd;
+  display: none;
+  min-width: 100%;
+}
+
+.navbar .w-dropdown-list{
+  position: absolute;
+  background: rgba(14, 15, 59, .5);
+  display: none;
+  min-width: 100%;
+  color: #fff;
+}
+
+.navbar .dropdown-link {
+  font-size: 13px;
+  transition: background-color .2s, color .2s;
+  color: #fff;
+}
+.navbar.scrolled .dropdown-link {
+  font-size: 13px;
+  transition: background-color .2s, color .2s;
+  color: #000;
+}
 
 
 
+.dropdown-link:hover {
+  color: #fff;
+  background-color: var(--color_cyan);
+}
+
+.dropdown-link.w--current {
+  color: var(--color_cyan);
+}
+
+.dropdown-link.w--current:hover {
+  color: #fff;
+}
+
+
+
+
+/* Initially hide the dropdown menus */
+.dropdown-list.w-dropdown-list {
+  display: none;
+}
+
+/* Show the dropdown menu when the parent is hovered */
+.dropdown.w-dropdown:hover .dropdown-list.w-dropdown-list {
+  display: block;
+}
+
+.dropdown-list > ul > li {
+    position: relative; /* Necessary for absolute positioning of sub-menu */
+}
+.dropdown-list ul, .dropdown-list li {
+    list-style-type: none; /* Removes bullet points */
+    margin: 0;
+    padding: 0;
+}
+
+.sub-menu {
+    display: none; /* Hide the sub-menu initially */
+    position: absolute; /* Position it relative to its parent */
+    left: 100%; /* Position to the right of the parent menu item */
+    top: 0; /* Align it with the top of the parent item */
+    min-width: 200px; /* Minimum width of the sub-menu */
+}
+
+.dropdown-link.w-dropdown-link:hover + .sub-menu,
+.sub-menu:hover {
+    display: block; /* Show the sub-menu on hover */
+}
+
+
+
+.navbar.scrolled .dropdown-link,
+.navbar.scrolled .dropdown-link .sub-menu a {
+  color: #000 ;
+  background-color: #f2f2f2;
+} 
+.navbar.scrolled .dropdown-link:hover,
+.navbar.scrolled .dropdown-link .sub-menu a:hover {
+  color: #fff ;
+  background-color: var(--color_cyan);
+}
 
 .navbar.scrolled .logo-block-copy:hover{
 
@@ -422,36 +507,6 @@ transition: transform 0.3s ease;
 
 
 
-.dropdown-link {
-  font-size: 13px;
-  transition: background-color .2s, color .2s;
-}
-
-.dropdown-link:hover {
-  color: #fff;
-  background-color: var(--color_cyan);
-}
-
-.dropdown-link.w--current {
-  color: var(--color_cyan);
-}
-
-.dropdown-link.w--current:hover {
-  color: #fff;
-}
-
-
-
-
-/* Initially hide the dropdown menus */
-.dropdown-list.w-dropdown-list {
-  display: none;
-}
-
-/* Show the dropdown menu when the parent is hovered */
-.dropdown.w-dropdown:hover .dropdown-list.w-dropdown-list {
-  display: block;
-}
 
 
 
@@ -499,8 +554,8 @@ transition: transform 0.3s ease;
 }
 
 .container.footer-container {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   padding-top: 63px;
   position: relative;
 }
@@ -592,27 +647,75 @@ input[type="radio"] {
 }
 
 
-#item-1:checked ~ .cards #song-3,
-#item-2:checked ~ .cards #song-1,
-#item-3:checked ~ .cards #song-2 {
-  transform: translateX(-50%) scale(0.8);
+/* Styles for cards when specific toggles are checked */
+#item-1:checked ~ .cards #song-4,
+#item-4:checked ~ .cards #song-2 {
+  transform: translateX(-150%) scale(0.8); /* Move further left and out of view */
+  opacity: 0;
   z-index: 0;
 }
 
 #item-1:checked ~ .cards #song-2,
 #item-2:checked ~ .cards #song-3,
-#item-3:checked ~ .cards #song-1 {
-  transform: translateX(50%) scale(0.8);
+#item-3:checked ~ .cards #song-4,
+#item-4:checked ~ .cards #song-1 {
+  transform: translateX(50%) scale(0.8); /* This will be moved to the right */
+  opacity: 0.5;
   z-index: 0;
 }
 
+#item-1:checked ~ .cards #song-3,
+#item-2:checked ~ .cards #song-4,
+#item-3:checked ~ .cards #song-1,
+#item-4:checked ~ .cards #song-3 {
+  transform: translateX(-50%) scale(0.8); /* This will be moved to the left */
+  opacity: 0.5;
+  z-index: 0;
+}
+
+/* Center and highlight the active card */
 #item-1:checked ~ .cards #song-1,
 #item-2:checked ~ .cards #song-2,
-#item-3:checked ~ .cards #song-3 {
+#item-3:checked ~ .cards #song-3,
+#item-4:checked ~ .cards #song-4 {
   transform: translateX(0) scale(1);
   opacity: 1;
   z-index: 1;
 }
+
+/* Further left translation for specific cards to hide them */
+#item-2:checked ~ .cards #song-1,
+#item-3:checked ~ .cards #song-2, {
+  transform: translateX(-150%) scale(0.8); /* Move further left and out of view */
+  opacity: 0;
+  z-index: 0;
+}
+/* Hide all descriptions by default */
+.description div {
+  display: none; /* Hide all descriptions by default */
+  text-align: center;
+  padding: 10px;
+}
+
+.description h3 {
+  color: var(--color_orange);
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.description p {
+  color: var(--color_cyan);
+  font-size: 15px;
+}
+
+/* Show the description corresponding to the checked item */
+#item-1:checked ~ .description #desc-1,
+#item-2:checked ~ .description #desc-2,
+#item-3:checked ~ .description #desc-3,
+#item-4:checked ~ .description #desc-4 {
+  display: block;
+}
+
 
 
 
@@ -775,12 +878,39 @@ input[type="radio"] {
 }
 
 
+.button-services:hover{
+  background-color: var(--color_navy_blue);
+  box-shadow: 0 8px 16px 4px rgba(0, 0, 0, .3);
+  color: #fff;
+
+}
+
+.button-services{
+
+    background-color: var(--color_cyan);
+    color: #fff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 3px;
+    transition: background-color 0.2s ease 0s, background-position 0.2s ease 0s, color 0.2s ease 0s, border 0.2s ease 0s, box-shadow 0.2s ease 0s;
+
+
+}
+
+
 .button-research:hover{
   background-color: var(--color_cyan);
   box-shadow: 0 8px 16px 4px rgba(0, 0, 0, .3);
   color: #fff;
 
 }
+
+
 
 .button.slider-button.outline {
   background-color: rgba(0, 0, 0, 0);
@@ -907,7 +1037,7 @@ input[type="radio"] {
 
 .section.below-contact-form {
   background-color: #f0f2f5;
-  padding-top: 50px;
+  padding-top: 110px;
 }
 
 .section.pricing-section {
@@ -930,7 +1060,7 @@ input[type="radio"] {
 
 .section.feature-section {
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 0px;
   overflow: hidden;
 }
 
@@ -1356,7 +1486,7 @@ input[type="radio"] {
 }
 
 .image-section {
-  background-image: url('../images/Photo-5_2.jpg');
+  background-image: url('../images/home/Research.jpeg');
   background-position: 50%;
   background-size: cover;
 }
@@ -1732,8 +1862,8 @@ input[type="radio"] {
   letter-spacing: 1px;
   text-transform: uppercase;
   margin-top: 5px;
-  margin-right: 15px;
-  font-size: 16px;
+  margin-right: 12px;
+  font-size: 14px;
   text-decoration: none;
   display: inline-block;
 }
@@ -2973,9 +3103,11 @@ input[type="radio"] {
   border: 1px solid #ececec;
   border-radius: 4px;
   position: absolute;
-  top: 15px;
   left: -395px;
   box-shadow: 3px 3px 33px rgba(0, 0, 0, .1);
+  max-height: 425px;
+
+
 
 
 
@@ -3005,21 +3137,22 @@ input[type="radio"] {
 }
 
 .feature-info-icon {
-  height: 35px;
+  height: 50px;
   float: left;
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 .feature-info-title {
-  margin-top: 8px;
-  margin-bottom: 30px;
+  margin-top: 16px;
+  margin-bottom: 20px;
   font-size: 21px;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .feature-info-paragraph {
-  opacity: .7;
-  font-size: 14px;
+  opacity: .8;
+  font-size: 16px;
+  margin-left: 15px;
 }
 
 .checkbox {
@@ -3463,7 +3596,7 @@ input[type="radio"] {
   background-size: auto, cover;
   padding-top: 100px;
   padding-bottom: 90px;
-  height: 140%;
+  height: 110%;
   
 
 }
@@ -5109,15 +5242,22 @@ input[type="radio"] {
 }
 
 .browser-mockup-right-copy {
-  width: 770px;
+  width: 750px;
   background-color: rgba(0, 0, 0, 0);
   border: 1px solid #e6e6e6;
   border-radius: 3px;
   position: absolute;
-  top: -35px;
   right: -395px;
   box-shadow: 3px 3px 33px rgba(0, 0, 0, .1);
+
 }
+
+
+
+
+
+
+
 
 .browser-mockup-right-copy.small {
   width: 560px;
@@ -10194,7 +10334,7 @@ html.w-mod-js [data-ix="hide-lightbox"] {
   }
 
   .hero-video {
-    background-image: url('../images/Photo-9.jpg');
+    
     background-position: 0 0;
     background-size: 800px;
   }
@@ -16761,3 +16901,48 @@ html.w-mod-js [data-ix="hide-lightbox"] {
     text-decoration: none;
     cursor: pointer;
   }
+
+
+ .feature-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around; /* Adjust this to space-between if you want no space at the container edges */
+    align-items: center;
+    flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+}
+
+.service-image {
+    flex: 3 1 40%; /* More space is given to the image, grows and shrinks but starts at 60% of the container */
+    max-width: 50%; /* Ensures the image is never larger than its actual size */
+    min-width: 300px; /* Minimum width for the image */
+    margin-bottom: 100px;
+    margin-right: 100px;
+}
+
+.service-text-block {
+    flex: 2 1 40%; /* Less space given to the text, starts at 40% of the container */
+    max-width: 30%; /* Ensures text block doesn't exceed 100% width */
+    min-width: 100px; /* Minimum width for text block */
+    margin-left: 300px;
+}
+
+
+@media (max-width: 991px) {
+  #lab-gallery {
+    display: grid;
+  }
+  #service-container-left{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  
+}
+
+#lab-facilities{
+
+  background-image: linear-gradient(var(--color_navy_overlay),var(--color_navy_overlay)), url('../images/lab/Home Page.jpeg');
+  background-size: cover; /* Ensures the background covers the entire div */
+    background-position: center; /* Centers the background image in the div */
+    background-repeat: no-repeat; /* Prevents repeating the background image */
+}
+
