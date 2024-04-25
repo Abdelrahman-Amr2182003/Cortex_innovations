@@ -1572,7 +1572,7 @@ input[type="radio"] {
 .image-section-overlay.white-gradient {
   color: #000;
   background-color: rgba(0, 0, 0, 0);
-  background-image: linear-gradient(#fff 39%, rgba(255, 255, 255, 0));
+  background-image: linear-gradient(#f9f9f9 39%, rgba(255, 255, 255, 0));
   padding-top: 210px;
   padding-bottom: 240px;
 }
@@ -16946,3 +16946,46 @@ html.w-mod-js [data-ix="hide-lightbox"] {
     background-repeat: no-repeat; /* Prevents repeating the background image */
 }
 
+/* Main Content Styles */
+.soon_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100% - 133px); /* Adjust the height based on the nav/footer height */
+  text-align: center;
+  background-color: #fff;
+}
+
+.image-soon {
+  margin-top: 100px;
+  transition: transform 0.3s ease;
+  width: 40%;
+}
+
+.image-soon:hover {
+  transform: scale(1.2);
+}
+
+.soon-title {
+  font-weight: 700;
+  font-size: 65px;
+  color: var(--color_navy_blue); /* Dark blue text */
+  margin: 20px 0;
+}
+
+.button-section-soon {
+  margin: 20px;
+}
+
+@media (max-width: 778px) {
+
+  .container.home-intro-container{
+    max-width: 450px;
+    height: 550px;
+    text-align: center;
+    margin-top: -137px;
+    padding-bottom: 40px;
+  }
+
+}
