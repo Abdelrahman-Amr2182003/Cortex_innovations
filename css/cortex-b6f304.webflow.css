@@ -14401,10 +14401,12 @@ html.w-mod-js [data-ix="hide-lightbox"] {
   .section {
     padding: 15px;
   }
+  /*
   .carousel-control-next,.carousel-control-prev{
 
     display: none;
   }
+  */
   .section.tint.overflow-none {
     padding: 20px;
   }
@@ -16741,7 +16743,7 @@ html.w-mod-js [data-ix="hide-lightbox"] {
 }
 
 }
-
+/*
 #introCarousel
 {
   height: auto;
@@ -16768,7 +16770,6 @@ html.w-mod-js [data-ix="hide-lightbox"] {
 
   }
 
-/* Height for devices larger than 576px */
 @media (min-width: 992px) {
   #introCarousel {
     margin-top: -58.59px;
@@ -16784,7 +16785,7 @@ html.w-mod-js [data-ix="hide-lightbox"] {
   padding-bottom: 10px;
   margin-bottom: 20px;
 }
-
+*/
 
 
 .gallery {

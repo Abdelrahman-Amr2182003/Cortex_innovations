@@ -91,6 +91,52 @@
     position: relative;
 }
       }
+
+
+.carousel-inner img {
+  height: 400px; /* Adjust the height as needed */
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 18vh;
+  left: 14px;
+  padding: 10px;
+  margin-left: -35vw;
+  border-radius: 5px;
+
+
+}
+.carousel-caption h1 {
+  font-weight: bold;
+  color: #fff;
+
+
+}
+   @media screen and (max-width: 750px){
+
+.carousel-caption {
+  position: absolute;
+  top: 24vh;
+  left: 14px;
+  padding: 10px;
+  margin-left: -30vw;
+  border-radius: 5px;
+
+
+}
+
+
+
+   }
+
+.custom-carousel .carousel-indicators {
+  bottom: -20px; /* Adjust if necessary to move indicators outside the image */
+}
+
+
+
+
       </style>
       <div class="stats-row w-row">
         <div class="stats-column w-col w-col-4">
@@ -590,27 +636,56 @@
 ***/
 
 </script>
-
-    
-  
-
-
-
-
-
-
-
-  <div class="image-section about-us-2">
-    <div class="image-section-overlay-copy-copy"><!--white-gradient-->
-      <div class="container-copy centered w-container">
-        <div class="section-title-wrapper info">
-          <h2 class="section-title-copy-copy-copy-copy-copy-copy">We&#x27;d love to work with you</h2>
-          <div class="section-description-copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</div>
+<section>
+  <div id="carouselExampleIndicators" class="carousel slide custom-carousel" data-mdb-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-mdb-target="#carouselExampleIndicators" data-mdb-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-mdb-target="#carouselExampleIndicators" data-mdb-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-mdb-target="#carouselExampleIndicators" data-mdb-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../images/about/Software.jpg" class="d-block w-100" alt="Software">
+        <div class="carousel-caption">
+          <h1>Software</h1>
         </div>
-        <a href="../contact/contact.html?subject=Career" class="button w-button">CAREERS</a>
+      </div>
+      <div class="carousel-item">
+        <img src="../images/about/Mechanical and Electrical.jpg" class="d-block w-100" alt="Mechanical and Electrical">
+        <div class="carousel-caption">
+          <h1>Mechanical and Electrical</h1>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="../images/about/Design.jpg" class="d-block w-100" alt="Design">
+        <div class="carousel-caption">
+          <h1>Design</h1>
+        </div>
       </div>
     </div>
+    <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleIndicators" data-mdb-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleIndicators" data-mdb-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
+</section>
+
+<div class="image-section about-us-2">
+  <div class="image-section-overlay-copy-copy">
+    <div class="container-copy centered w-container">
+      <div class="section-title-wrapper info">
+        <h2 class="section-title-copy-copy-copy-copy-copy-copy">We'd love to work with you</h2>
+        <div class="section-description-copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</div>
+      </div>
+      <a href="../contact/contact.html?subject=Career" class="button w-button">CAREERS</a>
+    </div>
+  </div>
+</div>
+
   
 
 
@@ -654,5 +729,7 @@
     <script type="text/javascript" src="../js/mdb.min.js"></script>
     <!-- Custom scripts -->
     <script type="text/javascript" src="../js/script.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js"></script>
+
 </body>
 </html>
