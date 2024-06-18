@@ -19,6 +19,7 @@
     --color_navy_blue:#0e0f3b;
     --color_grey:#f1f2f3;
     --color_navy_overlay:rgba(14, 15, 59, .5);
+    --color_navy_overlay_dark:rgba(14, 15, 59, .7);
 }
 
 
@@ -589,7 +590,7 @@ transition: transform 0.3s ease;
 .container.footer-container {
   margin-top: 5px;
   margin-bottom: 5px;
-  padding-top: 63px;
+  padding-top: 15px;
   position: relative;
 }
 
@@ -623,7 +624,7 @@ input[type="radio"] {
   margin: auto;
   transition: transform 0.4s ease;
   cursor: pointer;
-   background-image: linear-gradient(var(--color_navy_overlay), var(--color_navy_overlay));
+   background-image: linear-gradient(var(--color_navy_overlay_dark), var(--color_navy_overlay_dark));
   border-radius: 10px;
   text-decoration: none;
   display: block;
@@ -646,7 +647,7 @@ input[type="radio"] {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: var(--color_navy_overlay);
+  background: var(--color_navy_overlay_dark);
   opacity: 0.0; /* You can adjust the opacity as needed */
   border-radius: 10px;
   transition: opacity 0.4s ease;
@@ -737,8 +738,9 @@ input[type="radio"] {
 }
 
 .description p {
-  color: var(--color_cyan);
-  font-size: 15px;
+  color: var(--color_navy_blue);
+  font-size: 16px;
+  font-weight: 500;
 }
 
 /* Show the description corresponding to the checked item */
@@ -1212,7 +1214,7 @@ input[type="radio"] {
 .section-description-lab-home{
 
   text-align: left;
-  margin-top: -30px;
+  margin-top: -70px;
   margin-bottom: 10px;
   padding-top: 0;
   font-size: 21px;
@@ -1878,7 +1880,7 @@ input[type="radio"] {
 .simple-footer {
   background-color: var(--footer_top_gray);
   padding-top: 10px;
-  padding-bottom: 25px;
+  padding-bottom: 15px;
 
 }
 
@@ -2373,7 +2375,7 @@ input[type="radio"] {
   display: flex;
   overflow: hidden;
   box-shadow: 0 10px 40px rgba(0, 0, 0, .3);
-  margin-left: 220px;
+  margin-left: 0px;
 }
 
 .overall-video-lightbox.hero-small {
@@ -4475,6 +4477,11 @@ input[type="radio"] {
   margin-left: 150px;
 
 }
+.research-items-list-two-cols.archive {
+  
+  margin-left: 150px;
+
+}
 
 .blog-post-item {
   order: -1;
@@ -4685,6 +4692,57 @@ input[type="radio"] {
   border-radius: 3px;
   margin-bottom: 20px;
   display: block;
+}
+
+.simple-research-image-block-small {
+  width: 20vh;
+  height: 18vh;
+  
+  background-position: 50%;
+  background-size: cover;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  display: block;
+}
+.research-description-small{
+  display: block;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 0px;
+  margin-left: 30px;
+  max-width: 30vh;
+
+}
+
+
+.research-description-small .title-research{
+
+  color: var(--color_cyan);
+  font-size: 21px;
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+.research-description-small .small-paragraph{
+
+  font-size: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 500;
+  padding-top: 10px;
+  text-align: justify;
+}
+
+
+
+@media screen and (max-width: 991px) {
+.simple-research-image-block{
+
+  width: 500px;
+}
+
 }
 
 
@@ -8232,7 +8290,7 @@ input[type="radio"] {
 }
 
 ._2 {
-  margin-top: -234px;
+  margin-top: -320px;
   margin-bottom: -42px;
   padding-top: 0;
   font-size: 46px;
@@ -8533,7 +8591,7 @@ input[type="radio"] {
 }
 
 .image-section-overlay-copy-copy-copy.color {
-  background-color: var(--color_navy_overlay);
+  background-color: var(--color_navy_overlay_dark);
   margin-bottom: -19px;
   padding-top: 0;
 }
@@ -16905,7 +16963,7 @@ html.w-mod-js [data-ix="hide-lightbox"] {
 
 #lab-facilities{
 
-  background-image: linear-gradient(var(--color_navy_overlay),var(--color_navy_overlay)), url('../images/lab/Home Page.jpeg');
+  background-image: linear-gradient(var(--color_navy_overlay),var(--color_navy_overlay)), url('../images/lab/Lab Facilities-01.jpg');
   background-size: cover; /* Ensures the background covers the entire div */
     background-position: center; /* Centers the background image in the div */
     background-repeat: no-repeat; /* Prevents repeating the background image */
@@ -16950,7 +17008,7 @@ html.w-mod-js [data-ix="hide-lightbox"] {
 }
 
 .email-signup button {
-    background-color: blue;
+    background-color: var(--color_navy_blue);
     color: white;
     border: none;
     padding: 10px 20px;
@@ -17452,3 +17510,105 @@ font-size: 16px; /* Paragraph font size */
   text-align: left;
 }
 
+.content {
+  padding: 7rem 0; }
+.bg-left-half {
+  position: relative; }
+  .bg-left-half:before {
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    z-index: -1;
+    content: "";
+    left: 0;
+    top: 0;
+    background-color: #f8f9fa; }
+
+.media-29101 img {
+  margin-bottom: 20px; }
+
+.media-29101 h3 {
+  font-size: 18px;
+  font-weight: 900 !important; }
+  .media-29101 h3 a {
+    color: #6c757d; }
+
+.owl-2-style .owl-nav {
+  display: none; }
+
+.owl-2-style .owl-dots {
+  text-align: center;
+  position: relative;
+  bottom: -30px; }
+  .owl-2-style .owl-dots .owl-dot {
+    display: inline-block; }
+    .owl-2-style .owl-dots .owl-dot span {
+      display: inline-block;
+      width: 15px;
+      height: 3px;
+      border-radius: 0px;
+      background: #cccccc;
+      -webkit-transition: 0.3s all cubic-bezier(0.32, 0.71, 0.53, 0.53);
+      -o-transition: 0.3s all cubic-bezier(0.32, 0.71, 0.53, 0.53);
+      transition: 0.3s all cubic-bezier(0.32, 0.71, 0.53, 0.53);
+      margin: 3px; }
+    .owl-2-style .owl-dots .owl-dot.active span {
+      background: #007bff; }
+    .owl-2-style .owl-dots .owl-dot:active, .owl-2-style .owl-dots .owl-dot:focus {
+      outline: none; }
+.text-primary{
+
+  color: var(--color-orange) !important;
+    font-size: 35px;
+    font-weight: bold;
+}
+.container.owl-2-style{
+
+max-width: 941px;
+margin-left: auto;
+margin-right: auto;
+position: relative;
+left: -200px;
+height: auto;
+
+}
+
+@media(max-width: 991px){
+.container.owl-2-style{
+  left: 0;
+}
+
+
+  
+
+}
+
+.research-container {
+    margin-top: 525px;
+    margin-bottom: 129px;
+    padding-top: 63px;
+    position: relative;
+    margin-left: 150px;
+}
+.subpage-title-research {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: Source Sans Pro, sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 40px;
+    margin-left: 0;
+    text-align: left;
+  }
+.page-subtitle-research {
+    width: 100%;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 0;
+    /* margin-right: auto; */
+    font-family: Source Sans Pro, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 27px;
+    display: block;
+}
