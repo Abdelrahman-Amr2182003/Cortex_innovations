@@ -82,7 +82,7 @@
           <h1 class="form-title">Contact us now</h1>
           <h2 class="form-title subtitle">Do you have a question? Contact us now!</h2>
           <label for="name-2" class="field-label">Name:</label>
-          <input type="text" class="field rounded w-input" maxlength="256" name="name" data-name="Name 2" placeholder="" id="name-2">
+          <input type="text" class="field rounded w-input" maxlength="256" name="name" data-name="Name 2" placeholder="" id="name">
           <label for="name-2" class="field-label">subject:</label>
           <select id="subject" name="subject">
               <option value="General Inquiry">General Inquiry</option>
@@ -135,6 +135,8 @@
           <label for="Message" class="field-label">Your message:</label>
           <textarea id="Message" name="Message" maxlength="5000" data-name="Message" placeholder="" class="field rounded area w-input"></textarea>
           <input type="submit" value="Send Email" data-wait="Please wait..." class="button w-button">
+          <div id="successMessage" class="sent-message">Your message has been sent. Thank you!</div>
+          <div id="failMessage" class="error-message">Error Sending Message</div>
         </form>
         <div class="success-message w-form-done">
           <p>Thank you! Your submission has been received!</p>

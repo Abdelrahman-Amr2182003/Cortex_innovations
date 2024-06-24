@@ -76,14 +76,15 @@
     </div>
   </div>
 
-  <div class="soon_section">
-    <div class="email-signup">
-        <input type="email" placeholder="Your Email" id="email">
+<div class="soon_section">
+    <form action="../php/subscriber.php" method="post" class="email-signup">
+        <input type="email" name="email" placeholder="Your Email" id="email" required>
         <button type="submit">Notify Me</button>
-    </div>
-    
-    
-  </div>
+        <div id="successMessage" class="sent-message">Your message has been sent. Thank you!</div>
+          <div id="failMessage" class="error-message">Error Sending Message</div>
+    </form>
+</div>
+
   
 
 

@@ -6360,6 +6360,25 @@ input[type="radio"] {
   padding-top: 115px;
   padding-bottom: 185px;
 }
+
+.sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin-top: 25px;
+}
+.error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+  margin-top: 25px;
+}
 @media(max-width: 991px) {
     /* Make the main dropdown full-width to utilize the screen space */
     .navbar .w-dropdown-list {
