@@ -73,10 +73,11 @@
 <div class="section tint">
    <div class="container">
       <div class="blog-posts-list-wrapper w-dyn-list">
+        <div class="content-wrapper">
          <div role="list" class="research-items-list archive w-clearfix w-dyn-items w-row">
             <!-- Repeated structure simplified for brevity -->
             <!-- Replace the content inside each repeated item as needed -->
-            <div role="listitem" class="simple-research-post-item archive w-clearfix w-dyn-item w-col w-col-6">
+            <div role="listitem" class="simple-research-post-item archive w-clearfix w-dyn-item w-col w-col-6" data-keywords="UX/UI Design">
                <a href="#" class="simple-research-image-block  w-inline-block" style="background-image: url('../images/Lab/Embedded systems and 3D laser scanning-02.jpg');">
                   <div class="research-overlay"></div>
                </a>
@@ -97,22 +98,23 @@
                         <h5>Mar 2021</h5>
                       </div>
                       <img src="../images/Lab/Embedded systems and 3D laser scanning-02.jpg" alt="Image">
-                    </div>
-                    <div class="research-abstract">
-                      <p>Combining laser profiling technology with embedded systems, this method provides high-resolution surface measurements for industrial quality control and inspection.
-                        <div class="tag-container">
+                      <div class="tag-container">
                             <div class="tag">Design Inspiration</div>
                             <div class="tag">Marketing</div>
                             <div class="tag">UX/UI Design</div>
                             <div class="tag">Content Marketing</div>
                         </div>
+                    </div>
+                    <div class="research-abstract">
+                      <p>Combining laser profiling technology with embedded systems, this method provides high-resolution surface measurements for industrial quality control and inspection.
+                        
                       </p>
                     </div>
                   </div>
                 </div> <!-- End of Modal structure -->
             </div>
 
-            <div role="listitem" class="simple-research-post-item archive w-clearfix w-dyn-item w-col w-col-6">
+            <div role="listitem" class="simple-research-post-item archive w-clearfix w-dyn-item w-col w-col-6" data-keywords="Marketing">
                <a href="#" class="simple-research-image-block  w-inline-block" style="background-image: url('../images/Lab/Embedded systems and 3D laser scanning-03.jpg');">
                   <div class="research-overlay"></div>
                </a>
@@ -133,15 +135,16 @@
                         <h5>Sep 2021</h5>
                       </div>
                       <img src="../images/Lab/Embedded systems and 3D laser scanning-03.jpg" alt="Image">
-                    </div>
-                    <div class="research-abstract">
-                      <p>Lidar scanners integrate with embedded systems for accurate 3D mapping and scanning, enhancing applications from autonomous vehicles to environmental monitoring.
-                        <div class="tag-container">
+                      <div class="tag-container">
                             <div class="tag">Design Inspiration</div>
                             <div class="tag">Marketing</div>
                             <div class="tag">UX/UI Design</div>
                             <div class="tag">Content Marketing</div>
                         </div>
+                    </div>
+                    <div class="research-abstract">
+                      <p>Lidar scanners integrate with embedded systems for accurate 3D mapping and scanning, enhancing applications from autonomous vehicles to environmental monitoring.
+                        
                       </p>
                     </div>
                   </div>
@@ -153,6 +156,64 @@
          <div class="empty-state w-dyn-hide w-dyn-empty">
             <div>No items found.</div>
          </div>
+
+
+
+           <div class="keywords-container">
+
+              <div class="sdg-container">
+      <h1>Sustainable Development Goals SDGs</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas.</p>
+      <div class="sdg-list">
+          <div class="sdg-item">
+              <div class="sdg-icon">
+                  <img src="../images/Icons/Software.png" alt="Affordable and Clean Energy">
+              </div>
+              <p>Affordable and Clean Energy</p>
+          </div>
+          <div class="sdg-item">
+              <div class="sdg-icon">
+                  <img src="../images/Icons/Software.png" alt="Industry, Innovation, and Infrastructure">
+              </div>
+              <p>Industry, Innovation, and Infrastructure</p>
+          </div>
+          <div class="sdg-item">
+              <div class="sdg-icon">
+                  <img src="../images/Icons/Software.png" alt="Sustainable Cities and Communities">
+              </div>
+              <p>Sustainable Cities and Communities</p>
+          </div>
+      </div>
+</div>
+
+             <div class="keyword-container">
+      <h3 class="keyword-title">Keywords</h3>
+      <div class="keywords-flex-container">
+          <div class="keyword" data-keyword="All" onclick="filterKeywords(this);">All</div>
+          <div class="keyword" data-keyword="Design Inspiration" onclick="filterKeywords(this);">Design Inspiration</div>
+          <div class="keyword" data-keyword="Marketing" onclick="filterKeywords(this);">Marketing</div>
+          <div class="keyword" data-keyword="UX/UI Design" onclick="filterKeywords(this);">UX/UI Design</div>
+          <div class="keyword" data-keyword="Design Inspiration" onclick="filterKeywords(this);">Design Inspiration</div>
+          <div class="keyword" data-keyword="Marketing" onclick="filterKeywords(this);">Marketing</div>
+          <div class="keyword" data-keyword="UX/UI Design" onclick="filterKeywords(this);">UX/UI Design</div>
+      </div>
+  </div>
+
+
+            
+
+
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
       </div>
    </div>
 </div>
@@ -201,6 +262,37 @@ window.onclick = function(event) {
   if (event.target.classList.contains('modal')) {
     event.target.style.display = "none";
   }
+}
+</script>
+<script>
+function filterKeywords(selectedElement) {
+    const allKeywords = document.querySelectorAll('.keyword');
+    const allResearchItems = document.querySelectorAll('.simple-research-post-item');
+
+    if (selectedElement.innerText === 'All') {
+        // If "All" is selected, show all research items and reset keyword colors
+        allResearchItems.forEach(item => item.style.display = '');
+        allKeywords.forEach(keyword => keyword.style.backgroundColor = 'var(--color_navy_blue)');
+        selectedElement.style.backgroundColor = 'var(--color_cyan)';
+    } else {
+        // Toggle the selected keyword color
+        const isActive = selectedElement.style.backgroundColor === 'var(--color_cyan)';
+        selectedElement.style.backgroundColor = isActive ? 'var(--color_navy_blue)' : 'var(--color_cyan)';
+
+        // Filter based on active keywords
+        const activeKeywords = Array.from(document.querySelectorAll('.keyword'))
+                                  .filter(keyword => keyword.style.backgroundColor === 'var(--color_cyan)')
+                                  .map(keyword => keyword.getAttribute('data-keyword'));
+
+        // Display relevant research items
+        allResearchItems.forEach(item => {
+            const keywords = item.getAttribute('data-keywords').split(', ');
+            item.style.display = keywords.some(keyword => activeKeywords.includes(keyword)) ? '' : 'none';
+        });
+
+        // Reset "All" keyword if any specific keyword is active
+        document.querySelector('.keyword[data-keyword="All"]').style.backgroundColor = 'var(--color_navy_blue)';
+    }
 }
 </script>
 </body>
