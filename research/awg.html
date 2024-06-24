@@ -315,7 +315,7 @@ function filterKeywords(selectedElement) {
     const allResearchItems = document.querySelectorAll('.simple-research-post-item');
 
     if (selectedElement.innerText === 'All') {
-        // If "All" is selected, show all research items and reset keyword colors
+        // Show all research items and reset keyword colors
         allResearchItems.forEach(item => item.style.display = '');
         allKeywords.forEach(keyword => keyword.style.backgroundColor = 'var(--color_navy_blue)');
         selectedElement.style.backgroundColor = 'var(--color_cyan)';
@@ -324,21 +324,28 @@ function filterKeywords(selectedElement) {
         const isActive = selectedElement.style.backgroundColor === 'var(--color_cyan)';
         selectedElement.style.backgroundColor = isActive ? 'var(--color_navy_blue)' : 'var(--color_cyan)';
 
-        // Filter based on active keywords
-        const activeKeywords = Array.from(document.querySelectorAll('.keyword'))
-                                  .filter(keyword => keyword.style.backgroundColor === 'var(--color_cyan)')
-                                  .map(keyword => keyword.getAttribute('data-keyword'));
+        // Collect all active keywords
+        const activeKeywords = Array.from(allKeywords)
+                                    .filter(keyword => keyword.style.backgroundColor === 'var(--color_cyan)')
+                                    .map(keyword => keyword.getAttribute('data-keyword'));
 
-        // Display relevant research items
-        allResearchItems.forEach(item => {
-            const keywords = item.getAttribute('data-keywords').split(', ');
-            item.style.display = keywords.some(keyword => activeKeywords.includes(keyword)) ? '' : 'none';
-        });
+        // Check if no keywords are active; if none, treat as if 'All' is selected
+        if (activeKeywords.length === 0) {
+            allResearchItems.forEach(item => item.style.display = ''); // Show all items
+            document.querySelector('.keyword[data-keyword="All"]').style.backgroundColor = 'var(--color_cyan)';
+        } else {
+            // Display relevant research items based on selected keywords
+            allResearchItems.forEach(item => {
+                const keywords = item.getAttribute('data-keywords').split(', ');
+                item.style.display = keywords.some(keyword => activeKeywords.includes(keyword)) ? '' : 'none';
+            });
 
-        // Reset "All" keyword if any specific keyword is active
-        document.querySelector('.keyword[data-keyword="All"]').style.backgroundColor = 'var(--color_navy_blue)';
+            // Ensure 'All' is reset if any keyword is active
+            document.querySelector('.keyword[data-keyword="All"]').style.backgroundColor = 'var(--color_navy_blue)';
+        }
     }
 }
 </script>
+
 </body>
 </html>
