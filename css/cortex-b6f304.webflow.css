@@ -4738,7 +4738,7 @@ input[type="radio"] {
 
 
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 767px) {
 .simple-research-image-block{
 
   width: 500px;
@@ -6379,7 +6379,7 @@ input[type="radio"] {
   font-weight: 600;
   margin-top: 25px;
 }
-@media(max-width: 991px) {
+@media(max-width: 767px) {
     /* Make the main dropdown full-width to utilize the screen space */
     .navbar .w-dropdown-list {
         background: rgba(14, 15, 59, 0.95); /* Darker background for better readability */
@@ -9563,7 +9563,7 @@ html.w-mod-js [data-ix="hide-lightbox"] {
   display: none;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 767px) {
   li {
     font-size: 13px;
   }
@@ -12621,15 +12621,15 @@ html.w-mod-js [data-ix="hide-lightbox"] {
   }
 
   .home-mockup {
-    width: auto;
-    height: 290px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    top: 0;
-    left: -350px;
-    right: -350px;
-  }
+        width: auto;
+        height: 290px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        top: -58px;
+        left: -502px;
+        right: -350px;
+    }
 
   .home-mockup.ipad {
     width: auto;
@@ -17009,7 +17009,7 @@ html.w-mod-js [data-ix="hide-lightbox"] {
 }
 
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   #lab-gallery {
     display: grid;
   }
@@ -17104,7 +17104,7 @@ html.w-mod-js [data-ix="hide-lightbox"] {
 }
 
 
-@media (max-width: 778px) {
+@media (max-width: 767px) {
 
   .container.home-intro-container{
     max-width: 450px;
@@ -17596,7 +17596,7 @@ font-size: 16px; /* Paragraph font size */
 
 
 
-@media(max-width: 991px){
+@media(max-width: 767px){
 
 .modal {
         padding-top: 10px; /* Less padding on top for mobile */
@@ -17811,18 +17811,16 @@ font-size: 16px; /* Paragraph font size */
     font-size: 35px;
     font-weight: bold;
 }
-.container.owl-2-style{
-
-max-width: 941px;
-margin-left: auto;
-margin-right: auto;
-position: relative;
-left: -200px;
-height: auto;
-
+.container.owl-2-style {
+    max-width: 1164px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    left: -112px;
+    height: auto;
 }
 
-@media(max-width: 991px){
+@media(max-width: 767px){
 .container.owl-2-style{
   left: 0;
 }
