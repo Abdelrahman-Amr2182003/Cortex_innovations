@@ -6360,6 +6360,43 @@ input[type="radio"] {
   padding-top: 115px;
   padding-bottom: 185px;
 }
+@media(max-width: 991px) {
+    /* Make the main dropdown full-width to utilize the screen space */
+    .navbar .w-dropdown-list {
+        background: rgba(14, 15, 59, 0.95); /* Darker background for better readability */
+        width: 100%; /* Full width for easier access */
+        box-shadow: none; /* Optional: remove or keep shadow for styling */
+        position: static; /* Static position for scrolling with the page */
+    }
+
+    /* Ensure dropdown links are easy to tap */
+    .dropdown-link {
+        display: block; /* Ensure the dropdown link is block-level */
+        width: 100%; /* Full width for easier tapping */
+        padding: 12px; /* Larger padding for larger tap area */
+        text-align: left; /* Align text to the left for better readability */
+        border-bottom: 1px solid #e7e7e7; /* Separators for clear distinction */
+    }
+
+    /* Adjust the sub-menu for mobile */
+    .sub-menu {
+        position: static; /* Allow the submenu to expand within the same content flow */
+        width: 100%; /* Full width for sub-menus */
+        background: rgba(14, 15, 59, 0.85); /* Slightly lighter to differentiate from main menu */
+        padding-left: 20px; /* Indent submenu items for hierarchy visualization */
+    }
+
+    /* Styling for hover states might need to be adjusted or disabled for touch devices */
+    .dropdown-link:hover, .dropdown-link.w--current:hover {
+        background-color: var(--color_cyan); /* Keep the hover effect for visual feedback */
+    }
+
+    /* Show sub-menus on click instead of hover on mobile */
+    .dropdown-link.w-dropdown-link:focus + .sub-menu,
+    .dropdown-link.w-dropdown-link:active + .sub-menu {
+        display: block; /* Display submenu on tap */
+    }
+}
 
 .image-section-overlay-copy.black {
   background-color: rgba(27, 28, 31, .6);
