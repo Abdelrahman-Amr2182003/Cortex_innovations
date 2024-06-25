@@ -17638,6 +17638,7 @@ font-size: 16px; /* Paragraph font size */
 
 .modal {
         padding-top: 10px; /* Less padding on top for mobile */
+        top: 10vh;
     }
 
     .modal-content {
@@ -17646,6 +17647,8 @@ font-size: 16px; /* Paragraph font size */
         margin: 10% auto; /* Larger margin on top and bottom for mobile */
         max-height: 90vh; /* Slightly taller on mobile if needed */
         overflow-y: auto; /* Allow scrolling within the modal if needed */
+        display: flex;
+        flex-direction: column;
     }
 
     .research-abstract, .research-thumbnail {
@@ -17677,7 +17680,7 @@ font-size: 16px; /* Paragraph font size */
     }
 
     .tag-container {
-        padding-left: 10px; /* Less padding for better space usage */
+        padding-left: 0; /* Less padding for better space usage */
     }
 
     .tag {
@@ -18095,11 +18098,19 @@ font-size: 16px; /* Paragraph font size */
     font-size: 15px;
 }
 
-    /* Adjustments for modal dialogs for consistency */
+    .modal {
+        padding-top: 10px; /* Less padding on top for mobile */
+        top: 10vh;
+    }
+
     .modal-content {
-        width: 90%; /* Full width for mobile with slight margin */
-        max-height: 80vh; /* Maximum height to avoid very tall modals */
-        overflow-y: auto; /* Allows scrolling within modal for lengthy content */
+        width: 90%; /* Slightly narrower on mobile for edge spacing */
+        padding: 15px; /* Less padding to save space */
+        margin: 10% auto; /* Larger margin on top and bottom for mobile */
+        max-height: 80vh; /* Slightly taller on mobile if needed */
+        overflow-y: auto; /* Allow scrolling within the modal if needed */
+        display: flex;
+        flex-direction: column;
     }
 
 
