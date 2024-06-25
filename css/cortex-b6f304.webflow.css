@@ -17540,7 +17540,7 @@ font-size: 16px; /* Paragraph font size */
 .keyword-title {
     font-size: 20px;
     color: #333;
-    text-align: left; /* Center the title if desired */
+    text-align: left; /* left the title if desired */
     padding: 5px 5px;
     margin-bottom: 10px; /* Space between title and keywords */
     padding-top: 0;
@@ -17855,7 +17855,7 @@ font-size: 16px; /* Paragraph font size */
 
     .keyword-container {
         flex-direction: column; /* Stack keywords vertically */
-        align-items: center;    /* Center align the keywords for better presentation */
+        align-items: left;    /* Center align the keywords for better presentation */
     }
 
     .keyword {
@@ -17865,7 +17865,7 @@ font-size: 16px; /* Paragraph font size */
     }
 
     .keyword-title {
-        text-align: center;     /* Centering the title for a cleaner look */
+        text-align: left;     /* Centering the title for a cleaner look */
         font-size: 18px;        /* Appropriately sized for mobile readability */
         margin-bottom: 10px;    /* Space below the title */
     }
@@ -17940,6 +17940,10 @@ font-size: 16px; /* Paragraph font size */
     margin-left: 10px;  /* Space before the icon in the next button */
     margin-right: 0;  /* Remove right margin */
 }
+
+.button-research.next:hover {
+    background-color: var(--color_navy_blue);
+}
 .buttons-container {
     display: flex;
     align-items: flex-end; /* Vertical alignment to the end */
@@ -17948,38 +17952,88 @@ font-size: 16px; /* Paragraph font size */
     margin-left: 10vw;
 
 }
-
 @media(max-width: 767px) {
+    .content-wrapper {
+        flex-direction: column; /* Stacks all content vertically */
+        flex-direction: column-reverse;
+        align-items: center; /* Centers the content in the viewport */
+        width: 100%; /* Ensures full width utilization */
+        padding: 0; /* Removes padding that could affect layout */
+    }
+
+    .sdg-container,
+    .keyword-container,
+    .research-items-list {
+        width: 100%; /* Each container takes the full width */
+        margin-bottom: 20px; /* Adds space between each container for clarity */
+        box-sizing: border-box; /* Includes padding in width calculation */
+    }
+    
+    .sdg-container,
+    .keyword-container {
+        background-color: #fff; /* Background color to distinguish the containers */
+        padding: 15px; /* Padding inside the containers for content spacing */
+        position: static; /* Ensures that the position is not absolute */
+    }
+
     .keywords-container {
-        width: 90%;  /* Appropriate width for mobile screens */
-        position: static;  /* Resets any specific positioning to flow naturally */
-        padding: 10px 0;  /* Adds vertical padding for better spacing */
-        margin: 20px auto;  /* Centers the container with automatic horizontal margins */
-        background-color: #f2f2f2; /* Maintains background color */
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds subtle shadow for depth */
+        position: static; /* Important to override any absolute positioning that could cause overlap */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
     }
+
     
-    /* Additional mobile adjustments for related elements */
-    .sdg-container, .keyword-container {
-        width: 100%;  /* Full width to utilize space */
-        margin: 0;  /* Remove any margin for alignment */
-        padding: 10px;  /* Consistent padding */
+    .sdg-item {
+        width: 100%; /* Allows each item to grow as needed based on content */
+        margin: 5px 0; /* Vertical margin for spacing */
     }
-    
+    .keyword{
+      width: auto; /* Allows each item to grow as needed based on content */
+        margin: 5px 0; /* Vertical margin for spacing */
+    }
+    .keywords-flex-container,
+    .sdg-list {
+        display: flex; /* Enables flexbox layout for better alignment */
+        align-items: left; /* Centers items within the container */
+    }
+
     .keyword {
-        font-size: 14px; /* Smaller font size for better readability */
-        margin: 5px; /* Sufficient spacing between keywords */
-        padding: 5px 10px; /* Comfortable touch target size */
+        padding: 8px 15px; /* Adequate padding for easier interaction */
+        border-radius: 15px; /* Rounded corners for aesthetic preference */
+        background-color: var(--color_navy_blue); /* Background color for keywords */
+        color: #fff; /* Text color for contrast */
+        font-size: 14px; /* Appropriate font size for mobile readability */
     }
 
-    .keyword-title {
-        text-align: center; /* Ensures title is centered */
-    }
-
-    /* Ensure buttons are also responsive */
     .buttons-container {
-        width: 100%; /* Full width for alignment */
-        justify-content: space-around; /* Even spacing around buttons */
-        margin-top: 20px; /* Space above the buttons */
+        width: 100%; /* Full width to accommodate both buttons */
+        padding: 10px 15px; /* Padding for spacing within the container */
+        box-sizing: border-box; /* Padding included in width calculation */
+        display: flex;
+        justify-content: space-between; /* Distributes space evenly between buttons */
+        margin-left: 3vw;
+        align-items: center;
+    }
+
+    .button-research {
+        flex-grow: 1; /* Allows buttons to fill the available space */
+    }
+    .button-research.previous {
+        background: #999090;
+        margin-right: 30px;
+          }
+      .button-research.next {
+        margin-left: 30px;
+          }
+
+    /* Adjustments for modal dialogs for consistency */
+    .modal-content {
+        width: 90%; /* Full width for mobile with slight margin */
+        max-height: 80vh; /* Maximum height to avoid very tall modals */
+        overflow-y: auto; /* Allows scrolling within modal for lengthy content */
     }
 }
+
+
