@@ -18102,15 +18102,19 @@ font-size: 16px; /* Paragraph font size */
         top: 10vh;
     }
 
-    .modal-content {
-        width: 90%; /* Slightly narrower on mobile for edge spacing */
-        padding: 15px; /* Less padding to save space */
-        margin: 10% auto; /* Larger margin on top and bottom for mobile */
-        max-height: 80vh; /* Slightly taller on mobile if needed */
-        overflow-y: auto; /* Allow scrolling within the modal if needed */
-        display: flex;
-        flex-direction: column;
-    }
+     .modal-content {
+    position: relative;  /* Positioned relative to its normal position */
+    width: 80%;  /* Set a width to define space for content */
+    max-height: 90vh;  /* Max height to enforce scrolling */
+    margin: 5% auto;  /* Centering the modal content horizontally */
+    padding: 20px;  /* Padding around content */
+    background-color: #fff;  /* Background color for visibility */
+    border-radius: 5px;  /* Rounded corners */
+    overflow-y: auto;  /* Allows vertical scrolling within the content */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);  /* Shadow for 3D effect */
+}
+
+    /* Ensure child elements do not expand beyond the modal content's height */
 
 
       .simple-research-post-item-small.archive{
