@@ -17132,14 +17132,12 @@ html.w-mod-js [data-ix="hide-lightbox"] {
 
 
 @media (max-width: 767px) {
-  .research-container {
-    margin-top: 50vh;r
-  }
+
   .page-subtitle-research{
     font-size: 15px;
   }
   .subpage-title-research {
-    font-size: 40px;
+    font-size: 35px;
   }
   .container.home-intro-container{
     max-width: 450px;
@@ -17972,6 +17970,10 @@ font-size: 16px; /* Paragraph font size */
 
 }
 @media(max-width: 767px) {
+   .research-container {
+    margin-top: 50vh;
+    margin-left: 6vw;
+  }
   .simple-research-post-item.archive{
     display: flex;
     flex-direction: column;
