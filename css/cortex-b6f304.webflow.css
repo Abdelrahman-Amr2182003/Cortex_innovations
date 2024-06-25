@@ -17135,6 +17135,12 @@ html.w-mod-js [data-ix="hide-lightbox"] {
   .research-container {
     margin-top: 50vh;r
   }
+  .page-subtitle-research{
+    font-size: 15px;
+  }
+  .subpage-title-research {
+    font-size: 40px;
+  }
   .container.home-intro-container{
     max-width: 450px;
     height: 550px;
