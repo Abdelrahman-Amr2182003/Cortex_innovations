@@ -14619,7 +14619,8 @@ html.w-mod-js [data-ix="hide-lightbox"] {
 .research-description .small-paragraph{
   font-size: 12px;
   width: 20vh;
-
+    margin-left: auto;
+        margin-right: auto;
 }
 .simple-research-post-item.archive{
   padding-right: 0px;
@@ -17980,12 +17981,18 @@ font-size: 16px; /* Paragraph font size */
   }
     .research-description{
       margin-left: 5px;
+      display: grid;
+      align-items: center;
     }
       .button-services{
         margin-top: 0;
       }
       .research-description .title-research{
         font-size: 22px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-bottom: 0;
       }
     .content-wrapper {
         flex-direction: column; /* Stacks all content vertically */
@@ -18053,6 +18060,8 @@ font-size: 16px; /* Paragraph font size */
 
     .button-research {
         flex-grow: 1; /* Allows buttons to fill the available space */
+        margin-left: auto;
+        margin-right: auto;
     }
     .button-research.previous {
         background: #999090;
@@ -18114,7 +18123,9 @@ font-size: 16px; /* Paragraph font size */
         background-repeat: no-repeat;
     }
 
-
+      .simple-research-post-item.archive{
+        align-items: center;
+      }
 
 
 
