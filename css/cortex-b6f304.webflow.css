@@ -17132,7 +17132,9 @@ html.w-mod-js [data-ix="hide-lightbox"] {
 
 
 @media (max-width: 767px) {
-
+  .research-container {
+    margin-top: 50vh;r
+  }
   .container.home-intro-container{
     max-width: 450px;
     height: 550px;
