@@ -17039,7 +17039,7 @@ html.w-mod-js [data-ix="hide-lightbox"] {
 
 #lab-facilities{
 
-  background-image: linear-gradient(var(--color_navy_overlay),var(--color_navy_overlay)), url('../images/lab/Lab Facilities-01.jpg');
+  background-image: linear-gradient(var(--color_navy_overlay),var(--color_navy_overlay)), url('../images/Lab/Lab Facilities-01.jpg');
   background-size: cover; /* Ensures the background covers the entire div */
     background-position: center; /* Centers the background image in the div */
     background-repeat: no-repeat; /* Prevents repeating the background image */
