@@ -87,13 +87,14 @@
 .carousel-caption {
   position: absolute;
   top: 75px;
-  left: 0px;
+  left: -200px;
   padding: 10px;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
   justify-content: left;
   align-items: flex-start;
+  margin-left: 0;
 
 
 }
@@ -118,20 +119,33 @@
 
 }
 
-   @media screen and (max-width: 991px){
-
+   @media screen and (max-width: 767px){
+    .soon_section{
+        height: 90%;
+        width: 100%
+        background-position:center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 .carousel-caption {
  position: absolute;
-  top: 75px;
-  left: 0px;
+  top: 55px;
+  left: -200px;
   padding: 10px;
-  margin-left: 50px;
+  margin-left: 0px;
   border-radius: 5px;
+  text-align: left;
 
 
 }
 
+    .carousel-caption h1{
+      margin-bottom: 10px;
+    }
+    .carousel-caption p {
+        font-size:16px; 
 
+    }
 
    }
 

@@ -14708,10 +14708,11 @@ html.w-mod-js [data-ix="hide-lightbox"] {
   }
 
   .image-section.ui-section {
-    background-image: linear-gradient(86deg, #eee 39%, rgba(238, 238, 238, .8)), url('../images/UI-Elements.jpg');
+    background-image:  url('../images/worldmap-2.png');
     background-position: 0 0, 50%;
     background-repeat: repeat, no-repeat;
     background-size: auto, cover;
+    background-color: var(--image_section_color);
   }
 
   .image-section-overlay {
@@ -17027,12 +17028,21 @@ html.w-mod-js [data-ix="hide-lightbox"] {
 
 
 @media (max-width: 767px) {
+
+
+
+
   #lab-gallery {
     display: grid;
   }
   #service-container-left{
     display: flex;
     flex-direction: column-reverse;
+    margin-top: 50px;
+  }
+  #service-container-right{
+   
+    margin-top: 50px;
   }
   
 }
@@ -17137,6 +17147,7 @@ html.w-mod-js [data-ix="hide-lightbox"] {
 -----------------------*/
 .portfolio {
   background: #fff;
+      min-height: 100vh;
 }
 
 .portfolio__filter {
@@ -17953,6 +17964,19 @@ font-size: 16px; /* Paragraph font size */
 
 }
 @media(max-width: 767px) {
+  .simple-research-post-item.archive{
+    display: flex;
+    flex-direction: column;
+  }
+    .research-description{
+      margin-left: 5px;
+    }
+      .button-services{
+        margin-top: 0;
+      }
+      .research-description .title-research{
+        font-size: 22px;
+      }
     .content-wrapper {
         flex-direction: column; /* Stacks all content vertically */
         flex-direction: column-reverse;
@@ -18013,7 +18037,7 @@ font-size: 16px; /* Paragraph font size */
         box-sizing: border-box; /* Padding included in width calculation */
         display: flex;
         justify-content: space-between; /* Distributes space evenly between buttons */
-        margin-left: 3vw;
+        margin-left: -3vw;
         align-items: center;
     }
 
@@ -18022,11 +18046,35 @@ font-size: 16px; /* Paragraph font size */
     }
     .button-research.previous {
         background: #999090;
-        margin-right: 30px;
+        margin-right: 15px;
+        padding-top: 0;
+        padding-bottom: 0;
+        width: 25vh;
+        font-size: 12px;
           }
       .button-research.next {
-        margin-left: 30px;
+                margin-left: 15px;
+        padding-top: 0;
+        padding-bottom: 0;
+        width: 23vh;
+        font-size: 12px;
           }
+
+
+
+
+.button-research.previous i {
+    margin-right: 0px;  /* Space after the icon in the previous button */
+    margin-left: 0;  /* Remove left margin */
+    font-size: 15px;
+
+}
+
+.button-research.next i {
+    margin-left: 0px;  /* Space before the icon in the next button */
+    margin-right: 0;  /* Remove right margin */
+    font-size: 15px;
+}
 
     /* Adjustments for modal dialogs for consistency */
     .modal-content {
@@ -18034,6 +18082,34 @@ font-size: 16px; /* Paragraph font size */
         max-height: 80vh; /* Maximum height to avoid very tall modals */
         overflow-y: auto; /* Allows scrolling within modal for lengthy content */
     }
+
+
+      .simple-research-post-item-small.archive{
+        display: flex;
+        flex-direction: column;
+      }
+      .research-description-small{
+          margin-left: 5px;
+
+      }
+      .simple-research-image-block-small{
+        width: 100%;
+      }
+
+        .soon_section{
+        height: 90%;
+        width: 100%;
+        background-position:center;
+    background-size: 100% 100%;  /* Stretch to fill the container */
+        background-repeat: no-repeat;
+    }
+
+
+
+
+
+
+
 }
 
 
