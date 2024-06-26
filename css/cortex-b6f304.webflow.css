@@ -4480,8 +4480,7 @@ input[type="radio"] {
 .research-items-list-two-cols.archive {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* This will center the items */
-    align-items: center;
+    align-items: flex-start;
     width: 80%; /* Adjust based on your layout needs */
     margin: 0 auto; /* Center the entire container */
     background-color: #f2f2f2;
@@ -4717,7 +4716,7 @@ input[type="radio"] {
   font-weight: 400;
   padding-top: 0px;
   margin-left: 30px;
-  max-width: 30vh;
+  max-width: 36vh;
 
 }
 
@@ -18214,3 +18213,13 @@ font-size: 16px; /* Paragraph font size */
 
 
 
+.simple-research-post-item-small.archive.w-col-5 {
+    flex: 0 0 46%; /* Adjust this value to fit two items per row perfectly */
+    margin-right: 4%; /* Spacing between items, adjust as needed */
+}
+@media (max-width: 767px) {
+    .simple-research-post-item-small.archive.w-col-5 {
+        flex: 0 0 100%; /* Full width for mobile */
+        margin-right: 0; /* No right margin on mobile */
+    }
+}
