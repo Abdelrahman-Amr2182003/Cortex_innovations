@@ -4776,6 +4776,8 @@ input[type="radio"] {
   margin-bottom: 50px;
   background-color: #fff;
   padding-top:10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
 }
 
 
@@ -12637,13 +12639,11 @@ html.w-mod-js [data-ix="hide-lightbox"] {
   }
 
   .home-mockup {
-        width: auto;
         height: 290px;
         margin-left: auto;
         margin-right: auto;
         display: block;
         top: -58px;
-        left: -502px;
         right: -350px;
     }
 
@@ -16416,6 +16416,9 @@ html.w-mod-js [data-ix="hide-lightbox"] {
     margin-top: 14px;
     font-size: 15px;
     line-height: 23px;
+    max-width: 380px;
+    display: flex;
+    text-align: center;
   }
 
   .section-description-copy.faded {
@@ -17553,6 +17556,7 @@ font-size: 16px; /* Paragraph font size */
     background-color: #fff;
     padding: 10px;
     height: auto; /* Adjust height as necessary */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .keyword-title {
@@ -17926,7 +17930,7 @@ font-size: 16px; /* Paragraph font size */
     margin-top: 0;
     margin-bottom: 0;
     font-family: Source Sans Pro, sans-serif;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 400;
     line-height: 40px;
     margin-left: 0;
@@ -17939,7 +17943,7 @@ font-size: 16px; /* Paragraph font size */
     margin-left: 0;
     /* margin-right: auto; */
     font-family: Source Sans Pro, sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 300;
     line-height: 27px;
     display: block;
@@ -17974,7 +17978,7 @@ font-size: 16px; /* Paragraph font size */
 }
 @media(max-width: 767px) {
    .research-container {
-    margin-top: 50vh;
+    margin-top: 45vh;
     margin-left: 6vw;
   }
   .simple-research-post-item.archive{
@@ -18100,6 +18104,8 @@ font-size: 16px; /* Paragraph font size */
     .modal {
         padding-top: 10px; /* Less padding on top for mobile */
         top: 10vh;
+                overflow: hidden; /* Avoid scrolling the background */
+
     }
 
      .modal-content {
@@ -18142,7 +18148,13 @@ font-size: 16px; /* Paragraph font size */
       }
 
 
-
+      .image-section.about-us-2{
+            height: 50%;
+    width: 100%;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+      }
 
 
 }
