@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html data-wf-page="64cea513d9b9ac3ec674f28b" data-wf-site="64cea512d9b9ac3ec674f210">
+<html lang="en">
+
 <head>
   <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Projects</title>
   <meta content="Startup Template - Webflow Responsive Website Template" name="description">
   <meta content="About 2" property="og:title">
@@ -29,6 +31,30 @@
   <link href="../css/normalize.css" rel="stylesheet" type="text/css">
   <link href="../css/webflow.css" rel="stylesheet" type="text/css">
   <link href="../css/cortex-b6f304.webflow.css" rel="stylesheet" type="text/css">
+
+  <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <style type="text/css">
+       .swiper-slide {
+    width: 80vh; /* Desired width */
+    height: 80vh; /* Set height explicitly */
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    overflow: hidden; /* Hide any overflow */
+    background-color: #fff; /* Optional: set a background color for contrast */
+}
+
+.swiper-slide img {
+    max-width: 100%; /* Ensure the image width doesn't exceed the container width */
+    max-height: 100%; /* Ensure the image height doesn't exceed the container height */
+    object-fit: contain; /* Keep the image within the container without cropping */
+}
+
+
+    </style>
+
 </head>
 <body>
   <div data-collapse="medium" data-animation="default" data-duration="400" data-no-scroll="1" data-easing="ease" data-easing2="ease" role="banner" class="navbar white w-nav">
@@ -69,70 +95,74 @@
     </div>
   </div>
 
-  <!-- Portfolio Section Begin -->
-  <section class="portfolio spad">
-    <div class="container" style="margin-top:100px;margin-bottom: 0px;">
-      <div class="row">
-        <div class="col-lg-12">
-          <ul class="portfolio__filter">
-            <li class="active" data-filter="*">All</li>
-            <li data-filter=".branding">Branding</li>
-            <li data-filter=".digital-marketing">Digital marketing</li>
-            <li data-filter=".web">Web</li>
-            <li data-filter=".photography">Photography</li>
-            <li data-filter=" .ecommerce">eCommerce</li>
-          </ul>
-        </div>
-      </div>
-      <div class="row portfolio__gallery">
-        <div class="col-lg-4 col-md-6 col-sm-6 mix branding">
-          <a href="Cable Routing.html">
-          <div class="portfolio__item">
-            <div class="portfolio__item__video set-bg" data-setbg="../images/Lab/Freezing desalination-02.jpg"></div>
-            <div class="portfolio__item__text">
-              <h4>Cable Routing</h4>
-              
+  <!-- ======= Portfolio Details Section ======= -->
+  <section id="portfolio-details" class="portfolio-details" style="background-color:#fff ;">
+    <div class="container" style="background-color:#fff; margin-bottom: 0px; padding-bottom: 120px;">
+
+      <div class="row gy-4">
+
+        <div class="col-lg-8">
+          <div class="portfolio-details-slider swiper">
+            <div class="swiper-wrapper align-items-center">
+
+              <div class="swiper-slide">
+                <img src="../images/Lab/Freezing desalination-02.jpg" alt="">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="../images/Lab/Freezing desalination-03.jpg" alt="">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="../images/Lab/Freezing desalination-04.jpg" alt="">
+              </div>
+
             </div>
+            <div class="swiper-pagination"></div>
           </div>
-        </a>
-
-
+          
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-6 mix digital-marketing">
-
-
-          <a href="Digital Twin.html">
-          <div class="portfolio__item">
-            <div class="portfolio__item__video set-bg" data-setbg="../images/Lab/Freezing desalination-02.jpg"></div>
-            <div class="portfolio__item__text">
-              <h4>Digital Twin</h4>
-              
-            </div>
+        <div class="col-lg-4">
+          <div class="portfolio-info">
+            <h3>Project information</h3>
+            <ul>
+              <li><strong>Category:</strong> Web design</li>
+              <li><strong>Client:</strong> ASU Company</li>
+              <li><strong>Project date:</strong> 01 March, 2020</li>
+              <li><strong>Project URL:</strong> <a href="#">www.example.com</a></li>
+            </ul>
           </div>
-        </a>
-
-
+          
         </div>
 
+        
+
+      </div class="row gy-4">
+      <div>
+        <div class="portfolio-description">
+            <h2>This is an example of portfolio detail</h2>
+            <p>
+             
+The Advanced Cable Routing System is a sophisticated optimization tool designed to leverage raster maps for the segmentation of areas into weighted cells, taking into account a variety of environmental and infrastructural elements including land cover, topography, and the presence of roads, rivers, and pipelines. This comprehensive software suite integrates essential Geographic Information System (GIS) functionalities, allowing for the display of results on an interactive map. This feature facilitates the implementation of optimization algorithms directly within the user interface.<br><br>
+
+By employing a detailed mesh division strategy, each segment of the mesh is assigned a specific value reflective of the environmental characteristics it represents, which aids in the calculation of path costs and the generation of a preliminary network layout.<br><br>
+
+Functionalities of this tool includes: data management capabilities, permitting the import, storage, and modification of datasets directly within the software interface. It features advanced data visualization tools and map handling capabilities, enhancing user interaction through a dynamic interface that supports the simultaneous management of multiple datasets. The interface includes an animated toolbar, real-time graph resizing, and intuitive map navigation tools such as re-centering, zooming, and toggling between various data layers.<br><br>
+
+The system also incorporates extensive functionality for adding and managing environmental, economic, and operational constraints. Automated weight assignment, informed by satellite imagery, is another key feature that enhances the precision of routing decisions. Additionally, the software is equipped to handle constraints related to electrical infrastructure, integrating seamlessly with design and simulation tools to offer a holistic solution for infrastructure planning.<br><br>
+
+The development team is committed to continual improvement and customization of the software to meet diverse project requirements. This includes the creation of an Application Programming Interface (API) to facilitate seamless integration with external platforms and services, allowing for enhanced visualization and analysis of network topologies. The planned API will enable the tool to interact more effectively with other systems, providing a unified view of optimal solutions and facilitating comprehensive energy masterplan activities.<br><br>
+In terms of user interface design, efforts are focused on refining the core algorithm to improve performance and adaptability, and enhancing the graphical user interface (GUI) to better align with user needs across different projects. The team is also developing specialized dashboards that streamline the presentation and analysis of data, ensuring that stakeholders can access and interpret critical information efficiently. This commitment to software excellence demonstrates the team's capability in delivering a robust, user-centered tool for routing optimization that significantly enhances infrastructure development processes.<br><br>
+
+            </p>
+          </div>
       </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <!--
-          <div class="pagination__option">
-            <a href="#" class="arrow__pagination left__arrow"><span class="arrow_left"></span> Prev</a>
-            <a href="#" class="number__pagination">1</a>
-            <a href="#" class="number__pagination">2</a>
-            <a href="#" class="arrow__pagination right__arrow">Next <span class="arrow_right"></span></a>
-          </div>
-          -->
-        </div>
-      </div>
+
     </div>
-  </section>
-  <!-- Portfolio Section End -->
+  </section><!-- End Portfolio Details Section -->
 
   <div class="simple-footer">
-    <div class="container footer-container" >
+    <div class="container footer-container">
       <div class="footer-row w-row">
         <div class="w-col w-col-1"></div>
         <div class="footer-logo-column-left w-col w-col-2">
@@ -158,31 +188,20 @@
       </div>
     </div>
   </div>
+
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=64cea512d9b9ac3ec674f210" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="../js/webflow.js" type="text/javascript"></script>
   <!-- MDB -->
   <script type="text/javascript" src="../js/mdb.min.js"></script>
   <!-- Custom scripts -->
   <script type="text/javascript" src="../js/script.js"></script>
-
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/mixitup.min.js"></script>
-  <script src="js/masonry.pkgd.min.js"></script>
-  <script src="js/jquery.slicknav.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/main.js"></script>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      document.querySelectorAll(".set-bg").forEach(function(element) {
-        var bg = element.getAttribute("data-setbg");
-        if (bg) {
-          element.style.backgroundImage = "url('" + bg + "')";
-        }
-      });
-    });
-  </script>
+  <script src="vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="vendor/php-email-form/validate.js"></script>
+  <script src="js/main _details.js"></script>
 </body>
 </html>
