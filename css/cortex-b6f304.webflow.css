@@ -18246,3 +18246,6 @@ font-size: 16px; /* Paragraph font size */
 }
 
 }
+.owl-carousel .owl-item img {
+  height: 22vh;
+}
