@@ -17637,11 +17637,18 @@ font-size: 16px; /* Paragraph font size */
 }
 
 .sdg-icon img {
-    width: 40px; /* Adjust size as needed */
+    width: 30px; /* Adjust size as needed */
     height: auto;
     margin-right: 10px;
 }
-
+.sdg-number {
+  font-size: 30px;
+  margin-right: 10px;
+  margin-top: 0;
+  margin-bottom: 0; 
+  width: 30px;
+  color: var(--color_orange);
+}
 .sdg-item p {
     flex: 1;
     font-size: 18px;
@@ -18158,7 +18165,11 @@ font-size: 16px; /* Paragraph font size */
         background-position:center;
     background-size: 100% 100%;  /* Stretch to fill the container */
         background-repeat: no-repeat;
+        background-image: url("../images/coming_soon/comming_soon_mobile.png");
+        background-color: #fff;
     }
+    
+    
 
       .simple-research-post-item.archive{
         align-items: center;

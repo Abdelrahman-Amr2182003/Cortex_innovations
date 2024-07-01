@@ -79,13 +79,15 @@
          <div role="list" class="research-items-list archive w-clearfix w-dyn-items w-row">
             <!-- Repeated structure simplified for brevity -->
             <!-- Replace the content inside each repeated item as needed -->
-            <div role="listitem" class="simple-research-post-item archive w-clearfix w-dyn-item w-col w-col-6" data-keywords="UX/UI Design">
+
+            <div role="listitem" class="simple-research-post-item archive w-clearfix w-dyn-item w-col w-col-6" data-keywords="water condensation, solid surfaces">
                <a href="#" class="simple-research-image-block  w-inline-block" style="background-image: url('../images/Lab/Embedded systems and 3D laser scanning-02.jpg');">
                   <div class="research-overlay"></div>
                </a>
                <div class="research-description">
                   <a href="#" class="title-research">Laser profilers</a>
                   <p class="small-paragraph">
+
                     Combining laser profiling technology with embedded systems, this method provides high-resolution surface measurements for industrial quality control and inspection.
                   </p>
                   <button class="button-research w-button" onclick="openModal('myModal1')">Learn more</button>
@@ -102,13 +104,13 @@
                       <img src="../images/Lab/Embedded systems and 3D laser scanning-02.jpg" alt="Image">
                       <div class="tag-container">
                             <div class="tag">Design Inspiration</div>
-                            <div class="tag">Marketing</div>
+                            <div class="tag">solid surfaces</div>
                             <div class="tag">UX/UI Design</div>
                             <div class="tag">Content Marketing</div>
                         </div>
                     </div>
                     <div class="research-abstract">
-                      <p>Laser profilers, combined with embedded systems, deliver high-resolution surface measurements for quality control and inspection purposes. These devices use laser beams to scan surfaces and measure height, width, and surface roughness with great accuracy. Embedded systems analyze the scanned data in real time, enabling quick assessments of surface defects, dimensions, or irregularities. Industries like manufacturing, aerospace, and construction rely on these measurements to ensure product quality and structural integrity. The combination of laser profiling and embedded systems also allows for automation in quality control, reducing inspection times and improving the consistency of results. Whether it's measuring intricate machine parts or assessing large infrastructure projects, laser profilers offer precision, reliability, and efficiency in surface analysis, making them indispensable for modern manufacturing and inspection processes.
+                      <p>Laser profilers, combined with embedded systems, deliver high-resolution surface measurements for quality control and inspection purposes.<br> These devices use laser beams to scan surfaces and measure height, width, and surface roughness with great accuracy.<br> Embedded systems analyze the scanned data in real time, enabling quick assessments of surface defects, dimensions, or irregularities.<br> Industries like manufacturing, aerospace, and construction rely on these measurements to ensure product quality and structural integrity.<br> The combination of laser profiling and embedded systems also allows for automation in quality control, reducing inspection times and improving the consistency of results.<br> Whether it's measuring intricate machine parts or assessing large infrastructure projects, laser profilers offer precision, reliability, and efficiency in surface analysis, making them indispensable for modern manufacturing and inspection processes.
 
                         
                       </p>
@@ -124,7 +126,6 @@
                <div class="research-description">
                   <a href="#" class="title-research">Lidar scanners</a>
                   <p class="small-paragraph">
-                    Lidar scanners integrate with embedded systems for accurate 3D mapping and scanning, enhancing applications from autonomous vehicles to environmental monitoring.
                   </p>
                   <button class="button-research w-button" onclick="openModal('myModal2')">Learn more</button>
                 </div>
@@ -147,7 +148,7 @@
                     </div>
                     <div class="research-abstract">
                       <p>
-Lidar (Light Detection and Ranging) scanners, when integrated with embedded systems, create powerful 3D mapping tools. By emitting laser pulses and measuring the time it takes for them to return, these scanners can generate highly accurate 3D maps of their surroundings. This technology is crucial for autonomous vehicles, drones, and environmental monitoring systems, where accurate spatial awareness is essential. Embedded systems process the raw data from the Lidar scanners in real time, converting them into actionable information for navigation, mapping, or data analysis. The combination of Lidar and embedded systems offers precision and intelligence, enabling autonomous vehicles to detect obstacles and navigate safely, while also helping environmental monitoring systems track changes in landscapes and ecosystems. These capabilities make Lidar scanners a vital technology in the fields of automation, safety, and environmental management.
+Lidar (Light Detection and Ranging) scanners, when integrated with embedded systems, create powerful 3D mapping tools.<br> By emitting laser pulses and measuring the time it takes for them to return, these scanners can generate highly accurate 3D maps of their surroundings.<br> This technology is crucial for autonomous vehicles, drones, and environmental monitoring systems, where accurate spatial awareness is essential.<br> Embedded systems process the raw data from the Lidar scanners in real time, converting them into actionable information for navigation, mapping, or data analysis.<br> The combination of Lidar and embedded systems offers precision and intelligence, enabling autonomous vehicles to detect obstacles and navigate safely, while also helping environmental monitoring systems track changes in landscapes and ecosystems.<br> These capabilities make Lidar scanners a vital technology in the fields of automation, safety, and environmental management.
 
                       </p>
                     </div>
@@ -170,22 +171,41 @@ Lidar (Light Detection and Ranging) scanners, when integrated with embedded syst
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas.</p>
       <div class="sdg-list">
           <div class="sdg-item">
+            <h3 class="sdg-number">7</h3>
               <div class="sdg-icon">
+
                   <img src="../images/Icons/Software.png" alt="Affordable and Clean Energy">
               </div>
               <p>Affordable and Clean Energy</p>
           </div>
           <div class="sdg-item">
+             <h3 class="sdg-number">9</h3>
               <div class="sdg-icon">
                   <img src="../images/Icons/Software.png" alt="Industry, Innovation, and Infrastructure">
               </div>
               <p>Industry, Innovation, and Infrastructure</p>
           </div>
           <div class="sdg-item">
+             <h3 class="sdg-number">12</h3>
               <div class="sdg-icon">
                   <img src="../images/Icons/Software.png" alt="Sustainable Cities and Communities">
               </div>
               <p>Sustainable Cities and Communities</p>
+          </div>
+          <div class="sdg-item">
+             <h3 class="sdg-number">12</h3>
+              <div class="sdg-icon">
+                  <img src="../images/Icons/Software.png" alt="Sustainable Cities and Communities">
+              </div>
+              <p>Responsible Consumption and Production</p>
+          </div>
+
+          <div class="sdg-item">
+             <h3 class="sdg-number">13</h3>
+              <div class="sdg-icon">
+                  <img src="../images/Icons/Software.png" alt="Sustainable Cities and Communities">
+              </div>
+              <p>Climate Action</p>
           </div>
       </div>
 </div>
@@ -281,7 +301,7 @@ function filterKeywords(selectedElement) {
     const allKeywords = document.querySelectorAll('.keyword');
     const allResearchItems = document.querySelectorAll('.simple-research-post-item');
 
-    if (selectedElement.innerText === 'All') {
+    if (selectedElement.innerText.toUpperCase() === 'ALL') {
         // Show all research items and reset keyword colors
         allResearchItems.forEach(item => item.style.display = '');
         allKeywords.forEach(keyword => keyword.style.backgroundColor = 'var(--color_navy_blue)');
@@ -291,10 +311,10 @@ function filterKeywords(selectedElement) {
         const isActive = selectedElement.style.backgroundColor === 'var(--color_cyan)';
         selectedElement.style.backgroundColor = isActive ? 'var(--color_navy_blue)' : 'var(--color_cyan)';
 
-        // Collect all active keywords
+        // Collect all active keywords, converting them to lower case for case-insensitive comparison
         const activeKeywords = Array.from(allKeywords)
                                     .filter(keyword => keyword.style.backgroundColor === 'var(--color_cyan)')
-                                    .map(keyword => keyword.getAttribute('data-keyword'));
+                                    .map(keyword => keyword.getAttribute('data-keyword').toLowerCase());
 
         // Check if no keywords are active; if none, treat as if 'All' is selected
         if (activeKeywords.length === 0) {
@@ -303,7 +323,7 @@ function filterKeywords(selectedElement) {
         } else {
             // Display relevant research items based on selected keywords
             allResearchItems.forEach(item => {
-                const keywords = item.getAttribute('data-keywords').split(', ');
+                const keywords = item.getAttribute('data-keywords').split(', ').map(k => k.toLowerCase());
                 item.style.display = keywords.some(keyword => activeKeywords.includes(keyword)) ? '' : 'none';
             });
 
@@ -312,6 +332,7 @@ function filterKeywords(selectedElement) {
         }
     }
 }
+
 </script>
 
 </body>
