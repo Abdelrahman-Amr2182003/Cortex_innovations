@@ -4588,6 +4588,7 @@ input[type="radio"] {
 .blog-overlay-title.large {
   font-size: 27px;
   line-height: 29px;
+  text-transform: capitalize;
 }
 
 .blog-post-title-wrapper {
