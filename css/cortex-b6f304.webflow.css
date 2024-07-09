@@ -3181,8 +3181,12 @@ input[type="radio"] {
   margin-bottom: 20px;
   font-size: 21px;
   font-weight: 700;
+  color: var(--color-orange);
 }
-
+.feature-info-title a{
+  text-decoration: none;
+  color: var(--color-orange);
+}
 .feature-info-paragraph {
   opacity: .8;
   font-size: 16px;
@@ -4717,8 +4721,12 @@ input[type="radio"] {
   margin-left: 30px;
   max-width: 36vh;
   max-height: 85%;
+  overflow-y: auto;
 }
 
+.research-description-small::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+}
 
 .research-description-small .title-research{
 
@@ -4738,6 +4746,7 @@ input[type="radio"] {
   font-weight: 500;
   padding-top: 10px;
   text-align: justify;
+
 }
 
 
@@ -10462,12 +10471,18 @@ html.w-mod-js [data-ix="hide-lightbox"] {
     text-align: center;
     background-color: rgba(0, 0, 0, .1);
     border-radius: 4px;
-    margin-right: 20px;
+    margin-left: 10px;
     padding-top: 14px;
     padding-left: 0;
     padding-right: 0;
   }
+.navbar.scrolled .logo-block-copy{
+  font-size: 22px;
+}
+.navbar .logo-block-copy{
 
+  font-size: 22px;
+}
   .transparant-menu-button:hover {
     background-color: rgba(0, 0, 0, .3);
   }
@@ -17392,7 +17407,7 @@ html.w-mod-js [data-ix="hide-lightbox"] {
 
 .portfolio-details .portfolio-description p {
   padding: 0;
-  color: var(--color_cyan);
+  color: #b3b3b3;
   font-weight: 400;
   text-align: justify;
 }
@@ -17533,6 +17548,8 @@ font-size: 16px; /* Paragraph font size */
     margin-right: 5px;
     text-align: center;
     font-weight: 400;
+    text-transform: capitalize;
+
 }
 .content-wrapper {
     display: flex;
@@ -17563,6 +17580,11 @@ font-size: 16px; /* Paragraph font size */
     padding: 20px; /* Padding inside the SDG container */
     background-color: #fff; /* Background color for contrast */
     margin-top: 0;
+    overflow-y: scroll;
+    max-height: 60vh;
+}
+.sdg-container::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
 }
 
 .keyword-container {
@@ -17605,6 +17627,7 @@ font-size: 16px; /* Paragraph font size */
     padding: 5px 10px;
     white-space: nowrap; /* Prevent text wrapping */
     transition: background-color 0.3s; /* Smooth transition for color change */
+    text-transform: capitalize;
 }
 
 
@@ -17614,6 +17637,7 @@ font-size: 16px; /* Paragraph font size */
     font-size: 24px;
     color: #333;
     text-align: left;
+    
 }
 
 .sdg-container p {
@@ -17628,6 +17652,7 @@ font-size: 16px; /* Paragraph font size */
     flex-direction: column;
     align-items: center;
 }
+
 
 .sdg-item {
     display: flex;
