@@ -17509,6 +17509,7 @@ font-size: 16px; /* Paragraph font size */
   margin-bottom: 10px; /* Space below the header */
   font-weight: 700;
   color: #000;
+  text-transform: capitalize;
 }
 
 
@@ -17833,6 +17834,7 @@ font-size: 16px; /* Paragraph font size */
   font-size: 28px;
   font-weight: bold;
   color: #000;
+  text-transform: capitalize;
 }
 
 .modal-news-date {
