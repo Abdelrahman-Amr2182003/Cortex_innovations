@@ -741,6 +741,9 @@ input[type="radio"] {
   color: var(--color_navy_blue);
   font-size: 16px;
   font-weight: 500;
+  width: 17vw;
+    margin-right: auto;
+    margin-left: auto
 }
 
 /* Show the description corresponding to the checked item */
@@ -925,7 +928,7 @@ input[type="radio"] {
     color: #fff;
     letter-spacing: 1px;
     text-transform: uppercase;
-    margin-top: 20px;
+    
     padding-left: 25px;
     padding-right: 25px;
     font-size: 12px;
@@ -1562,8 +1565,8 @@ input[type="radio"] {
 }
 
 .image-section.ui-section {
-  background-color: var(--image_section_color);
-  background-image: url('../images/worldmap-2.png');
+    background:linear-gradient(0deg, var(--color_navy_overlay), var(--color_navy_overlay)), url('../images/home/feautred.jpg');
+
   background-size: 100% 100%;
   padding-top: 25px;
   padding-bottom: 25px;
@@ -4704,11 +4707,12 @@ input[type="radio"] {
 }
 
 .simple-research-image-block-small {
-  width: 20vh;
+  width: 25vh;
   height: 23vh;
   
   background-position: 50%;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   border-radius: 3px;
   margin-bottom: 20px;
   display: block;
@@ -4807,7 +4811,7 @@ input[type="radio"] {
   font-size: 15px;
   font-weight: 400;
   margin-left: 30px;
-  max-width: 40vh;
+  max-width: 25vw;
   padding-top: 5px; 
 
 }
@@ -4815,28 +4819,46 @@ input[type="radio"] {
 .research-description .title-research{
 
   color: var(--color_cyan);
-  font-size: 28px;
-  font-weight: 600;
+  font-size: 25px;
+  font-weight: 700;
   text-align: left;
   margin-bottom: 40px;
   text-decoration: none;
   text-transform: capitalize;
 }
+
 .research-description .small-paragraph{
 
   font-size: 16px;
   display: flex;
   flex-wrap: wrap;
   font-weight: 500;
-  padding-top: 5px;
+  padding-top: 10px;
   text-align: justify;
+  height: 18vh;
+  width: 21vw;
 }
+@media(max-width: 768px){
+  .research-description .small-paragraph{
+    height: auto;
+    margin-left: auto;
+        margin-right: auto;
+        width: 40vw;
+  }
+  .button-research{
+    width: 30vw;
 
+  }
+}
 .simple-blog-post-item.related, .image-blog-post-item {
   order: -1;
 }
 
-
+.lab-facilites-paragraph{
+  width: 54vw;
+  text-align: justify;
+  color: #fff;
+}
 
 .blog-post-page-content {
   width: 80%;
@@ -5334,6 +5356,23 @@ input[type="radio"] {
   align-items: center;
   margin: 0;
 
+}
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.logo-main {
+    font-size: 24px; /* Adjust the size as needed */
+    font-weight: bold; /* Make it bold */
+}
+
+.logo-sub {
+    font-size: 14px; /* Adjust the size as needed */
+    font-weight: normal; /* Less bold */
+    margin-top: -5px; /* Adjust the spacing as needed */
 }
 .logo-block-copy img{
 
@@ -14731,7 +14770,7 @@ html.w-mod-js [data-ix="hide-lightbox"] {
   }
 
   .image-section.ui-section {
-    background-image:  url('../images/worldmap-2.png');
+    background-image:  url('../images/home/feautred.jpg');
     background-position: 0 0, 50%;
     background-repeat: repeat, no-repeat;
     background-size: auto, cover;
@@ -17639,12 +17678,14 @@ font-size: 16px; /* Paragraph font size */
     font-size: 24px;
     color: #333;
     text-align: left;
-    
+    margin-bottom: 10px;
+    line-height: 1;
 }
 
 .sdg-container p {
     font-size: 16px;
     color: #666;
+    text-align: justify;
     
     
 }
@@ -17670,16 +17711,18 @@ font-size: 16px; /* Paragraph font size */
     margin-right: 10px;
 }
 .sdg-number {
-  font-size: 30px;
+  font-size: 20px;
   margin-right: 10px;
   margin-top: 0;
   margin-bottom: 0; 
-  width: 30px;
-  color: var(--color_orange);
+  width: 25px;
+  color: #000;
+  font-weight: 500;
+  font-family: century-gothic, sans-serif;
 }
 .sdg-item p {
     flex: 1;
-    font-size: 18px;
+    font-size: 15px;
     color: #444;
 
 }
@@ -18027,8 +18070,16 @@ font-size: 16px; /* Paragraph font size */
     margin-left: 10vw;
 
 }
+.lab-gallery-img{
+  height: 22vh;
+  width: 20vw;
+}
 @media(max-width: 767px) {
-
+ 
+   .lab-gallery-img{
+  height: 22vh;
+  width: 25vw;
+}
    .research-container {
     margin-top: 45vh;
     margin-left: 6vw;
@@ -18041,6 +18092,7 @@ font-size: 16px; /* Paragraph font size */
       margin-left: 5px;
       display: grid;
       align-items: center;
+      max-width: 50vw;
     }
       .button-services{
         margin-top: 0;
@@ -18289,3 +18341,31 @@ font-size: 16px; /* Paragraph font size */
 .owl-carousel .owl-item img {
   height: 22vh;
 }
+ @media (max-width: 768px) {
+    .image-section.ui-section {
+      text-align: center;
+    }
+    .image-section.ui-section .container.w-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .image-section.ui-section .info-block-left.ui {
+      width: 100%;
+      max-width: 600px;
+      text-align: center;
+    }
+    .image-section.ui-section .info-block-left.ui .section-title-wrapper.full.info {
+      display: flex;
+      justify-content: center;
+    }
+    .image-section.ui-section .info-block-left.ui .lab-facilites-paragraph {
+      text-align: center;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .image-section.ui-section .info-block-left.ui .button.w-button {
+      display: inline-block;
+    }
+
+  }

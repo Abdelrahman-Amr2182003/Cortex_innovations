@@ -8,6 +8,43 @@
   <meta content="About 4" property="twitter:title">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta content="Webflow" name="generator">
+<style>
+        /* Carousel styles */
+        .carousel {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
+        .carousel-inner {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        .carousel-item {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+        .carousel-item .subpage-header.research {
+            height: 120vh; /* Maintain the original height */
+            background-size: cover;
+            background-position: center;
+        }
+        /* Navigation buttons */
+        .carousel-control-prev, .carousel-control-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .carousel-control-prev {
+            left: 10px;
+        }
+        .carousel-control-next {
+            right: 10px;
+        }
+    </style>
   <link href="../css/normalize.css" rel="stylesheet" type="text/css">
   <link href="../css/webflow.css" rel="stylesheet" type="text/css">
   <link href="../css/cortex-b6f304.webflow.css" rel="stylesheet" type="text/css">
@@ -26,8 +63,13 @@
 <div data-collapse="medium" data-animation="default" data-duration="400" data-no-scroll="1" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
     <div class="navbar-container">
        
-        <a href="../index.html" aria-current="page" class="logo-block-copy w-nav-brand w--current "><div class="favicon-img"></div>CORTEX INNOVATIONS</a>
-
+<a href="../index.html" aria-current="page" class="logo-block-copy w-nav-brand w--current">
+            <div class="favicon-img"></div>
+            <div class="logo-text">
+                <div class="logo-main">CORTEX</div>
+                <div class="logo-sub">Innovations</div>
+            </div>
+        </a>
       <nav role="navigation" class="nav-menu w-nav-menu">
         <a href="../services/services.html" aria-current="page" class="nav-link light w-nav-link w--current">SERVICES</a>
 
@@ -77,11 +119,31 @@
     </div>
   </div>
 
-  <div class="subpage-header research" style="background-image: linear-gradient(var(--color_navy_overlay),var(--color_navy_overlay)), url('../images/Lab/Home Page.jpeg')">
-    <div class="container w-container">
-      <h1 data-ix="fade-in-on-load" class="subpage-title" ><strong>Cortex Lab</strong></h1>
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="subpage-header research" style="background-image: linear-gradient(var(--color_navy_overlay),var(--color_navy_overlay)), url('../images/Lab/Home Page.jpeg');height: 120vh;">
+                <div class="container w-container">
+                    <h1 data-ix="fade-in-on-load" class="subpage-title"><strong>Cortex Lab</strong></h1>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="subpage-header research" style="background-image: linear-gradient(var(--color_navy_overlay),var(--color_navy_overlay)), url('../images/Lab/Home Page.jpeg');height: 120vh;">
+                <div class="container w-container">
+                    <h1 data-ix="fade-in-on-load" class="subpage-title"><strong>Cortex Lab</strong></h1>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="subpage-header research" style="background-image: linear-gradient(var(--color_navy_overlay),var(--color_navy_overlay)), url('../images/Lab/Home Page.jpeg');height: 120vh;">
+                <div class="container w-container">
+                    <h1 data-ix="fade-in-on-load" class="subpage-title"><strong>Cortex Lab</strong></h1>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
+</div>
 
 
 
@@ -100,7 +162,7 @@
       <div class="gallery-image-block">
         <div class="gallery-overlay-block">
           <div class="gallery-overlay-icon">
-            <img src="../images/Photo-3_1.jpg" alt="Image 1" class="view-icon">
+            <img  class ="lab-gallery-img"src="../images/Lab/GALLERY 1.jpg" alt="Image 1" class="view-icon">
           </div>
         </div>
       </div>
@@ -109,7 +171,7 @@
       <div class="gallery-image-block">
         <div class="gallery-overlay-block">
           <div class="gallery-overlay-icon">
-            <img src="../images/Photo-3_1.jpg" alt="Image 2" class="view-icon">
+            <img class ="lab-gallery-img" src="../images/Lab/GALLERY 2.jpg" alt="Image 2" class="view-icon">
           </div>
         </div>
       </div>
@@ -119,7 +181,7 @@
       <div class="gallery-image-block">
         <div class="gallery-overlay-block">
           <div class="gallery-overlay-icon">
-            <img src="../images/Photo-3_1.jpg" alt="Image 2" class="view-icon">
+            <img class ="lab-gallery-img" src="../images/Lab/GALLERY 3.jpg" alt="Image 2" class="view-icon">
           </div>
         </div>
       </div>
@@ -129,7 +191,7 @@
       <div class="gallery-image-block">
         <div class="gallery-overlay-block">
           <div class="gallery-overlay-icon">
-            <img src="../images/Photo-3_1.jpg" alt="Image 2" class="view-icon">
+            <img class ="lab-gallery-img" src="../images/Lab/GALLERY 4.jpg" alt="Image 2" class="view-icon">
           </div>
         </div>
       </div>
@@ -139,7 +201,7 @@
       <div class="gallery-image-block">
         <div class="gallery-overlay-block">
           <div class="gallery-overlay-icon">
-            <img src="../images/Photo-3_1.jpg" alt="Image 2" class="view-icon">
+            <img class ="lab-gallery-img" src="../images/Lab/GALLERY 5.jpg" alt="Image 2" class="view-icon">
           </div>
         </div>
       </div>
@@ -149,7 +211,7 @@
       <div class="gallery-image-block">
         <div class="gallery-overlay-block">
           <div class="gallery-overlay-icon">
-            <img src="../images/Photo-3_1.jpg" alt="Image 2" class="view-icon">
+            <img class ="lab-gallery-img" src="../images/Lab/GALLERY 6.jpg" alt="Image 2" class="view-icon">
           </div>
         </div>
       </div>
@@ -173,10 +235,11 @@
     <div class="container w-container" >
       <div class="info-block-left ui">
         <div class="section-title-wrapper full info">
-          <h2 class="_800"><strong>Lab Facilities</strong>.</h2>
+          <h2 class="_800" style="margin-bottom: 10px;"><strong>Lab Facilities</strong>.</h2>
+
         </div>
-        
-        <a href="lab_facilities.html" class="button w-button" style="background-color: var(--color_cyan);">Check Our Lab</a>
+        <p class="lab-facilites-paragraph">Harnessing Advanced Technologies for Breakthrough Innovations - Equipped with a wide array of sophisticated tools, including thermal cameras, salinity meters, torque meters, and more, Cortex Innovations' lab is a hub for cutting-edge research and development. From detailed environmental monitoring to precision engineering and innovative software solutions, our state-of-the-art lab facilities empower us to lead in various scientific and technological frontiers, ensuring precision, efficiency, and groundbreaking advancements.</p>
+        <a href="lab_facilities.html" class="button w-button" style="background-color: var(--color_cyan); margin-top: 15px;">Check Our Lab</a>
       </div>
     </div>
   </div>
@@ -238,7 +301,28 @@ window.onclick = function(event) {
   }
 }
 </script>
+<script>
+    let currentIndex = 0;
+    const items = document.querySelectorAll('.carousel-item');
+    const totalItems = items.length;
 
+    function updateCarousel() {
+        const inner = document.querySelector('.carousel-inner');
+        inner.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % totalItems;
+        updateCarousel();
+    }
+
+    function prevSlide() {
+        currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+        updateCarousel();
+    }
+
+    setInterval(nextSlide, 3000); // Auto-slide every 3 seconds
+</script>
 
 
 
