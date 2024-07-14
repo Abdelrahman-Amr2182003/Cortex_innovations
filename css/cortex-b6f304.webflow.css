@@ -4761,6 +4761,9 @@ input[type="radio"] {
 
   width: 500px;
 }
+.description p {
+width: 50vw;
+  }
 
 }
 
@@ -14769,13 +14772,13 @@ html.w-mod-js [data-ix="hide-lightbox"] {
     padding-right: 20px;
   }
 
-  .image-section.ui-section {
-    background-image:  url('../images/home/feautred.jpg');
-    background-position: 0 0, 50%;
-    background-repeat: repeat, no-repeat;
-    background-size: auto, cover;
-    background-color: var(--image_section_color);
-  }
+ .image-section.ui-section {
+    background:linear-gradient(0deg, var(--color_navy_overlay), var(--color_navy_overlay)), url('../images/home/feautred.jpg');
+
+  background-size: 100% 100%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
 
   .image-section-overlay {
     padding-top: 45px;
