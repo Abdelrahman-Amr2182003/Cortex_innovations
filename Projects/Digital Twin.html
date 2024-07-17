@@ -47,12 +47,20 @@
 }
 
 .swiper-slide img {
-    max-width: 100%; /* Ensure the image width doesn't exceed the container width */
-    max-height: 100%; /* Ensure the image height doesn't exceed the container height */
+    width: 100%; /* Ensure the image width doesn't exceed the container width */
+    height: 100%; /* Ensure the image height doesn't exceed the container height */
     object-fit: contain; /* Keep the image within the container without cropping */
 }
 
+.swiper-button-next,
+    .swiper-button-prev {
+      color: #000; /* Change to your preferred color */
+    }
 
+    .swiper-button-next:hover,
+    .swiper-button-prev:hover {
+      color: var(--color_cyan); /* Change to a darker shade or your preferred hover color */
+    }
     </style>
 
 </head>
@@ -125,6 +133,8 @@
 
             </div>
             <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
           </div>
           
         </div>
@@ -147,17 +157,13 @@
         <div class="portfolio-description">
           <h2>Project Brief</h2>
             <p>
-The modular architecture of our digital twin platform is designed around the FMI standard, allowing for the seamless integration of various data types and simulation models. This architecture supports the collaborative development of digital twins, utilizing expert knowledge from fields such as photogrammetry, LIDAR data analysis, and physics-based modeling. At Cortex Innovations, we are at the forefront of City Twin Modeling, utilizing state-of-the-art strategies that exploit the extensive potential of big data and the Internet of Things (IoT). Our models generate precise virtual replicas of urban environments, acting as dynamic tools for urban planning and infrastructure management.<br><br>
-
-By integrating real-time data collection with advanced predictive analytics, our city twins deliver actionable insights that can significantly enhance traffic management, energy distribution, and emergency response strategies. This proactive approach to urban management empowers cities to anticipate and address potential challenges, paving the way for more effective and sustainable solutions.<br><br>
-
+The modular architecture of our digital twin platform is designed around the FMI standard, allowing for the seamless integration of various data types and simulation models. This architecture supports the collaborative development of digital twins, utilizing expert knowledge from fields such as photogrammetry, LIDAR data analysis, and physics-based modeling. At Cortex Innovations, we are at the forefront of City Twin Modeling, utilizing state-of-the-art strategies that exploit the extensive potential of big data and the Internet of Things (IoT). Our models generate precise virtual replicas of urban environments, acting as dynamic tools for urban planning and infrastructure management.
+By integrating real-time data collection with advanced predictive analytics, our city twins deliver actionable insights that can significantly enhance traffic management, energy distribution, and emergency response strategies. This proactive approach to urban management empowers cities to anticipate and address potential challenges, paving the way for more effective and sustainable solutions.
 Our platform is comprehensive, designed to facilitate the exploration of architectural details and environmental impacts through a detailed and immersive virtual environment. The high photorealistic quality of the virtual environments ensures seamless integration with existing planning tools, enhancing both the visualization and the decision-making processes in urban development.<br><br>
 
-Beyond its applications in manufacturing and product development, our digital twin technology is crucial for strategic decision-making, operational optimization, and comprehensive planning across various sectors. In a controlled virtual setting, our platform allows for the replication of real-world scenarios, enabling extensive testing and scenario planning. <br><br>
-
-Featuring an adaptable, human-centric population model, our technology allows for the simulation of diverse scenarios by adjusting agent behaviors. This capability is crucial for addressing key aspects of urban planning such as sustainability reporting, disaster response simulations, evacuation planning, and transportation logistics. By merging a dynamic population model with detailed urban infrastructure data, our platform offers AI-driven decision-making tools that assist urban planners and operators in optimizing transportation planning, thus enhancing both customer satisfaction and operational efficiency. This integration of technology and urban infrastructure is pivotal in transforming how cities are planned, built, and managed.<br><br>
-
-It is a comprehensive city-scale digital twin platform that aims to provide a dynamic platform for studying architectural features, understanding environmental impacts, and experiencing the mosques in a virtual environment that accurately mirrors the physical world with seamless integration with existing planning tools in a photorealistic environment. Beyond manufacturing and product development, our digital twins are indispensable for strategic decision-making, optimizing operations, and planning across various sectors. They replicate real-world scenarios in a virtual environment, allowing for diverse testing strategies. With an adjustable human-centric population model, we simulate various scenarios by modifying agent behavior. Our solution addresses critical aspects of urban planning, including sustainability reporting, disaster simulations, evacuation planning, and transportation logistics. By integrating a dynamic population model with urban infrastructure, we offer AI-driven decision-making tools for planners and operators, optimizing transport planning to enhance customer satisfaction.<br><br>
+Beyond its applications in manufacturing and product development, our digital twin technology is crucial for strategic decision-making, operational optimization, and comprehensive planning across various sectors. In a controlled virtual setting, our platform allows for the replication of real-world scenarios, enabling extensive testing and scenario planning.
+Featuring an adaptable, human-centric population model, our technology allows for the simulation of diverse scenarios by adjusting agent behaviors. This capability is crucial for addressing key aspects of urban planning such as sustainability reporting, disaster response simulations, evacuation planning, and transportation logistics. By merging a dynamic population model with detailed urban infrastructure data, our platform offers AI-driven decision-making tools that assist urban planners and operators in optimizing transportation planning, thus enhancing both customer satisfaction and operational efficiency. This integration of technology and urban infrastructure is pivotal in transforming how cities are planned, built, and managed.
+It is a comprehensive city-scale digital twin platform that aims to provide a dynamic platform for studying architectural features, understanding environmental impacts, and experiencing the mosques in a virtual environment that accurately mirrors the physical world with seamless integration with existing planning tools in a photorealistic environment. Beyond manufacturing and product development, our digital twins are indispensable for strategic decision-making, optimizing operations, and planning across various sectors. They replicate real-world scenarios in a virtual environment, allowing for diverse testing strategies. With an adjustable human-centric population model, we simulate various scenarios by modifying agent behavior. Our solution addresses critical aspects of urban planning, including sustainability reporting, disaster simulations, evacuation planning, and transportation logistics. By integrating a dynamic population model with urban infrastructure, we offer AI-driven decision-making tools for planners and operators, optimizing transport planning to enhance customer satisfaction.
 
             </p>
           </div>
@@ -208,5 +214,18 @@ It is a comprehensive city-scale digital twin platform that aims to provide a dy
   <script src="vendor/waypoints/noframework.waypoints.js"></script>
   <script src="vendor/php-email-form/validate.js"></script>
   <script src="js/main _details.js"></script>
+   <script>
+    var swiper = new Swiper('.swiper', {
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
 </body>
 </html>

@@ -36,7 +36,7 @@
   <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
     <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
     <style type="text/css">
-       .swiper-slide {
+   .swiper-slide {
     width: 80vh; /* Desired width */
     height: 80vh; /* Set height explicitly */
     display: flex; /* Flexbox for centering */
@@ -47,11 +47,22 @@
 }
 
 .swiper-slide img {
-    max-width: 100%; /* Ensure the image width doesn't exceed the container width */
-    max-height: 100%; /* Ensure the image height doesn't exceed the container height */
+    width: 100%; /* Ensure the image width doesn't exceed the container width */
+    height: 100%; /* Ensure the image height doesn't exceed the container height */
     object-fit: contain; /* Keep the image within the container without cropping */
 }
+.swiper-button-next,
+    .swiper-button-prev {
+      color: #000; /* Change to your preferred color */
+      max-width: 15px;
+      max-height: 15px;
+      padding: 0;
+    }
 
+    .swiper-button-next:hover,
+    .swiper-button-prev:hover {
+      color: var(--color_cyan); /* Change to a darker shade or your preferred hover color */
+    }
 
     </style>
 
@@ -112,7 +123,7 @@
             <div class="swiper-wrapper align-items-center">
 
               <div class="swiper-slide">
-                <img src="../images/Projects/radicool3.jpg" alt="">
+                <img src="../images/Projects/RADICOOL 1.jpg" alt="">
               </div>
 
               <div class="swiper-slide">
@@ -120,11 +131,13 @@
               </div>
 
               <div class="swiper-slide">
-                <img src="../images/Projects/radicool1.jpg" alt="">
+                <img src="../images/Projects/RADICOOL 3.jpg" alt="">
               </div>
 
             </div>
             <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
           </div>
           
         </div>
@@ -132,9 +145,9 @@
           <div class="portfolio-info">
             <h3>Project information</h3>
             <ul>
-              <li><strong>Category:</strong> Web design</li>
-              <li><strong>Client:</strong> ASU Company</li>
-              <li><strong>Project date:</strong> 01 March, 2020</li>
+              <li><strong>Category:</strong>Passive Cooling System</li>
+              <li><strong>Client:</strong>----</li>
+              <li><strong>Project date:</strong> 01 FEB, 2024</li>
             </ul>
           </div>
           
@@ -147,17 +160,9 @@
         <div class="portfolio-description">
           <h2>Project Brief</h2>
             <p>
-             
-The Advanced Cable Routing System is a sophisticated optimization tool designed to leverage raster maps for the segmentation of areas into weighted cells, taking into account a variety of environmental and infrastructural elements including land cover, topography, and the presence of roads, rivers, and pipelines. This comprehensive software suite integrates essential Geographic Information System (GIS) functionalities, allowing for the display of results on an interactive map. This feature facilitates the implementation of optimization algorithms directly within the user interface.<br><br>
+        RADICOOL is an ambitious project developed by our team at CORTEX, dedicated to advancing radiative cooling technology. Our strategic approach addresses the consequences of thermal inefficiency rather than its root causes, presenting impactful solutions. Radiative cooling, a groundbreaking technology, forms the cornerstone of our initiative. By leveraging "The Atmospheric Window," we aim to dissipate heat effectively, providing a sustainable cooling solution. Radiative cooling capitalizes on the atmospheric window—specific wavelengths within the electromagnetic spectrum where the Earth's atmosphere is transparent. Materials engineered for radiative cooling emit infrared radiation at these wavelengths, allowing heat energy to escape into space. This natural process cools surfaces and objects without consuming additional energy, presenting an innovative and eco-friendly cooling method.<br><br>
 
-By employing a detailed mesh division strategy, each segment of the mesh is assigned a specific value reflective of the environmental characteristics it represents, which aids in the calculation of path costs and the generation of a preliminary network layout.<br><br>
-
-Functionalities of this tool includes: data management capabilities, permitting the import, storage, and modification of datasets directly within the software interface. It features advanced data visualization tools and map handling capabilities, enhancing user interaction through a dynamic interface that supports the simultaneous management of multiple datasets. The interface includes an animated toolbar, real-time graph resizing, and intuitive map navigation tools such as re-centering, zooming, and toggling between various data layers.<br><br>
-
-The system also incorporates extensive functionality for adding and managing environmental, economic, and operational constraints. Automated weight assignment, informed by satellite imagery, is another key feature that enhances the precision of routing decisions. Additionally, the software is equipped to handle constraints related to electrical infrastructure, integrating seamlessly with design and simulation tools to offer a holistic solution for infrastructure planning.<br><br>
-
-The development team is committed to continual improvement and customization of the software to meet diverse project requirements. This includes the creation of an Application Programming Interface (API) to facilitate seamless integration with external platforms and services, allowing for enhanced visualization and analysis of network topologies. The planned API will enable the tool to interact more effectively with other systems, providing a unified view of optimal solutions and facilitating comprehensive energy masterplan activities.<br><br>
-In terms of user interface design, efforts are focused on refining the core algorithm to improve performance and adaptability, and enhancing the graphical user interface (GUI) to better align with user needs across different projects. The team is also developing specialized dashboards that streamline the presentation and analysis of data, ensuring that stakeholders can access and interpret critical information efficiently. This commitment to software excellence demonstrates the team's capability in delivering a robust, user-centered tool for routing optimization that significantly enhances infrastructure development processes.<br><br>
+Our strategic approach harnesses the complexities of radiative cooling, transforming challenges into opportunities for innovation, environmental stewardship, and market leadership. We have identified several critical focus areas to achieve our objectives: addressing global warming and urban heat island effects by providing a passive cooling solution that reduces the reliance on conventional energy-intensive cooling systems; mitigating thermal losses by designing materials and systems that efficiently emit heat, ensuring maximum cooling performance and energy savings; and developing durable materials and products that maintain their cooling efficiency over an extended period, ensuring long-term viability and cost-effectiveness. RADICOOL aims to lead the market in radiative cooling technology by developing and commercializing advanced materials that maximize radiative cooling efficiency, implementing solutions that contribute to significant energy savings and reduced carbon footprints, and promoting environmental responsibility through innovative cooling technologies that align with global sustainability goals. By focusing on the consequences of thermal inefficiency, RADICOOL presents a forward-thinking solution to global cooling needs. Our project leverages the unique properties of radiative cooling, turning environmental challenges into opportunities for innovation and leadership. Through strategic planning and dedicated research, RADICOOL aims to set new standards in sustainable cooling technology.
 
             </p>
           </div>
@@ -208,5 +213,18 @@ In terms of user interface design, efforts are focused on refining the core algo
   <script src="vendor/waypoints/noframework.waypoints.js"></script>
   <script src="vendor/php-email-form/validate.js"></script>
   <script src="js/main _details.js"></script>
+   <script>
+    var swiper = new Swiper('.swiper', {
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
 </body>
 </html>

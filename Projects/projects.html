@@ -29,6 +29,7 @@
   <link href="../css/normalize.css" rel="stylesheet" type="text/css">
   <link href="../css/webflow.css" rel="stylesheet" type="text/css">
   <link href="../css/cortex-b6f304.webflow.css" rel="stylesheet" type="text/css">
+ 
 </head>
 <body>
   <div data-collapse="medium" data-animation="default" data-duration="400" data-no-scroll="1" data-easing="ease" data-easing2="ease" role="banner" class="navbar white w-nav">
@@ -94,9 +95,9 @@
         <div class="col-lg-4 col-md-6 col-sm-6 mix Software Optimization">
           <a href="Cable Routing.html">
           <div class="portfolio__item">
-            <div class="portfolio__item__video set-bg" data-setbg="../images/Lab/Freezing desalination-02.jpg"></div>
+            <div class="portfolio__item__video set-bg" data-setbg="../images/Projects/CABLE 1.jpg"></div>
             <div class="portfolio__item__text">
-              <h4>Cable Routing</h4>
+              <h4>Cable Routing Optimization</h4>
               
             </div>
           </div>
@@ -124,7 +125,7 @@
 
           <a href="RadiCool.html">
           <div class="portfolio__item">
-            <div class="portfolio__item__video set-bg" data-setbg="../images/Projects/radicool3.jpg"></div>
+            <div class="portfolio__item__video set-bg" data-setbg="../images/Projects/RADICOOL 3.jpg"></div>
             <div class="portfolio__item__text">
               <h4>Radi Cool</h4>
               
@@ -139,7 +140,7 @@
 
           <a href="DrillingDataAnalysis.html">
           <div class="portfolio__item">
-            <div class="portfolio__item__video set-bg" data-setbg="../images/Projects/Twin Modeling.jpeg"></div>
+            <div class="portfolio__item__video set-bg" data-setbg="../images/Projects/modus 1.jpg"></div>
             <div class="portfolio__item__text">
               <h4>Drilling Data analysis</h4>
               
@@ -153,9 +154,9 @@
         <div class="col-lg-4 col-md-6 col-sm-6 mix Sustainability">
           <a href="Sub Zero.html">
           <div class="portfolio__item">
-            <div class="portfolio__item__video set-bg" data-setbg="../images/Projects/subzero 1.jpg"></div>
+            <div class="portfolio__item__video set-bg" data-setbg="../images/Projects/Subzero 3.jpg"></div>
             <div class="portfolio__item__text">
-              <h4>Sub Zero</h4>
+              <h4>SubZero</h4>
               
             </div>
           </div>
@@ -234,6 +235,29 @@
         }
       });
     });
+  </script>
+  <script type="text/javascript">
+    
+    document.addEventListener("DOMContentLoaded", function() {
+      document.querySelectorAll(".set-bg").forEach(function(element) {
+        var bg = element.getAttribute("data-setbg");
+        if (bg) {
+          element.style.backgroundImage = "linear-gradient(45deg, rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url('" + bg + "')";
+        }
+
+        // Add hover event listeners
+        element.addEventListener("mouseenter", function() {
+          element.style.backgroundImage = "url('" + bg + "')";
+        });
+
+        element.addEventListener("mouseleave", function() {
+          element.style.backgroundImage = "linear-gradient(45deg, rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url('" + bg + "')";
+        });
+      });
+    });
+
+
+
   </script>
 </body>
 </html>

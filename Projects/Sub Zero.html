@@ -36,7 +36,7 @@
   <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
     <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
     <style type="text/css">
-       .swiper-slide {
+   .swiper-slide {
     width: 80vh; /* Desired width */
     height: 80vh; /* Set height explicitly */
     display: flex; /* Flexbox for centering */
@@ -47,11 +47,19 @@
 }
 
 .swiper-slide img {
-    max-width: 100%; /* Ensure the image width doesn't exceed the container width */
-    max-height: 100%; /* Ensure the image height doesn't exceed the container height */
+    width: 100%; /* Ensure the image width doesn't exceed the container width */
+    height: 100%; /* Ensure the image height doesn't exceed the container height */
     object-fit: contain; /* Keep the image within the container without cropping */
 }
+.swiper-button-next,
+    .swiper-button-prev {
+      color: #000; /* Change to your preferred color */
+    }
 
+    .swiper-button-next:hover,
+    .swiper-button-prev:hover {
+      color: var(--color_cyan); /* Change to a darker shade or your preferred hover color */
+    }
 
     </style>
 
@@ -111,19 +119,24 @@
             <div class="swiper-wrapper align-items-center">
 
               <div class="swiper-slide">
+                <img src="../images/Projects/Subzero 3.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
                 <img src="../images/Projects/Subzero 1.jpg" alt="">
               </div>
 
-              <div class="swiper-slide">
-                <img src="../images/Projects/Subzero 3.jpg" alt="">
-              </div>
+              
 
               <div class="swiper-slide">
                 <img src="../images/Projects/sub zero 2.jpg" alt="">
               </div>
 
             </div>
+             <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
+            <!-- Add Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
           </div>
           
         </div>
@@ -131,9 +144,9 @@
           <div class="portfolio-info">
             <h3>Project information</h3>
             <ul>
-              <li><strong>Category:</strong> Web design</li>
-              <li><strong>Client:</strong> ASU Company</li>
-              <li><strong>Project date:</strong> 01 March, 2020</li>
+              <li><strong>Category:</strong>Desalination</li>
+              <li><strong>Client:</strong>----</li>
+              <li><strong>Project date:</strong> 01 JAN, 2022</li>
             </ul>
           </div>
           
@@ -146,7 +159,7 @@
         <div class="portfolio-description">
           <h2>Project Brief</h2>
             <p>
-Our cutting-edge desalination technology is revolutionizing freshwater accessibility through an innovative freezing method, distinguishing our approach from conventional heat or pressure-dependent techniques.<br><br> This novel method not only consumes less energy but also extends the system's lifespan due to reduced operational temperatures, thereby minimizing maintenance requirements, and negating the need for consumables.<br><br> A notable feature of our technology is its seamless integration with existing air conditioning or refrigeration systems, enabling simultaneous cooling and freshwater production, thereby enhancing efficiency.<br><br> Tailored specifically for agricultural applications, particularly in greenhouses within hot climates, our system ensures the provision of water that not only meets specific quality standards critical for the health of crops and plants but also maintains optimal temperature conditions.<br><br> Our commitment to sustainable agriculture is underscored by stringent monitoring of water quality to prevent contamination by ions, trace elements, and organics harmful to sensitive crops.<br><br> Adhering to the 2023 UN Food and Agriculture Organization's guidelines, we maintain sodium, chloride, and boron concentrations in irrigation water below 69 mg/L, 85 mg/L, and 3 mg/L, respectively, to guarantee safe cultivation.<br><br> Moreover, our approach includes comprehensive physicochemical and bacteriological assessments of the produced water and saline streams, ensuring that post-treatment processes are meticulously chosen to meet specific water quality standards.<br><br> This ensures that our desalination process can be finely tuned to match the unique characteristics of impaired feed waters, producing clean water that meets predetermined criteria.<br><br> Based on these advancements, our technology not only meets the critical need for sustainable water sources but also positions us as leaders in the field, poised to capitalize on first-mover advantages in the market.
+Our cutting-edge desalination technology is revolutionizing freshwater accessibility through an innovative freezing method, distinguishing our approach from conventional heat or pressure-dependent techniques. This novel method not only consumes less energy but also extends the system's lifespan due to reduced operational temperatures, thereby minimizing maintenance requirements, and negating the need for consumables. A notable feature of our technology is its seamless integration with existing air conditioning or refrigeration systems, enabling simultaneous cooling and freshwater production, thereby enhancing efficiency. Tailored specifically for agricultural applications, particularly in greenhouses within hot climates, our system ensures the provision of water that not only meets specific quality standards critical for the health of crops and plants but also maintains optimal temperature conditions.<br><br> Our commitment to sustainable agriculture is underscored by stringent monitoring of water quality to prevent contamination by ions, trace elements, and organics harmful to sensitive crops. Adhering to the 2023 UN Food and Agriculture Organization's guidelines, we maintain sodium, chloride, and boron concentrations in irrigation water below 69 mg/L, 85 mg/L, and 3 mg/L, respectively, to guarantee safe cultivation. Moreover, our approach includes comprehensive physicochemical and bacteriological assessments of the produced water and saline streams, ensuring that post-treatment processes are meticulously chosen to meet specific water quality standards. This ensures that our desalination process can be finely tuned to match the unique characteristics of impaired feed waters, producing clean water that meets predetermined criteria. Based on these advancements, our technology not only meets the critical need for sustainable water sources but also positions us as leaders in the field, poised to capitalize on first-mover advantages in the market.
 
             </p>
           </div>
@@ -197,5 +210,18 @@ Our cutting-edge desalination technology is revolutionizing freshwater accessibi
   <script src="vendor/waypoints/noframework.waypoints.js"></script>
   <script src="vendor/php-email-form/validate.js"></script>
   <script src="js/main _details.js"></script>
+   <script>
+    var swiper = new Swiper('.swiper', {
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
 </body>
 </html>

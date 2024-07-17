@@ -47,11 +47,19 @@
 }
 
 .swiper-slide img {
-    max-width: 100%; /* Ensure the image width doesn't exceed the container width */
-    max-height: 100%; /* Ensure the image height doesn't exceed the container height */
+    width: 100%; /* Ensure the image width doesn't exceed the container width */
+    height: 100%; /* Ensure the image height doesn't exceed the container height */
     object-fit: contain; /* Keep the image within the container without cropping */
 }
+.swiper-button-next,
+    .swiper-button-prev {
+      color: #000; /* Change to your preferred color */
+    }
 
+    .swiper-button-next:hover,
+    .swiper-button-prev:hover {
+      color: var(--color_cyan); /* Change to a darker shade or your preferred hover color */
+    }
 
     </style>
 
@@ -112,19 +120,21 @@
             <div class="swiper-wrapper align-items-center">
 
               <div class="swiper-slide">
-                <img src="../images/Lab/Freezing desalination-02.jpg" alt="">
+                <img src="../images/Projects/modus 1.jpg" alt="">
               </div>
 
               <div class="swiper-slide">
-                <img src="../images/Lab/Freezing desalination-03.jpg" alt="">
+                <img src="../images/Projects/modus 2.jpg" alt="">
               </div>
 
               <div class="swiper-slide">
-                <img src="../images/Lab/Freezing desalination-04.jpg" alt="">
+                <img src="../images/Projects/modus 3.jpg" alt="">
               </div>
 
             </div>
             <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
           </div>
           
         </div>
@@ -148,16 +158,9 @@
           <h2>Project Brief</h2>
             <p>
              
-The Advanced Cable Routing System is a sophisticated optimization tool designed to leverage raster maps for the segmentation of areas into weighted cells, taking into account a variety of environmental and infrastructural elements including land cover, topography, and the presence of roads, rivers, and pipelines. This comprehensive software suite integrates essential Geographic Information System (GIS) functionalities, allowing for the display of results on an interactive map. This feature facilitates the implementation of optimization algorithms directly within the user interface.<br><br>
+In the dynamic field of drilling operations, effective data management and insightful analysis are crucial for optimizing performance and ensuring safety. Our latest project leverages cutting-edge technology to provide comprehensive data analysis and visualization solutions tailored for drilling data. This innovative program not only stores drilling data in a structured database but also integrates advanced analytical capabilities through a Large Language Model (LLM). The core of our project lies in its robust database system designed to efficiently store daily drilling reports and other related data. This ensures that historical data is readily accessible for future analyses, significantly reducing the time required to add and retrieve data. The seamless integration of new data sets into the existing database infrastructure enables continuous and scalable data management. One of the standout features of our program is its incorporation of a Large Language Model (LLM). This LLM facilitates natural language interaction with the system, allowing users to input queries and commands in plain language. Whether a user wants to generate specific plots, apply data filters, or clean the dataset, the LLM interprets the input and executes the appropriate actions. This user-friendly interface bridges the gap between complex data analysis tasks and users who may not have specialized technical expertise.
 
-By employing a detailed mesh division strategy, each segment of the mesh is assigned a specific value reflective of the environmental characteristics it represents, which aids in the calculation of path costs and the generation of a preliminary network layout.<br><br>
-
-Functionalities of this tool includes: data management capabilities, permitting the import, storage, and modification of datasets directly within the software interface. It features advanced data visualization tools and map handling capabilities, enhancing user interaction through a dynamic interface that supports the simultaneous management of multiple datasets. The interface includes an animated toolbar, real-time graph resizing, and intuitive map navigation tools such as re-centering, zooming, and toggling between various data layers.<br><br>
-
-The system also incorporates extensive functionality for adding and managing environmental, economic, and operational constraints. Automated weight assignment, informed by satellite imagery, is another key feature that enhances the precision of routing decisions. Additionally, the software is equipped to handle constraints related to electrical infrastructure, integrating seamlessly with design and simulation tools to offer a holistic solution for infrastructure planning.<br><br>
-
-The development team is committed to continual improvement and customization of the software to meet diverse project requirements. This includes the creation of an Application Programming Interface (API) to facilitate seamless integration with external platforms and services, allowing for enhanced visualization and analysis of network topologies. The planned API will enable the tool to interact more effectively with other systems, providing a unified view of optimal solutions and facilitating comprehensive energy masterplan activities.<br><br>
-In terms of user interface design, efforts are focused on refining the core algorithm to improve performance and adaptability, and enhancing the graphical user interface (GUI) to better align with user needs across different projects. The team is also developing specialized dashboards that streamline the presentation and analysis of data, ensuring that stakeholders can access and interpret critical information efficiently. This commitment to software excellence demonstrates the team's capability in delivering a robust, user-centered tool for routing optimization that significantly enhances infrastructure development processes.<br><br>
+The program is equipped with a suite of tools for comprehensive data analysis and visualization. It supports the creation of various types of charts, including line, scatter, bar, pie, and nested pie charts, among others. These visualizations help in identifying trends, anomalies, and patterns within the drilling data, providing valuable insights for decision-making. The system's capabilities extend to automated reporting and data cleaning. Users can generate comprehensive reports summarizing key metrics and findings, tailored to their specific needs. The program also includes sophisticated data cleaning functions to ensure the integrity and accuracy of the data, eliminating inconsistencies and preparing the data for further analysis. This project represents a significant advancement in the field of drilling data analysis and visualization. By combining a robust database infrastructure with natural language processing and advanced analytical tools, our program empowers users to make data-driven decisions with ease. The integration of LLM for user interaction ensures that even complex data tasks can be performed effortlessly, making this tool an invaluable asset for drilling operations and beyond.
 
             </p>
           </div>
@@ -208,5 +211,18 @@ In terms of user interface design, efforts are focused on refining the core algo
   <script src="vendor/waypoints/noframework.waypoints.js"></script>
   <script src="vendor/php-email-form/validate.js"></script>
   <script src="js/main _details.js"></script>
+   <script>
+    var swiper = new Swiper('.swiper', {
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
 </body>
 </html>
