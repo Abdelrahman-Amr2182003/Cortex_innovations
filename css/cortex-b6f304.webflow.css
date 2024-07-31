@@ -12701,28 +12701,7 @@ html.w-mod-js [data-ix="hide-lightbox"] {
     padding-right: 0;
   }
 
-  .home-mockup {
-        height: 290px;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-        top: -58px;
-        right: -350px;
-    }
 
-  .home-mockup.ipad {
-    width: auto;
-    height: 210px;
-    top: 59px;
-    right: -200px;
-  }
-
-  .home-mockup.iphone {
-    width: auto;
-    height: 170px;
-    top: 102px;
-    right: -220px;
-  }
 
   .simple-white-footer {
     text-align: center;
@@ -15245,9 +15224,15 @@ html.w-mod-js [data-ix="hide-lightbox"] {
     margin-bottom: 20px;
   }
 
-  .home-mockup {
-    height: 160px;
-  }
+    .home-mockup {
+        height: 290px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        top: -8vh;
+        right: -350px;
+    }
+
 
   .home-mockup.ipad {
     height: 120px;
@@ -15556,7 +15541,7 @@ html.w-mod-js [data-ix="hide-lightbox"] {
   }
 
   .home-mockup-column {
-    height: 180px;
+    height: 16vh;
   }
 
   .pricing-column-right {
@@ -17740,10 +17725,20 @@ font-size: 16px; /* Paragraph font size */
 
 
 @media(max-width: 767px){
+  .sdg-icon img{
+    width: 40px;
+  }
 
 .modal {
-        padding-top: 10px; /* Less padding on top for mobile */
-        top: 10vh;
+        padding-top: 60px; /* Less padding on top for mobile */
+        position: fixed;
+        z-index: 999;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.4);
     }
 
     .modal-content {
@@ -17751,15 +17746,21 @@ font-size: 16px; /* Paragraph font size */
         padding: 15px; /* Less padding to save space */
         margin: 10% auto; /* Larger margin on top and bottom for mobile */
         max-height: 90vh; /* Slightly taller on mobile if needed */
-        overflow-y: auto; /* Allow scrolling within the modal if needed */
         display: flex;
         flex-direction: column;
     }
+    .research-abstract {
+      overflow-y: clip;
+      background-color: #fff;
+      padding:5px;
 
+    }
     .research-abstract, .research-thumbnail {
         width: 100%; /* Full width for better mobile readability */
     }
-
+    .research-thumbnail{
+      margin-bottom: 0;
+    }
     .research-abstract p {
         font-size: 14px; /* Smaller font for mobile */
         padding-right: 15px;
@@ -18351,6 +18352,13 @@ font-size: 16px; /* Paragraph font size */
   height: 30vh;
 }
  @media (max-width: 768px) {
+      .home-mockup {
+        height: 20vh;
+    }
+  .section-description-lab-home {
+
+    margin-top: -15vh;
+  }
     .image-section.ui-section {
       text-align: center;
     }
