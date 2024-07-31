@@ -1570,6 +1570,8 @@ input[type="radio"] {
   padding-top: 25px;
   padding-bottom: 25px;
   background-position: top;
+  background-repeat:no-repeat;
+  background-size: cover;
 }
 
 .image-section-overlay {
@@ -14661,7 +14663,7 @@ html.w-mod-js [data-ix="hide-lightbox"] {
 
 .research-description .small-paragraph{
   font-size: 12px;
-  width: 20vh;
+  width: 60vw;
     margin-left: auto;
         margin-right: auto;
 }
@@ -17961,7 +17963,7 @@ font-size: 16px; /* Paragraph font size */
     font-weight: bold;
 }
 .container.owl-2-style {
-    max-width: 1164px;
+    max-width: 70vw;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -18102,7 +18104,7 @@ font-size: 16px; /* Paragraph font size */
       margin-left: 5px;
       display: grid;
       align-items: center;
-      max-width: 50vw;
+      max-width: 60vw;
     }
       .button-services{
         margin-top: 0;
@@ -18351,7 +18353,106 @@ font-size: 16px; /* Paragraph font size */
 .owl-carousel .owl-item img {
   height: 30vh;
 }
+.container.lab-home-container{
+  display: flex;
+  flex-direction: row;
+  width: 70vw;
+  height: 50vh;
+  left: -5vw;
+  margin-left: 0;
+  position: relative;
+  margin-left: auto;
+    margin-right: auto;
+
+
+}
+.lab-home-description-container{
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  height: 30vh;
+}
+
+.lab-home-image {
+    width: 32vw;
+    margin-right: 40px; /* Space between image and description */
+}
+
+.lab-home-description {
+        text-align: left;
+    margin-bottom: 10px;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 27px;
+    color: #000;
+    text-align: justify;
+}
+
+.lab-home-title {
+  margin-top: 0;
+    padding-top: 0;
+    font-size: 46px;
+    font-weight: 300;
+    line-height: 45px;
+    margin-bottom: 20px;
+}
+.lab-home-button{
+  margin-left: 0;
+ width: 8vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  @media (max-width: 768px) {
+
+    .container.lab-home-container{
+      display: flex;
+      flex-direction: column;
+      width: 90vw;
+      left: 0;
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 10px;
+      height: auto;
+
+    }
+    .lab-home-description-container{
+      
+      width: 90vw;
+      height:auto;
+    }
+    .lab-home-image {
+    width: 90vw;
+    margin-right: auto; 
+    margin-left: auto;
+}
+.lab-home-button{
+  margin-left: auto;
+  margin-right: auto;
+ width: 40vw;
+ text-align: center;
+}
+.lab-home-title {
+  margin-top: 10px;
+}
+
+
       .home-mockup {
         height: 20vh;
     }
