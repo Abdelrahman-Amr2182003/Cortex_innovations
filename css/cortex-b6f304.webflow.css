@@ -18485,5 +18485,10 @@ font-size: 16px; /* Paragraph font size */
     .image-section.ui-section .info-block-left.ui .button.w-button {
       display: inline-block;
     }
-
+    .w-row.research-theme-row{
+      margin-top: 10px;
+    }
+    .section-description-copy.research-home-description{
+      margin-bottom: 90px;
+    }
   }
