@@ -680,49 +680,24 @@ input[type="radio"] {
   display: block; /* Show on hover */
 }
 
-
-/* Styles for cards when specific toggles are checked */
-#item-1:checked ~ .cards #song-4,
-#item-4:checked ~ .cards #song-2 {
-  transform: translateX(-150%) scale(0.8); /* Move further left and out of view */
-  opacity: 0;
+#item-1:checked ~ .cards #song-3, #item-2:checked ~ .cards #song-1, #item-3:checked ~ .cards #song-2 {
+  transform: translatex(-40%) scale(.8);
+  opacity: .4;
   z-index: 0;
 }
 
-#item-1:checked ~ .cards #song-2,
-#item-2:checked ~ .cards #song-3,
-#item-3:checked ~ .cards #song-4,
-#item-4:checked ~ .cards #song-1 {
-  transform: translateX(50%) scale(0.8); /* This will be moved to the right */
-  opacity: 0.5;
+#item-1:checked ~ .cards #song-2, #item-2:checked ~ .cards #song-3, #item-3:checked ~ .cards #song-1 {
+  transform: translatex(40%) scale(.8);
+  opacity: .4;
   z-index: 0;
 }
 
-#item-1:checked ~ .cards #song-3,
-#item-2:checked ~ .cards #song-4,
-#item-3:checked ~ .cards #song-1,
-#item-4:checked ~ .cards #song-3 {
-  transform: translateX(-50%) scale(0.8); /* This will be moved to the left */
-  opacity: 0.5;
-  z-index: 0;
-}
-
-/* Center and highlight the active card */
-#item-1:checked ~ .cards #song-1,
-#item-2:checked ~ .cards #song-2,
-#item-3:checked ~ .cards #song-3,
-#item-4:checked ~ .cards #song-4 {
-  transform: translateX(0) scale(1);
+#item-1:checked ~ .cards #song-1, #item-2:checked ~ .cards #song-2, #item-3:checked ~ .cards #song-3 {
+  transform: translatex(0) scale(1);
   opacity: 1;
   z-index: 1;
-}
-
-/* Further left translation for specific cards to hide them */
-#item-2:checked ~ .cards #song-1,
-#item-3:checked ~ .cards #song-2, {
-  transform: translateX(-150%) scale(0.8); /* Move further left and out of view */
-  opacity: 0;
-  z-index: 0;
+  
+  
 }
 /* Hide all descriptions by default */
 .description div {
@@ -18398,7 +18373,7 @@ font-size: 16px; /* Paragraph font size */
 }
 .lab-home-button{
   margin-left: 0;
- width: 8vw;
+ width: 10vw;
 }
 
 
