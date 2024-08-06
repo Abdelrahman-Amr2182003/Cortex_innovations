@@ -14639,7 +14639,8 @@ html.w-mod-js [data-ix="hide-lightbox"] {
   }
   .research-items-list.archive{
 
-    margin-left: 5px;
+    margin-left: auto;
+        margin-right: auto;
   }
 
 .research-description .small-paragraph{
