@@ -17080,7 +17080,8 @@ html.w-mod-js [data-ix="hide-lightbox"] {
 
 
   #lab-gallery {
-    display: grid;
+    display: flex;
+    flex-direction: column;
   }
   #service-container-left{
     display: flex;
