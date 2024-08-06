@@ -18214,6 +18214,7 @@ font-size: 16px; /* Paragraph font size */
     background-color: #fff;  /* Background color for visibility */
     border-radius: 5px;  /* Rounded corners */
     overflow-y: auto;  /* Allows vertical scrolling within the content */
+     -webkit-overflow-scrolling: touch;
     box-shadow: 0 4px 6px rgba(0,0,0,0.3);  /* Shadow for 3D effect */
 }
 
