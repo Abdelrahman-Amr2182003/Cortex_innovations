@@ -17450,7 +17450,15 @@ html.w-mod-js [data-ix="hide-lightbox"] {
     display: flex; /* Use flexbox for layout */
     align-items: stretch; /* Stretch items to fill the modal */
     max-height: 80vh; /* Maximum height */
-    overflow: hidden; /* Hide overflow */
+    overflow-y: auto;        /* Scroll vertical if content is too long */
+     /* Hide scrollbar for Chrome, Safari and Opera */
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge, and Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
 
 
