@@ -10,104 +10,125 @@
   <meta content="Webflow" name="generator">
   <style>
     /* General carousel styles */
-    .carousel {
-        position: relative;
-        width: 100%;
-        overflow: hidden;
-    }
-    .carousel-inner {
-        display: flex;
-        transition: transform 0.5s ease;
-    }
-    .carousel-item {
-        min-width: 100%;
-        box-sizing: border-box;
-    }
-    .carousel-item img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-    }
-    /* Navigation buttons */
-    .carousel-control-prev, .carousel-control-next {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background: rgba(0, 0, 0, 0.0);
-        color: rgba(0, 0, 0, 0.5);
-        padding: 10px;
-        cursor: pointer;
-        z-index: 2;
-    }
-    .carousel-control-prev {
-        left: 10px;
-    }
-    .carousel-control-next {
-        right: 10px;
-    }
-    .carousel-control-prev-icon, .carousel-control-next-icon {
-        display: inline-block;
-        width: 30px;
-        height: 30px;
-        background-size: 100%, 100%;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    .carousel-control-prev-icon {
-        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23FFFFFF" viewBox="0 0 8 8"><path d="M5.5 0L3 4l2.5 4H7.5L5 4 7.5 0H5.5z"/></svg>');
-    }
-    .carousel-control-next-icon {
-        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23FFFFFF" viewBox="0 0 8 8"><path d="M2.5 0L5 4 2.5 8H0.5L3 4 0.5 0H2.5z"/></svg>');
-    }
-    /* Indicators */
-    .carousel-indicators {
-        position: absolute;
-        bottom: 10px;
-        left: 50%;
-        transform: translateX(-50%);
-        display: flex;
-        justify-content: center;
-    }
-    .carousel-indicators li {
-        background-color: #fff;
-        border: none;
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        margin: 0 5px;
-        cursor: pointer;
-    }
-    .carousel-indicators .active {
-        background-color: #000;
-    }
-    /* Custom styles for gallery carousel */
-    .gallery-carousel .carousel-item {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Navigation buttons */
+.carousel-control-prev, .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+    border: none;
+    border-radius: 50%;
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-size: 100%, 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.carousel-control-prev-icon {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23FFFFFF" viewBox="0 0 8 8"><path d="M5.5 0L3 4l2.5 4H7.5L5 4 7.5 0H5.5z"/></svg>');
+}
+
+.carousel-control-next-icon {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23FFFFFF" viewBox="0 0 8 8"><path d="M2.5 0L5 4 2.5 8H0.5L3 4 0.5 0H2.5z"/></svg>');
+}
+
+/* Indicators */
+.carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-indicators li {
+    background-color: #fff;
+    border: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.carousel-indicators .active {
+    background-color: #000;
+}
+
+/* Custom styles for gallery carousel */
+.gallery-carousel .carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-carousel .carousel-item img {
+    width: 60vw;
+    height: 55vh;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 767px) {
     .gallery-carousel .carousel-item img {
-        width: 60vw;
-        height: 55vh;
+        width: 90vw;
+        height: auto; /* Adjust height for better aspect ratio on smaller screens */
         object-fit: cover;
     }
-    @media screen and (max-width: 767px) {
-        .gallery-carousel .carousel-item img {
-            width: 90vw;
-            height: 44vh;
-            object-fit: cover;
-        }
-        .carousel-control-prev, .carousel-control-next {
-            padding: 5px;
-        }
-        .carousel-control-prev {
-            left: 0px;
-        }
-        .carousel-control-next {
-            right: 0px;
-        }
+
+    .carousel-control-prev, .carousel-control-next {
+        padding: 5px;
+        font-size: 1.5rem; /* Increase size for better touch interaction */
     }
-    
+
+    .carousel-control-prev {
+        left: 5px; /* Adjust position */
+    }
+
+    .carousel-control-next {
+        right: 5px; /* Adjust position */
+    }
+}
+
   </style>
 
   <link href="../css/normalize.css" rel="stylesheet" type="text/css">
@@ -202,11 +223,11 @@
                 <div class="section-title-wrapper full info" style="margin-bottom: 5px;">
                     <h2 class="_700" style="font-size: 25px;font-weight: bold;">Brief of our Lab</h2>
                 </div>
-                <p class="small-paragraph" style="font-weight: 600;text-align:justify;">
+                <p class="small-paragraph" style="font-weight: 600;text-align:justify;max-width: 80vw;">
                     At Cortex Innovations, we lead cutting-edge research in renewable energy, water solutions, urban development, transportation optimization, and city-scale digital twins. From promoting clean energy generation to addressing water scarcity and designing sustainable cities, our lab pioneers innovative solutions. With expertise in energy storage, smart systems, and advanced technologies like IoT and AI, we drive efficiency and reliability. Equipped with state-of-the-art tools, our facility empowers precision and groundbreaking advancements across scientific and technological domains.
                 </p>
             </div>
-            <div class="w-col w-col-7">
+            <div class="w-col">
                 <div class="gallery">
                     <div id="galleryCarousel" class="carousel slide gallery-carousel" data-ride="carousel">
                         <div class="carousel-inner">
@@ -217,7 +238,7 @@
                                 <img src="../images/Lab/GALLERY 1.jpg" alt="Image 1">
                             </div>
                             <div class="carousel-item">
-                                <img src="../images/Lab/GALLERY 9.jpg" alt="Image 2">
+                                <img src="../images/Lab/GALLERY 9.JPG" alt="Image 2">
                             </div>
                             <div class="carousel-item">
                                 <img src="../images/Lab/GALLERY 3.jpg" alt="Image 3">
@@ -229,7 +250,7 @@
                                 <img src="../images/Lab/GALLERY 5.jpg" alt="Image 5">
                             </div>
                             <div class="carousel-item">
-                                <img src="../images/Lab/GALLERY 7.jpg" alt="Image 6">
+                                <img src="../images/Lab/GALLERY 7.JPG" alt="Image 6">
                             </div>
                             <div class="carousel-item">
                                 <img src="../images/Lab Facilities/3D printer.jpg" alt="Image 6">
