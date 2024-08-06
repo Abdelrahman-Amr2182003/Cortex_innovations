@@ -14735,11 +14735,12 @@ html.w-mod-js [data-ix="hide-lightbox"] {
   }
 
  .image-section.ui-section {
-    background:linear-gradient(0deg, var(--color_navy_overlay), var(--color_navy_overlay)), url('../images/home/feat_1.jpeg');
+    background:linear-gradient(0deg, var(--color_navy_overlay), var(--color_navy_overlay)), url('../images/home/feat_1_mobile.jpeg');
 
   background-size: 100% 100%;
   padding-top: 25px;
   padding-bottom: 25px;
+  background-position: center,center;
 
 }
 
@@ -17113,6 +17114,7 @@ html.w-mod-js [data-ix="hide-lightbox"] {
   justify-content: center; /* Horizontal alignment */
   padding-top: 120px;
   padding-bottom: 250px;
+  background-color:#fff;
 }
 
 
@@ -17944,7 +17946,7 @@ font-size: 16px; /* Paragraph font size */
     font-weight: bold;
 }
 .container.owl-2-style {
-    max-width: 70vw;
+    max-width: 100vw;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -17953,6 +17955,7 @@ font-size: 16px; /* Paragraph font size */
 }
 
 @media(max-width: 767px){
+
 .container.owl-2-style{
   left: 0;
 }
@@ -18464,6 +18467,7 @@ font-size: 16px; /* Paragraph font size */
       text-align: center;
       margin-right: auto;
       margin-left: auto;
+      width: 80vw;
     }
     .image-section.ui-section .info-block-left.ui .button.w-button {
       display: inline-block;

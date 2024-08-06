@@ -122,6 +122,9 @@
 }
 
    @media screen and (max-width: 767px){
+     .feature-blocks-row.w-row{
+    margin-top: 0;
+  }
 .carousel-inner img {
   height: 55vh; /* Adjust the height as needed */
 }
@@ -150,6 +153,38 @@
 
 .custom-carousel .carousel-indicators {
   bottom: -20px; /* Adjust if necessary to move indicators outside the image */
+}
+.carousel-background {
+  width: 100%;
+  height: 50vh; /* Maintains the current height settings */
+  background-size: cover;
+  background-position: center;
+}
+
+/* Media query to change images on smaller screens */
+@media screen and (max-width: 768px) {
+  .carousel-item:nth-child(1) .carousel-background {
+    background-image: url('../images/about/Software_mobile.jpg');
+  }
+  .carousel-item:nth-child(2) .carousel-background {
+    background-image: url('../images/about/Mechanical_and_Electrical_mobile.jpg');
+  }
+  .carousel-item:nth-child(3) .carousel-background {
+    background-image: url('../images/about/Design_mobile.jpg');
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .carousel-item:nth-child(1) .carousel-background {
+    background-image: url('../images/about/Software_mobile.jpg');
+  }
+  .carousel-item:nth-child(2) .carousel-background {
+    background-image: url('../images/about/Mechanical_and_Electrical_mobile.jpg');
+  }
+  .carousel-item:nth-child(3) .carousel-background {
+    background-image: url('../images/about/Design_mobile.jpg');
+  }
 }
 
 
@@ -351,28 +386,29 @@
       <button type="button" data-mdb-target="#carouselExampleIndicators" data-mdb-slide-to="2" aria-label="Slide 3"></button>
     </div>
     <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="../images/about/Software.jpg" class="d-block w-100" alt="Software">
-        <div class="carousel-caption">
-          <h1>Software</h1>
-          <p>Our software development team comprises a dynamic group of skilled professionals who are passionate about building robust, scalable, and innovative software solutions. With expertise spanning various programming languages, frameworks, and technologies, our developers excel in creating customized applications that meet the unique needs of our clients.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="../images/about/Mechanical and Electrical.jpg" class="d-block w-100" alt="Mechanical and Electrical">
-        <div class="carousel-caption">
-          <h1>Mechanical and Electrical</h1>
-          <p>our electrical and mechanical team is a highly skilled group of engineers and technicians dedicated to designing and implementing cutting-edge solutions across various industries meeting rigorous performance and safety standards. Each member brings a wealth of knowledge and practical experience, ensuring precision and innovation in every project.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="../images/about/Design.jpg" class="d-block w-100" alt="Design">
-        <div class="carousel-caption">
-          <h1>Design</h1>
-          <p>Diverse creatives make outstanding digital experiences on our design team. With inventive thinking, technological competence, and a deep grasp of user needs, our team creates impressive and functional designs. Our team's diverse abilities and viewpoints ensure that every project is suited to our clients' goals and aesthetic preferences.</p>
-        </div>
-      </div>
+  <div class="carousel-item active">
+    <div class="carousel-background" alt="Software" style="background-image: url('../images/about/Software.jpg');"></div>
+    <div class="carousel-caption">
+      <h1>Software</h1>
+      <p>Our software development team comprises a dynamic group of skilled professionals who are passionate about building robust, scalable, and innovative software solutions. With expertise spanning various programming languages, frameworks, and technologies, our developers excel in creating customized applications that meet the unique needs of our clients.</p>
     </div>
+  </div>
+  <div class="carousel-item">
+    <div class="carousel-background" alt="Mechanical and Electrical" style="background-image: url('../images/about/Mechanical and Electrical.jpg');"></div>
+    <div class="carousel-caption">
+      <h1>Mechanical and Electrical</h1>
+      <p>Our electrical and mechanical team is a highly skilled group of engineers and technicians dedicated to designing and implementing cutting-edge solutions across various industries, meeting rigorous performance and safety standards. Each member brings a wealth of knowledge and practical experience, ensuring precision and innovation in every project.</p>
+    </div>
+  </div>
+  <div class="carousel-item">
+    <div class="carousel-background" alt="Design" style="background-image: url('../images/about/Design.jpg');"></div>
+    <div class="carousel-caption">
+      <h1>Design</h1>
+      <p>Diverse creatives make outstanding digital experiences on our design team. With inventive thinking, technological competence, and a deep grasp of user needs, our team creates impressive and functional designs. Our team's diverse abilities and viewpoints ensure that every project is suited to our clients' goals and aesthetic preferences.</p>
+    </div>
+  </div>
+</div>
+
     <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleIndicators" data-mdb-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
