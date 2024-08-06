@@ -4730,8 +4730,14 @@ input[type="radio"] {
   text-align: justify;
 
 }
-
-
+.research-title-container{
+  height: 5vh;
+}
+@media screen and (max-width: 900px) {
+  .research-title-container{
+  height: 8vh;
+}
+}
 
 @media screen and (max-width: 767px) {
 .simple-research-image-block{
@@ -18373,7 +18379,8 @@ font-size: 16px; /* Paragraph font size */
 }
 .lab-home-button{
   margin-left: 0;
- width: 10vw;
+ width: 8vw;
+ text-align: center;
 }
 
 
