@@ -18505,7 +18505,6 @@ font-size: 16px; /* Paragraph font size */
       max-height: calc(100vh - 10%); /* Ensure it fits within the viewport */
       display: flex;
       flex-direction: column;
-      overflow-y: auto; /* Ensure the modal content can scroll */
     }
 
     /* Hide scrollbar for Chrome, Safari and Opera */
@@ -18518,8 +18517,6 @@ font-size: 16px; /* Paragraph font size */
       -ms-overflow-style: none;  /* IE and Edge */
       scrollbar-width: none;  /* Firefox */
     }
-
-
 
 
 
