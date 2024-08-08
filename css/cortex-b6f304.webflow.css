@@ -17762,7 +17762,7 @@ font-size: 16px; /* Paragraph font size */
       overflow-y: auto;
       background-color: #fff;
       padding:5px;
-      min-height: 20vh;
+      min-height: 40vh;
 
     }
     .research-abstract, .research-thumbnail {
