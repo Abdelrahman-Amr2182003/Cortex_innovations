@@ -17451,7 +17451,7 @@ html.w-mod-js [data-ix="hide-lightbox"] {
     display: flex; /* Use flexbox for layout */
     align-items: stretch; /* Stretch items to fill the modal */
     max-height: 80vh; /* Maximum height */
-    overflow: hidden; /* Hide overflow */
+    /* Hide overflow */
 }
 
     /* Hide scrollbar for Chrome, Safari and Opera */
@@ -17524,7 +17524,7 @@ font-size: 16px; /* Paragraph font size */
 
 .research-thumbnail img {
   width: 24vw; /* Maximum width */
-  height: 48vh; /* Maintain aspect ratio */
+  height: 40vh; /* Maintain aspect ratio */
   display: block;
   margin-left: 0;
 }
@@ -18486,9 +18486,7 @@ font-size: 16px; /* Paragraph font size */
 
   
 
-body.modal-open {
-  overflow: hidden;
-}
+
 
 .modal {
   display: none; /* Hidden by default */
@@ -18500,6 +18498,7 @@ body.modal-open {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  overflow: auto;
 }
 
 .modal-content {
@@ -18507,12 +18506,11 @@ body.modal-open {
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
-  max-height: calc(100vh - 10%); /* Adjust height to fit within viewport */
   border-radius: 10px;
-  overflow-y: auto; /* Enable vertical scrolling if needed */
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: ;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
