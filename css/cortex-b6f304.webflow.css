@@ -17759,9 +17759,10 @@ font-size: 16px; /* Paragraph font size */
       scrollbar-width: none;  /* Firefox */
     }
     .research-abstract {
-      overflow-y: clip;
+      overflow-y: auto;
       background-color: #fff;
       padding:5px;
+      min-height: 20vh;
 
     }
     .research-abstract, .research-thumbnail {
