@@ -357,11 +357,11 @@ box-shadow: 0 0 33px rgba(0, 0, 0, .2);
 
 .logo-block-copy .favicon-img{
 
-  background-image:url('../images/logo_2.png');
+  background-image:url('../images/Modus-logo.png');
   background-repeat: no-repeat;
   background-size: cover;
-  width:1.5em;
-  height:1.5em;
+  width:4em;
+  height:2em;
   display: block;
   padding: 10px;
   margin-right: 10px;
@@ -371,11 +371,15 @@ box-shadow: 0 0 33px rgba(0, 0, 0, .2);
 
 .navbar.scrolled .favicon-img{
 
-  background-image: url('../images/favicon.png');
+  background-image: url('../images/Modus-logo-2.png');
 
 }
 
+.navbar.white .favicon-img{
 
+  background-image: url('../images/Modus-logo-2.png');
+
+}
 
 .w-nav-brand:hover{
 
@@ -437,7 +441,7 @@ transition: transform 0.3s ease;
 .nav-menu {
   z-index: 1;
   border-radius: 4px;
-  margin-top: 5px;
+  margin-top: 9px;
 }
 
 .nav-link {
@@ -4681,6 +4685,7 @@ input[type="radio"] {
   margin-bottom: 10px;
   display: block;
   background-repeat: no-repeat;
+  margin-left: 12px;
 }
 
 .simple-research-image-block-small {
@@ -4776,6 +4781,8 @@ width: 50vw;
   background-color: #fff;
   padding-top:10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 43vw;
+  height: auto;
 
 }
 
@@ -17584,19 +17591,18 @@ font-size: 16px; /* Paragraph font size */
     align-items: start;  /* Align children to the top */
     width: 100%;
     min-height: 100vh;
+    flex-direction: row;
 }
 
 .research-items-list {
-    flex: 1;  /* Allows this list to take up the available space */
-    margin-right: 20px;  /* Optional: space between the list and the keywords */
+   
+    margin-right: 4vw;  /* Optional: space between the list and the keywords */
 }
 .keywords-container {
     display: flex;
     flex-direction: column;  /* Stack children vertically */
     width: 20vw; /* Adjust width as needed */
     align-items: center;  /* Center-align the child components */
-    position: absolute;
-    left: 60vw;
     background-color: #f2f2f2; /* Optional background color */
 
 }
@@ -17721,7 +17727,7 @@ font-size: 16px; /* Paragraph font size */
 
 
 
-@media(max-width: 767px){
+@media(max-width: 767px){/* Modal */
   .sdg-icon img{
     width: 40px;
   }
@@ -18101,131 +18107,7 @@ font-size: 16px; /* Paragraph font size */
   height: 22vh;
   width: 25vw;
 }
-   .research-container {
-    margin-top: 45vh;
-    margin-left: 6vw;
-  }
-  .simple-research-post-item.archive{
-    display: flex;
-    flex-direction: column;
-  }
-    .research-description{
-      margin-left: 5px;
-      display: grid;
-      align-items: center;
-      max-width: 60vw;
-    }
-      .button-services{
-        margin-top: 0;
-      }
-      .research-description .title-research{
-        font-size: 22px;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        margin-bottom: 0;
-      }
-    .content-wrapper {
-        flex-direction: column; /* Stacks all content vertically */
-        flex-direction: column-reverse;
-        align-items: center; /* Centers the content in the viewport */
-        width: 100%; /* Ensures full width utilization */
-        padding: 0; /* Removes padding that could affect layout */
-    }
-
-    .sdg-container,
-    .keyword-container,
-    .research-items-list {
-        width: 100%; /* Each container takes the full width */
-        margin-bottom: 20px; /* Adds space between each container for clarity */
-        box-sizing: border-box; /* Includes padding in width calculation */
-    }
-    
-    .sdg-container,
-    .keyword-container {
-        background-color: #fff; /* Background color to distinguish the containers */
-        padding: 15px; /* Padding inside the containers for content spacing */
-        position: static; /* Ensures that the position is not absolute */
-    }
-
-    .keywords-container {
-        position: static; /* Important to override any absolute positioning that could cause overlap */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 80%;
-    }
-
-    
-    .sdg-item {
-        width: 100%; /* Allows each item to grow as needed based on content */
-        margin: 5px 0; /* Vertical margin for spacing */
-    }
-    .keyword{
-      width: auto; /* Allows each item to grow as needed based on content */
-        margin: 5px 0; /* Vertical margin for spacing */
-    }
-    .keywords-flex-container,
-    .sdg-list {
-        display: flex; /* Enables flexbox layout for better alignment */
-        align-items: left; /* Centers items within the container */
-    }
-
-    .keyword {
-        padding: 8px 15px; /* Adequate padding for easier interaction */
-        border-radius: 15px; /* Rounded corners for aesthetic preference */
-        background-color: var(--color_navy_blue); /* Background color for keywords */
-        color: #fff; /* Text color for contrast */
-        font-size: 14px; /* Appropriate font size for mobile readability */
-    }
-
-    .buttons-container {
-        width: 100%; /* Full width to accommodate both buttons */
-        padding: 10px 15px; /* Padding for spacing within the container */
-        box-sizing: border-box; /* Padding included in width calculation */
-        display: flex;
-        justify-content: space-between; /* Distributes space evenly between buttons */
-        margin-left: -3vw;
-        align-items: center;
-    }
-
-    .button-research {
-        flex-grow: 1; /* Allows buttons to fill the available space */
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .button-research.previous {
-        background: #999090;
-        margin-right: 15px;
-        padding-top: 0;
-        padding-bottom: 0;
-        width: 25vh;
-        font-size: 12px;
-          }
-      .button-research.next {
-                margin-left: 15px;
-        padding-top: 0;
-        padding-bottom: 0;
-        width: 23vh;
-        font-size: 12px;
-          }
-
-
-
-
-.button-research.previous i {
-    margin-right: 0px;  /* Space after the icon in the previous button */
-    margin-left: 0;  /* Remove left margin */
-    font-size: 15px;
-
-}
-
-.button-research.next i {
-    margin-left: 0px;  /* Space before the icon in the next button */
-    margin-right: 0;  /* Remove right margin */
-    font-size: 15px;
-}
-
+   
      
     /* Ensure child elements do not expand beyond the modal content's height */
 
@@ -18347,10 +18229,9 @@ font-size: 16px; /* Paragraph font size */
 .container.lab-home-container{
   display: flex;
   flex-direction: row;
-  width: 70vw;
+  width: 85vw;
   height: 50vh;
-  left: -5vw;
-  margin-left: 0;
+
   position: relative;
   margin-left: auto;
     margin-right: auto;
@@ -18360,13 +18241,15 @@ font-size: 16px; /* Paragraph font size */
 .lab-home-description-container{
   display: flex;
   flex-direction: column;
-  width: 30vw;
+  width: 40vw;
   height: 30vh;
 }
 
 .lab-home-image {
-    width: 32vw;
+    width: 35vw;
+    height: 50vh;
     margin-right: 40px; /* Space between image and description */
+    margin-left: 5vw;
 }
 
 .lab-home-description {
@@ -18389,7 +18272,8 @@ font-size: 16px; /* Paragraph font size */
 }
 .lab-home-button{
   margin-left: 0;
- width: 8vw;
+ width: 9vw;
+ min-width: 170px;
  text-align: center;
 }
 
@@ -18408,6 +18292,277 @@ font-size: 16px; /* Paragraph font size */
 
 
 
+
+
+
+
+
+
+@media(max-width: 1250px){
+    .container.lab-home-container{
+
+  display: flex;
+      flex-direction: column;
+      width: 90vw;
+      left: 0;
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 10px;
+      height: auto;
+
+    }
+    .lab-home-description-container{
+      
+      width: 90vw;
+      height:auto;
+    }
+    .lab-home-image {
+    width: 60vw;
+    margin-right: auto; 
+    margin-left: 0;
+}
+.lab-home-button{
+  margin-left: 0;
+  margin-right: auto;
+ width: 18vw;
+ text-align: center;
+}
+.lab-home-title {
+  margin-top: 10px;
+}
+
+
+      .home-mockup {
+        height: 20vh;
+    }
+
+
+}
+
+@media(max-width: 1100px){
+
+.simple-research-post-item.archive{
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .research-title-container{
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .research-items-list.archive{
+        display: flex;
+    flex-direction: column;
+    margin-left: auto;
+        margin-right: auto;
+        
+      }
+      .button-research {
+        flex-grow: 1; /* Allows buttons to fill the available space */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .research-description .title-research{
+        font-size: 22px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-bottom: 0;
+      }
+
+      .research-items-list.archive{
+        margin-left: auto;
+        margin-right: auto;
+
+      }
+
+
+.simple-research-post-item.archive {
+  width: 60vw;
+}
+
+  .simple-research-post-item.archive {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .simple-research-image-block {
+        width: 500px;
+        height: 300px;
+        background-size: contain;
+    }
+    .research-overlay {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+    .research-description {
+        margin-left: 5px;
+        display: grid;
+        align-items: center;
+        max-width: 50vw;
+    }
+        .research-title-container {
+        height: 8vh;
+    }
+
+        .content-wrapper {
+        flex-direction: column;
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+    }
+    .research-container {
+    margin-top: 45vh;
+    margin-left: 6vw;
+  }
+  .simple-research-post-item.archive{
+    display: flex;
+    flex-direction: column;
+  }
+    .research-description{
+      margin-left: 5px;
+      display: grid;
+      align-items: center;
+      max-width: 50vw;
+    }
+      .button-services{
+        margin-top: 0;
+      }
+      .research-description .title-research{
+        font-size: 22px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-bottom: 0;
+      }
+    .content-wrapper {
+        flex-direction: column-reverse;
+        align-items: center; /* Centers the content in the viewport */
+        width: 100%; /* Ensures full width utilization */
+        padding: 0; /* Removes padding that could affect layout */
+    }
+
+    .sdg-container,
+    .keyword-container,
+    .research-items-list {
+        width: 100%; /* Each container takes the full width */
+        margin-bottom: 20px; /* Adds space between each container for clarity */
+        box-sizing: border-box; /* Includes padding in width calculation */
+    }
+    
+    .sdg-container,
+    .keyword-container {
+        background-color: #fff; /* Background color to distinguish the containers */
+        padding: 15px; /* Padding inside the containers for content spacing */
+        position: static; /* Ensures that the position is not absolute */
+    }
+
+    .keywords-container {
+        position: static; /* Important to override any absolute positioning that could cause overlap */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 61%;
+    }
+
+    
+    .sdg-item {
+        width: 100%; /* Allows each item to grow as needed based on content */
+        margin: 5px 0; /* Vertical margin for spacing */
+    }
+    .keyword{
+      width: auto; /* Allows each item to grow as needed based on content */
+        margin: 5px 0; /* Vertical margin for spacing */
+    }
+    .keywords-flex-container,
+    .sdg-list {
+        display: flex; /* Enables flexbox layout for better alignment */
+        align-items: left; /* Centers items within the container */
+    }
+
+    .keyword {
+        padding: 8px 15px; /* Adequate padding for easier interaction */
+        border-radius: 15px; /* Rounded corners for aesthetic preference */
+        background-color: var(--color_navy_blue); /* Background color for keywords */
+        color: #fff; /* Text color for contrast */
+        font-size: 14px; /* Appropriate font size for mobile readability */
+    }
+
+    .buttons-container {
+        width: 100%; /* Full width to accommodate both buttons */
+        padding: 10px 15px; /* Padding for spacing within the container */
+        box-sizing: border-box; /* Padding included in width calculation */
+        display: flex;
+        justify-content: space-between; /* Distributes space evenly between buttons */
+        margin-left: -3vw;
+        align-items: center;
+    }
+
+    .button-research {
+        flex-grow: 1; /* Allows buttons to fill the available space */
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .button-research.previous {
+        background: #999090;
+        margin-right: 15px;
+        padding-top: 0;
+        padding-bottom: 0;
+        width: 25vh;
+        font-size: 12px;
+          }
+      .button-research.next {
+                margin-left: 15px;
+        padding-top: 0;
+        padding-bottom: 0;
+        width: 23vh;
+        font-size: 12px;
+          }
+
+
+
+
+.button-research.previous i {
+    margin-right: 0px;  /* Space after the icon in the previous button */
+    margin-left: 0;  /* Remove left margin */
+    font-size: 15px;
+
+}
+
+.button-research.next i {
+    margin-left: 0px;  /* Space before the icon in the next button */
+    margin-right: 0;  /* Remove right margin */
+    font-size: 15px;
+}
+.research-description .small-paragraph{
+  margin-left: auto;
+        margin-right: auto;
+        padding-top: 0;
+        width: 32vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
 
 
 
@@ -18539,10 +18694,46 @@ font-size: 16px; /* Paragraph font size */
 .close:focus {
   color: black;
 }
+ .simple-research-post-item.archive{
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .research-title-container{
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .research-items-list.archive{
+        display: flex;
+    flex-direction: column;
+    margin-left: auto;
+        margin-right: auto;
+        
+      }
+      .button-research {
+        flex-grow: 1; /* Allows buttons to fill the available space */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .research-description .title-research{
+        font-size: 22px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-bottom: 0;
+      }
+
+      .research-items-list.archive{
+        margin-left: auto;
+        margin-right: auto;
+
+      }
 
 
-
-
+.simple-research-post-item.archive {
+  width: 56vw;
+}
 
 
 
